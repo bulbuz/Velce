@@ -22,6 +22,7 @@ namespace Velce
 
     class Editor {
     public:
+
         Editor(SDL_Renderer* renderer, int w, int h);
         void Run();
         void WorldEditor();
@@ -33,6 +34,7 @@ namespace Velce
         enum Tile { EMTPY, SELECTED, CREATED };
 
     private:
+
         SDL_Renderer* renderer;
         const int WIN_WIDTH;
         const int WIN_HEIGHT;
@@ -43,7 +45,6 @@ namespace Velce
         double TILE_SIZE;
 
         std::vector<std::vector<Tile>> grid;
-        std::vector<std::vector<Tile>> selection_grid;
         std::vector<SDL_Rect> sector_rects;
 
         double zoom;
@@ -51,7 +52,7 @@ namespace Velce
         bool mouse_motion;
 
         // preview of sector creation
-        SDL_FRect selection_box;
+        SDL_Rect selection_box;
 
         SDL_Rect* selected_sector;
 
@@ -63,6 +64,5 @@ namespace Velce
 
         Vec2 create_start_pos;
 
-        int cnt = 0;
     };
 } // namespace Velce
