@@ -20,10 +20,10 @@
       <UniqueIdentifier>{fb2e6edc-4c01-4102-9217-3bac172a6144}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\imgui">
-      <UniqueIdentifier>{f8de7ae0-5159-40e2-bc5a-6eac9f94353d}</UniqueIdentifier>
+      <UniqueIdentifier>{fec919fa-386f-4697-942b-1249f4cccdf7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{1ec2d91d-1d5c-4a6b-a923-aea712f4bac7}</UniqueIdentifier>
+      <UniqueIdentifier>{daa49077-dee0-48f4-9c12-c5eb2ec09ac2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -57,28 +57,28 @@
     <ClInclude Include="Debug.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imconfig.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imconfig.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imgui.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_impl_sdl2.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_impl_sdl2.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_impl_sdlrenderer.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_impl_sdlrenderer.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_internal.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_internal.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_rectpack.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_rectpack.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_textedit.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_textedit.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_truetype.h">
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_truetype.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
   </ItemGroup>
@@ -110,25 +110,25 @@
     <ClCompile Include="Editor.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_demo.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_demo.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_draw.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_draw.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_impl_sdl2.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_impl_sdl2.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_impl_sdlrenderer.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_impl_sdlrenderer.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_tables.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_tables.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_widgets.cpp">
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_widgets.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
   </ItemGroup>

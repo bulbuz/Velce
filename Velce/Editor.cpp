@@ -44,7 +44,6 @@ namespace Velce
             }
             ImGui::End();
         }
-        
 
         ImGui::Begin("Editor props");
         // mode buttons
@@ -63,6 +62,7 @@ namespace Velce
         else if (mode == SELECT)
             tbx_mode = "Selection";
         ImGui::Text(("Mode: " + tbx_mode).c_str());
+        ImGui::Text(("Sector count: " + std::to_string(sector_rects.size())).c_str());
         ImGui::End();
 
         // update
@@ -76,7 +76,7 @@ namespace Velce
         mouse.grid_pos.x = (int)mouse.grid_pos.x; mouse.grid_pos.y = (int)mouse.grid_pos.y;
 
         // behavior code
-        if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.grid_pos.x >= 0 && mouse.grid_pos.x <= WORLD_WIDTH && mouse.grid_pos.y >= 0 && mouse.grid_pos.y <= WORLD_HEIGHT) {
+        if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x > 0 && mouse.rel_pos.x <= WIN_WIDTH && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_WIDTH) {
             switch (mode) {
             case MOVE:
                 scroll = scroll + mouse.delta;
@@ -99,9 +99,19 @@ namespace Velce
 
         if (ImGui::IsWindowFocused() && !mouse.holding_left_click) {
             if (mode == Mode::CREATE) {
-                // create sector in grid
+                // create the actual sector
                 if (create_start_pos != Vec2(-1, -1)) {
-                    sector_rects.push_back(selection_box);
+                    if (selection_box.w < 0) {
+                        selection_box.x += selection_box.w;
+                        selection_box.w = abs(selection_box.w);
+                    }
+
+                    if (selection_box.h < 0) {
+                        selection_box.y += selection_box.h;
+                        selection_box.h = abs(selection_box.h);
+                    }
+                    if (selection_box.w && selection_box.h)
+                        sector_rects.push_back(selection_box);
                 }
                 // reset selection grid
                 create_start_pos = Vec2(-1, -1);

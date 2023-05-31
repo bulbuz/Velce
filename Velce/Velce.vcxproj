@@ -135,14 +135,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imconfig.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_impl_sdl2.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_impl_sdlrenderer.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imgui_internal.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_rectpack.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_textedit.h" />
-    <ClInclude Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\include\imstb_truetype.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imconfig.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imgui.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_impl_sdl2.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_impl_sdlrenderer.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imgui_internal.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_rectpack.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_textedit.h" />
+    <ClInclude Include="..\res\vendor\imgui\include\imstb_truetype.h" />
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Animator.h" />
     <ClInclude Include="Debug.h" />
@@ -155,13 +155,13 @@
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_impl_sdl2.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_impl_sdlrenderer.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\..\..\Users\Adrian\projects\Velce\vendor\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_impl_sdl2.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_impl_sdlrenderer.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_tables.cpp" />
+    <ClCompile Include="..\res\vendor\imgui\src\imgui_widgets.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Animator.cpp" />
     <ClCompile Include="Editor.cpp" />
