@@ -44,7 +44,6 @@ namespace Velce
         const int WORLD_HEIGHT;
         double TILE_SIZE;
 
-        std::vector<std::vector<Tile>> grid;
         std::vector<SDL_Rect> sector_rects;
 
         double zoom;

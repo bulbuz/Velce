@@ -3,7 +3,7 @@
 namespace Velce
 {
     Editor::Editor(SDL_Renderer* renderer, int w, int h) : renderer(renderer), WIN_WIDTH(w), WIN_HEIGHT(h),
-        WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24), zoom(1), zoom_speed(1 / 10.0), grid(WORLD_HEIGHT, std::vector<Tile>(WORLD_WIDTH, Tile::EMTPY)) {
+        WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24), zoom(1), zoom_speed(1 / 10.0) {
         mode = MOVE;
         context = WORLD_EDITOR;
         mouse_motion = false;
@@ -57,7 +57,7 @@ namespace Velce
 
         // check if there is a selected sector
         if (selected_sector != nullptr) {
-            ImGui::Begin("Sector props");
+            ImGui::Begin("Editor prop");
             if (ImGui::Button("Edit sector")) {
                 //context = Context::SECTOR_EDITOR;
             }
