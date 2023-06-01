@@ -29,9 +29,8 @@ namespace Velce
         void SectorEditor();
         void Input(SDL_Event* event);
 
-        enum Context { WORLD_EDITOR, SECTOR_EDITOR };
-        enum Mode { SELECT, MOVE, CREATE, DELETE };
-        enum Tile { EMTPY, SELECTED, CREATED };
+        enum class Context { WORLD_EDITOR, SECTOR_EDITOR };
+        enum class Mode { SELECT, MOVE, CREATE, DELETE };
 
     private:
 
@@ -43,6 +42,7 @@ namespace Velce
         const int WORLD_WIDTH;
         const int WORLD_HEIGHT;
         double TILE_SIZE;
+        int blocks_per_tile; // number of blocks one world tile corresponds to
 
         std::vector<SDL_Rect> sector_rects;
 
@@ -62,6 +62,8 @@ namespace Velce
         Vec2 scroll;
 
         Vec2 create_start_pos;
+
+        Vec2 grabbed_delta;
 
     };
 } // namespace Velce

@@ -4,12 +4,13 @@ namespace Velce
 {
     Editor::Editor(SDL_Renderer* renderer, int w, int h) : renderer(renderer), WIN_WIDTH(w), WIN_HEIGHT(h),
         WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24), zoom(1), zoom_speed(1 / 10.0) {
-        mode = MOVE;
-        context = WORLD_EDITOR;
+        mode = Mode::MOVE;
+        context = Context::WORLD_EDITOR;
         mouse_motion = false;
         create_start_pos.x = -1; create_start_pos.y = -1;
         selected_sector = nullptr;
         selection_box = { 0, 0, 0, 0 };
+        blocks_per_tile = 4;
     }
 
     void Editor::Run() {
@@ -18,10 +19,10 @@ namespace Velce
             mouse.delta = Vec2(0, 0);
         }
 
-        if (context == WORLD_EDITOR) {
+        if (context == Context::WORLD_EDITOR) {
             WorldEditor();
         }
-        else if (context == SECTOR_EDITOR) {
+        else if (context == Context::SECTOR_EDITOR) {
             SectorEditor();
         }
     }
@@ -34,21 +35,22 @@ namespace Velce
         ImGui::Begin("Editor prop");
         // mode buttons
         if (ImGui::Button("Move"))
-            mode = MOVE;
+            mode = Mode::MOVE;
         ImGui::SameLine();
         if (ImGui::Button("Create room"))
-            mode = CREATE;
+            mode = Mode::CREATE;
         ImGui::SameLine();
         if (ImGui::Button("Select"))
             mode = Mode::SELECT;
 
         std::string tbx_mode = "Move";
-        if (mode == CREATE)
+        if (mode == Mode::CREATE)
             tbx_mode = "Creation";
-        else if (mode == SELECT)
+        else if (mode == Mode::SELECT)
             tbx_mode = "Selection";
         ImGui::Text(("Mode: " + tbx_mode).c_str());
         ImGui::Text(("Sector count: " + std::to_string(sector_rects.size())).c_str());
+        // ImGui::SliderInt("Sector tile scale", )
         ImGui::End();
 
         // reset selected sector if mode was switched
@@ -86,11 +88,11 @@ namespace Velce
         if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x > 0 && mouse.rel_pos.x <= WIN_WIDTH 
             && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
             switch (mode) {
-            case MOVE:
+            case Mode::MOVE:
                 scroll = scroll + mouse.delta;
                 break;
 
-            case CREATE:
+            case Mode::CREATE:
                 if (create_start_pos == Vec2(-1, -1)) {
                     create_start_pos = mouse.grid_pos;
                     selection_box = { 0, 0, 0, 0 };
@@ -101,6 +103,20 @@ namespace Velce
                 }
                 break;
 
+            case Mode::SELECT:
+                if (selected_sector != nullptr) {
+                    if (grabbed_delta == Vec2(-1, -1)) {
+                        grabbed_delta = mouse.grid_pos - Vec2(selected_sector->x, selected_sector->y);
+                    } else {
+                        int dx = mouse.grid_pos.x - grabbed_delta.x;
+                        int dy = mouse.grid_pos.y - grabbed_delta.y;
+                        if (dx >= 0 && dx + selected_sector->w <= WORLD_WIDTH)
+                            selected_sector->x = dx;
+                        if (dy >= 0 && dy + selected_sector->h <= WORLD_HEIGHT)
+                            selected_sector->y = dy;
+                    }
+                }
+                break;
             default:
                 break;
             }
@@ -121,7 +137,6 @@ namespace Velce
                         selection_box.h = abs(selection_box.h);
                     }
 
-
                     if (selection_box.w && selection_box.h)
                         if (selection_box.x >= 0 && selection_box.x + selection_box.w <= WORLD_WIDTH &&
                             selection_box.y >= 0 && selection_box.y + selection_box.h <= WORLD_HEIGHT)
@@ -131,6 +146,7 @@ namespace Velce
                 create_start_pos = Vec2(-1, -1);
                 selection_box = { 0, 0, 0, 0 };
             }
+            grabbed_delta = Vec2(-1, -1);
         }
 
         // render

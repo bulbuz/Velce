@@ -45,8 +45,7 @@ namespace Velce
 		int g = -1;
 		int b = -1;
 
-		bool operator == (const Color& that) const
-		{
+		bool operator == (const Color& that) const {
 			return (this->r == that.r && this->g == that.g && this->b == that.b);
 		}
 	};
@@ -80,5 +79,5 @@ namespace Velce
 		FALLING,
 		IDLE
 	};
-
+	
 } // namespace Velce

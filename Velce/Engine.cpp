@@ -20,7 +20,7 @@ namespace Velce {
 		window = SDL_CreateWindow("Velce", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIN_WIDTH, WIN_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_MAXIMIZED);
 		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
-
+#ifndef RELEASE
 		// Setup Dear ImGui context
 		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
@@ -37,12 +37,13 @@ namespace Velce {
 		ImGui_ImplSDL2_InitForSDLRenderer(window, renderer);
 		ImGui_ImplSDLRenderer_Init(renderer);
 
+		SDL_SetWindowResizable(window, SDL_TRUE);
+#endif // RELEASE
+
 		game_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, WIN_WIDTH, WIN_HEIGHT);
 		editor_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, WIN_WIDTH, WIN_HEIGHT);
 
 		CWD = std::filesystem::current_path().string() + "/../";
-
-		SDL_SetWindowResizable(window, SDL_TRUE);
 
 		game = nullptr;
 		editor = new Editor(renderer, WIN_WIDTH, WIN_HEIGHT);
@@ -60,11 +61,59 @@ namespace Velce {
 			editor->Input(&event);
 		}
 	}
+	
+	void Engine::Update() {
+		{
+			ImGui::Begin("Editor", NULL);
+			SDL_SetRenderTarget(renderer, editor_buffer);
+			editor->Run();
+			ImGui::Image((void*)editor_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
+			ImGui::End();
+		}
+
+		{
+			SDL_SetRenderTarget(renderer, game_buffer);
+
+			ImGui::Begin("Game");
+			if (ImGui::Button("Play")) {
+				delete game;
+				game = nullptr;
+				game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD);
+				run_game = 1;
+			}
+
+			ImGui::SameLine();
+			if (ImGui::Button("Stop")) {
+				run_game = 0;
+				delete game;
+				game = nullptr;
+			}
+
+			if (run_game) {
+				game->Run(deltatime);
+			}
+			else {
+				SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+				SDL_RenderClear(renderer);
+			}
+			ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
+			ImGui::End();
+		}
+	}
+
+	void Engine::Render() {
+		// Render imgui
+		SDL_SetRenderTarget(renderer, NULL);
+		SDL_SetRenderDrawColor(renderer, 44, 43, 46, 255);
+		SDL_RenderClear(renderer);
+		ImGui::Render();
+		ImGui_ImplSDLRenderer_RenderDrawData(ImGui::GetDrawData());
+		SDL_RenderPresent(renderer);
+	}
 
 	void Engine::Run() {
 		Uint64 now = SDL_GetPerformanceCounter();
 		Uint64 last = 0;
-		deltatime = 0;
 
 		while (is_running) {
 			last = now;
@@ -77,51 +126,8 @@ namespace Velce {
 			ImGui::NewFrame();
 
 			HandleEvents();
-
-			{
-				ImGui::Begin("Editor", NULL);
-				SDL_SetRenderTarget(renderer, editor_buffer);
-				editor->Run();
-				ImGui::Image((void*)editor_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
-				ImGui::End();
-			}
-
-			{
-				SDL_SetRenderTarget(renderer, game_buffer);
-
-				ImGui::Begin("Game");
-				if (ImGui::Button("Play")) {
-					delete game;
-					game = nullptr;
-					game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD);
-					run_game = 1;
-				}
-
-				ImGui::SameLine();
-				if (ImGui::Button("Stop")) {
-					run_game = 0;
-					delete game;
-					game = nullptr;
-				}
-
-				if (run_game) {
-					game->Run(deltatime);
-				}
-				else {
-					SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-					SDL_RenderClear(renderer);
-				}
-				ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
-				ImGui::End();
-			}
-
-			// Render imgui
-			SDL_SetRenderTarget(renderer, NULL);
-			SDL_SetRenderDrawColor(renderer, 44, 43, 46, 255);
-			SDL_RenderClear(renderer);
-			ImGui::Render();
-			ImGui_ImplSDLRenderer_RenderDrawData(ImGui::GetDrawData());
-			SDL_RenderPresent(renderer);
+			Update();
+			Render();
 		}
 	}
 
@@ -138,6 +144,7 @@ namespace Velce {
 
 		SDL_DestroyRenderer(renderer);
 		SDL_DestroyWindow(window);
+		IMG_Quit();
 		SDL_Quit();
 	}
 

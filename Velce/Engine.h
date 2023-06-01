@@ -17,8 +17,7 @@
 #include "Player.h"
 
 namespace Velce {
-	class Engine
-	{
+	class Engine {
 	public:
 		void Run();
 		Engine(int w, int h);
@@ -35,11 +34,9 @@ namespace Velce {
 		Game* game;
 		double deltatime;
 		bool is_running;
-		// current working directory path
-		std::string CWD;
 
 		void Render();
-		void Update(double deltatime);
+		void Update();
 		void HandleEvents();
 		void OnClose();
 
@@ -47,6 +44,9 @@ namespace Velce {
 		SDL_Texture* editor_buffer;
 
 		bool run_game;
+
+		// current working directory path
+		std::string CWD;
 	};
 }
 
