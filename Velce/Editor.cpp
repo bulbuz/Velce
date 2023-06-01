@@ -64,21 +64,21 @@ namespace Velce
                 //context = Context::SECTOR_EDITOR;
             }
 
+            std::cout << selected_sector->x << " " << selected_sector->y << "\n";
             if (ImGui::Button("Delete")) {
                 for (int i = 0; i < sector_rects.size(); i++) {
                     if (selected_sector == &sector_rects[i]) {
                         sector_rects.erase(sector_rects.begin() + i);
+						selected_sector = nullptr;
                         break;
                     }
                 }
-                selected_sector = nullptr;
             }
             ImGui::End();
         }
 
         // update
         // ------
-
         ImVec2 window_pos = ImGui::GetCursorScreenPos();
         mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
         mouse.grid_pos = mouse.rel_pos - scroll;
@@ -94,8 +94,11 @@ namespace Velce
 
             case Mode::CREATE:
                 if (create_start_pos == Vec2(-1, -1)) {
-                    create_start_pos = mouse.grid_pos;
-                    selection_box = { 0, 0, 0, 0 };
+                    if (mouse.grid_pos.x == std::clamp(mouse.grid_pos.x, 0, WORLD_WIDTH) && 
+                        mouse.grid_pos.y == std::clamp(mouse.grid_pos.y, 0, WORLD_HEIGHT)) {
+                        create_start_pos = mouse.grid_pos;
+                        selection_box = { 0, 0, 0, 0 };
+                    }
                 } else {
                     // empty selection grid
                     selection_box = { create_start_pos.x, create_start_pos.y,

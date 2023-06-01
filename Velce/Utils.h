@@ -1,7 +1,8 @@
 #pragma once
 
-namespace Velce
-{
+#include <SDL.h>
+
+namespace Velce {
 #define EMPTY_COLOR Color(-1, -1, -1)
 
 	// 2D Vector

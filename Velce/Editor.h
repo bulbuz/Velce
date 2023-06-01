@@ -29,7 +29,7 @@ namespace Velce
         void SectorEditor();
         void Input(SDL_Event* event);
 
-        enum class Context { WORLD_EDITOR, SECTOR_EDITOR };
+        enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE };
         enum class Mode { SELECT, MOVE, CREATE, DELETE };
 
     private:
