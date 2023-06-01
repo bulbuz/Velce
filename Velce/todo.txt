@@ -1,0 +1,20 @@
+
+TODO
+----------------
+- SDL_Texture wrapper class? (automatic cleanup)
+- input class (potentially command pattern)
+- replace maps with unordered_maps where necessary
+- fix actor class stuff
+- check for exceptions
+
+OPTIMIZATION
+----------------
+- fix replace copies with pointers if possible
+
+DONE
+----------------
+- animation system
+- directional movement
+- jumping physics
+- spritesheet loader
+- organize assets folder

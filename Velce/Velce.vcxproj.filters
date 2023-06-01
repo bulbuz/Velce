@@ -132,4 +132,7 @@
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt" />
+  </ItemGroup>
 </Project>

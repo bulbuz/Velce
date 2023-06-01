@@ -30,22 +30,8 @@ namespace Velce
 
         // imgui stuff
         // --------------
-        
-        if (selected_sector != nullptr) {
-            ImGui::Begin("Sector props");
-            if (ImGui::Button("Delete")) {
-                for (int i = 0; i < sector_rects.size(); i++) {
-                    if (selected_sector->x == sector_rects[i].x && selected_sector->y == sector_rects[i].y && selected_sector->w == sector_rects[i].w && selected_sector->h == sector_rects[i].h) {
-                        sector_rects.erase(sector_rects.begin() + i);
-                        break;
-                    }
-                }
-                selected_sector = nullptr;
-            }
-            ImGui::End();
-        }
 
-        ImGui::Begin("Editor props");
+        ImGui::Begin("Editor prop");
         // mode buttons
         if (ImGui::Button("Move"))
             mode = MOVE;
@@ -54,7 +40,7 @@ namespace Velce
             mode = CREATE;
         ImGui::SameLine();
         if (ImGui::Button("Select"))
-            mode = SELECT;
+            mode = Mode::SELECT;
 
         std::string tbx_mode = "Move";
         if (mode == CREATE)
@@ -65,18 +51,40 @@ namespace Velce
         ImGui::Text(("Sector count: " + std::to_string(sector_rects.size())).c_str());
         ImGui::End();
 
+        // reset selected sector if mode was switched
+        if (mode != Mode::SELECT && selected_sector != nullptr)
+            selected_sector = nullptr;
+
+        // check if there is a selected sector
+        if (selected_sector != nullptr) {
+            ImGui::Begin("Sector props");
+            if (ImGui::Button("Edit sector")) {
+                //context = Context::SECTOR_EDITOR;
+            }
+
+            if (ImGui::Button("Delete")) {
+                for (int i = 0; i < sector_rects.size(); i++) {
+                    if (selected_sector == &sector_rects[i]) {
+                        sector_rects.erase(sector_rects.begin() + i);
+                        break;
+                    }
+                }
+                selected_sector = nullptr;
+            }
+            ImGui::End();
+        }
+
         // update
         // ------
 
         ImVec2 window_pos = ImGui::GetCursorScreenPos();
         mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
         mouse.grid_pos = mouse.rel_pos - scroll;
-
         mouse.grid_pos.x /= TILE_SIZE * zoom; mouse.grid_pos.y /= TILE_SIZE * zoom;
-        mouse.grid_pos.x = (int)mouse.grid_pos.x; mouse.grid_pos.y = (int)mouse.grid_pos.y;
 
         // behavior code
-        if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x > 0 && mouse.rel_pos.x <= WIN_WIDTH && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_WIDTH) {
+        if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x > 0 && mouse.rel_pos.x <= WIN_WIDTH 
+            && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
             switch (mode) {
             case MOVE:
                 scroll = scroll + mouse.delta;
@@ -88,7 +96,8 @@ namespace Velce
                     selection_box = { 0, 0, 0, 0 };
                 } else {
                     // empty selection grid
-                    selection_box = { (int) create_start_pos.x, (int) create_start_pos.y, (int) (mouse.grid_pos.x - create_start_pos.x) + 1, (int) (mouse.grid_pos.y - create_start_pos.y) + 1 };
+                    selection_box = { create_start_pos.x, create_start_pos.y,
+                        (mouse.grid_pos.x - create_start_pos.x) + 1, (mouse.grid_pos.y - create_start_pos.y) + 1 };
                 }
                 break;
 
@@ -101,6 +110,7 @@ namespace Velce
             if (mode == Mode::CREATE) {
                 // create the actual sector
                 if (create_start_pos != Vec2(-1, -1)) {
+                    // correct negative dimensions
                     if (selection_box.w < 0) {
                         selection_box.x += selection_box.w;
                         selection_box.w = abs(selection_box.w);
@@ -110,8 +120,12 @@ namespace Velce
                         selection_box.y += selection_box.h;
                         selection_box.h = abs(selection_box.h);
                     }
+
+
                     if (selection_box.w && selection_box.h)
-                        sector_rects.push_back(selection_box);
+                        if (selection_box.x >= 0 && selection_box.x + selection_box.w <= WORLD_WIDTH &&
+                            selection_box.y >= 0 && selection_box.y + selection_box.h <= WORLD_HEIGHT)
+                            sector_rects.push_back(selection_box);
                 }
                 // reset selection grid
                 create_start_pos = Vec2(-1, -1);
@@ -126,14 +140,9 @@ namespace Velce
 
         {   // draw the selection box 
             SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-            SDL_FRect selection_box_render{ selection_box.x * TILE_SIZE * zoom + scroll.x, selection_box.y * TILE_SIZE * zoom + scroll.y, selection_box.w * TILE_SIZE * zoom, selection_box.h * TILE_SIZE * zoom };
+            SDL_FRect selection_box_render{ selection_box.x * TILE_SIZE * zoom + scroll.x, selection_box.y * TILE_SIZE * zoom + scroll.y,
+                selection_box.w * TILE_SIZE * zoom, selection_box.h * TILE_SIZE * zoom };
             SDL_RenderFillRectF(renderer, &selection_box_render);
-        }
-
-        // draw created sectors
-        for (const auto& rect : sector_rects) {
-            SDL_FRect sector_rect{ rect.x * TILE_SIZE * zoom + scroll.x, rect.y * TILE_SIZE * zoom + scroll.y, rect.w * TILE_SIZE * zoom, rect.h * TILE_SIZE * zoom };
-            SDL_RenderFillRectF(renderer, &sector_rect);
         }
 
         // render grid
@@ -144,7 +153,17 @@ namespace Velce
                 SDL_RenderDrawRectF(renderer, &tile);
             }
         }
+        // draw created sectors
+        for (const auto& rect : sector_rects) {
+            SDL_FRect sector_rect{ rect.x * TILE_SIZE * zoom + scroll.x, rect.y * TILE_SIZE * zoom + scroll.y,
+                rect.w * TILE_SIZE * zoom, rect.h * TILE_SIZE * zoom };
 
+            SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+            if (&rect == selected_sector) {
+                SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
+            }
+            SDL_RenderFillRectF(renderer, &sector_rect);
+        }
         // reset mouse motion
         mouse_motion = false;
     }

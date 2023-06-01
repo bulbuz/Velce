@@ -4,6 +4,7 @@ namespace Velce
 {
     class Sector {
     public:
+
     private:
     };
 

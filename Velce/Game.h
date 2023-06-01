@@ -14,7 +14,6 @@ namespace Velce
     public:
         Game(SDL_Renderer* renderer, int w, int h, std::string CWD);
         void Run(double dt);
-        void SetDeltatime(double dt);
     private:
         void Render();
         void Input();
@@ -22,7 +21,6 @@ namespace Velce
 
         const int WIN_WIDTH;
         const int WIN_HEIGHT;
-        double dt;
 
         SDL_Renderer* renderer;
         Player player;

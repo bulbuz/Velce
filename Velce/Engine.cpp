@@ -11,9 +11,9 @@ namespace Velce {
 			exit(-1);
 		}
 
-#ifdef SDL_HINT_IME_SHOW_UI
-		SDL_SetHint(SDL_HINT_IME_SHOW_UI, "1");
-#endif
+		#ifdef SDL_HINT_IME_SHOW_UI
+			SDL_SetHint(SDL_HINT_IME_SHOW_UI, "1");
+		#endif
 
 		IMG_Init(IMG_INIT_PNG);
 

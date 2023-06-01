@@ -33,8 +33,8 @@ namespace Velce
 			return (x != that.x || y != that.y);
 		}
 
-		double x = 0;
-		double y = 0;
+		int x = 0;
+		int y = 0;
 	};
 
 	// color representation in RGB-format
@@ -45,9 +45,9 @@ namespace Velce
 		int g = -1;
 		int b = -1;
 
-		bool operator == (const Color& rhs) const
+		bool operator == (const Color& that) const
 		{
-			return (this->r == rhs.r && this->g == rhs.g && this->b == rhs.b);
+			return (this->r == that.r && this->g == that.g && this->b == that.b);
 		}
 	};
 
