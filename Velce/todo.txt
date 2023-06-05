@@ -6,6 +6,7 @@ TODO
 - replace maps with unordered_maps where necessary
 - fix actor class stuff
 - check for exceptions
+- disable selection by clicking elsewhere
 
 OPTIMIZATION
 ----------------

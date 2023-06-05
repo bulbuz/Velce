@@ -22,21 +22,19 @@ namespace Velce
 
     class Editor {
     public:
-
         Editor(SDL_Renderer* renderer, int w, int h);
         void Run();
         void WorldEditor();
         void SectorEditor();
-        void Input(SDL_Event* event);
+        void Input();
 
+    private:
         enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE };
         enum class Mode { SELECT, MOVE, CREATE, DELETE };
 
-    private:
-
         SDL_Renderer* renderer;
-        const int WIN_WIDTH;
-        const int WIN_HEIGHT;
+        int WIN_WIDTH;
+        int WIN_HEIGHT;
 
         // dimensions in tiles
         const int WORLD_WIDTH;
@@ -44,26 +42,32 @@ namespace Velce
         double TILE_SIZE;
         int blocks_per_tile; // number of blocks one world tile corresponds to
 
-        std::vector<SDL_Rect> sector_rects;
+        struct WorldEditor {
 
-        double zoom;
-        double zoom_speed;
-        bool mouse_motion;
+            std::vector<SDL_Rect> sector_rects;
 
-        // preview of sector creation
-        SDL_Rect selection_box;
+            double zoom;
+            double zoom_speed;
 
-        SDL_Rect* selected_sector;
+            // preview of sector creation
+            SDL_Rect selection_box;
 
-        Mode mode;
-        Context context;
+            SDL_Rect* selected_sector;
 
-        Mouse mouse;
-        Vec2 scroll;
+            Mode mode;
+            Context context;
 
-        Vec2 create_start_pos;
+            Mouse mouse;
+            Vec2 scroll;
+            Vec2 create_start_pos;
+            Vec2 grabbed_delta;
 
-        Vec2 grabbed_delta;
+            // testing vars
+            bool unselect = false;
+        } world_editor;
+
+    private:
+        void RenderWorldEditor();
 
     };
 } // namespace Velce

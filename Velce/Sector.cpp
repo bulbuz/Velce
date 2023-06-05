@@ -2,7 +2,7 @@
 
 namespace Velce {
     Sector::Sector(int width, int height) {
-        win_dimensions.x = width;
-        win_dimensions.y = height;
+        sector_size.x = width;
+        sector_size.y = height;
     }
 } // namespace Velce

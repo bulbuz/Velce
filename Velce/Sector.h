@@ -9,7 +9,7 @@ namespace Velce {
     public:
         Sector(int width, int height);
     private:
-        Vec2 win_dimensions;
+        Vec2 sector_size;
     };
 
 } // namespace Velce

@@ -57,8 +57,6 @@ namespace Velce {
 			if (event.type == SDL_QUIT) {
 				is_running = false;
 			}
-
-			editor->Input(&event);
 		}
 	}
 	
