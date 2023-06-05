@@ -80,5 +80,5 @@ namespace Velce {
 		FALLING,
 		IDLE
 	};
-	
+
 } // namespace Velce
