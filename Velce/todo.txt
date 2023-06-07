@@ -1,21 +1,25 @@
 
 TODO
 ----------------
+
+// engine
 - SDL_Texture wrapper class? (automatic cleanup)
 - input class (potentially command pattern)
 - replace maps with unordered_maps where necessary
 - fix actor class stuff
 - check for exceptions
+
+// game
+
+// editor
 - disable selection by clicking elsewhere
+- spritesheet loader
+- level editor interface
+
+- layers
+- decouple editor apps?
+- save and load from file
 
 OPTIMIZATION
 ----------------
 - fix replace copies with pointers if possible
-
-DONE
-----------------
-- animation system
-- directional movement
-- jumping physics
-- spritesheet loader
-- organize assets folder

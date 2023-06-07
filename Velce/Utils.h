@@ -40,6 +40,7 @@ namespace Velce {
 
 	// color representation in RGB-format
 	struct Color {
+		Color() : r(0), g(0), b(0) { }
 		Color(int r, int g, int b) : r(r), g(g), b(b) { }
 
 		int r = -1;

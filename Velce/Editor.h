@@ -33,6 +33,8 @@ namespace Velce
         enum class Mode { SELECT, MOVE, CREATE, DELETE };
 
         SDL_Renderer* renderer;
+        const int VIEWPORT_WIDTH;
+        const int VIEWPORT_HEIGHT;
         int WIN_WIDTH;
         int WIN_HEIGHT;
 
@@ -41,6 +43,12 @@ namespace Velce
         const int WORLD_HEIGHT;
         double TILE_SIZE;
         int blocks_per_tile; // number of blocks one world tile corresponds to
+
+        // colors
+        Color background_color;
+        Color grid_color;
+        Color select_color;
+        Color sector_color;
 
         struct WorldEditor {
 
@@ -64,7 +72,10 @@ namespace Velce
 
             // testing vars
             bool unselect = false;
-        } world_editor;
+        } we;
+
+        struct SectorEditor {
+        } se;
 
     private:
         void RenderWorldEditor();
