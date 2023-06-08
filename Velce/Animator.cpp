@@ -2,14 +2,9 @@
 
 namespace Velce
 {
-    Animator::Animator(SDL_Renderer* renderer, std::string path) {
+    Animator::Animator(SDL_Renderer* renderer) {
         this->renderer = renderer;
         elapsed = 0;
-        spritesheet = NULL;
-        spritesheet = IMG_LoadTexture(renderer, path.c_str());
-        if (spritesheet == NULL) {
-            std::cout << "Failed to load player spritesheet! SDL_Error: " << SDL_GetError() << std::endl;
-        }
     }
 
     void Animator::Play(Vec2 pos) {
@@ -19,14 +14,12 @@ namespace Velce
             elapsed -= config.frame_duration / 1000.0;
             cur_frame = (cur_frame + 1) % config.frame_count + 1;
         }
-        int x = (cur_frame - 1) * (config.width + config.padding_x) + config.margin_x;
-        int y = config.margin_y;
+        int x = (cur_frame - 1) * (config.width + config.sheet.padding_x) + config.sheet.margin_x;
+        int y = config.sheet.margin_y;
         SDL_Rect src_rect{ x, y, config.width, config.height };
-        SDL_Rect dst_rect{ pos.x, pos.y, config.width * config.scale, config.height * config.scale };
-        if (SDL_RenderCopyEx(renderer, spritesheet, &src_rect, &dst_rect, 0, NULL, config.flip) < 0) {
-            std::cout << "ERROR! SDL_Error: " << SDL_GetError() << std::endl;
-            exit(-1);
-        }
+        SDL_Rect dst_rect{ pos.x, pos.y, config.width * config.sheet.scale, config.height * config.sheet.scale };
+
+        config.sheet.RenderAt(renderer, &src_rect, &dst_rect, config.flip);
 
         // debugging
         if (config.show_hitbox) {
@@ -49,11 +42,10 @@ namespace Velce
         cur_state = state;
     }
 
-    void Animator::SetStateConfig(ACTOR_STATE state, AnimConfig config) {
+    void Animator::ConfigureState(ACTOR_STATE state, AnimConfig config) {
         state_config[state] = config;
     }
 
     Animator::~Animator() {
-        SDL_DestroyTexture(spritesheet);
     }
 } // namespace Velce

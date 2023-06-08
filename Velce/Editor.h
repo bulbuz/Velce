@@ -50,6 +50,8 @@ namespace Velce
         Color select_color;
         Color sector_color;
 
+        Context context;
+
         struct WorldEditor {
 
             std::vector<SDL_Rect> sector_rects;
@@ -63,7 +65,6 @@ namespace Velce
             SDL_Rect* selected_sector;
 
             Mode mode;
-            Context context;
 
             Mouse mouse;
             Vec2 scroll;
@@ -75,6 +76,7 @@ namespace Velce
         } we;
 
         struct SectorEditor {
+            Spritesheet cur_sheet;
         } se;
 
     private:

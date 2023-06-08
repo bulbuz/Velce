@@ -5,7 +5,7 @@ namespace Velce {
     Editor::Editor(SDL_Renderer* renderer, int w, int h) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h),
         WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24) {
         we.mode = Mode::MOVE;
-        we.context = Context::WORLD_EDITOR;
+        context = Context::SECTOR_EDITOR;
         we.zoom = 1;
         we.zoom_speed = 1 / 10.0;
 
@@ -26,10 +26,10 @@ namespace Velce {
         WIN_WIDTH = std::min((int)ImGui::GetIO().DisplaySize.x, VIEWPORT_WIDTH);
         WIN_HEIGHT = std::min((int)ImGui::GetIO().DisplaySize.y, VIEWPORT_HEIGHT);
 
-        if (we.context == Context::WORLD_EDITOR) {
+        if (context == Context::WORLD_EDITOR) {
             WorldEditor();
         }
-        else if (we.context == Context::SECTOR_EDITOR) {
+        else if (context == Context::SECTOR_EDITOR) {
             SectorEditor();
         }
     }
@@ -37,12 +37,12 @@ namespace Velce {
     void Editor::Input() {
         ImGuiIO io = ImGui::GetIO();
 
-        if (we.context == Context::WORLD_EDITOR) {
+        if (context == Context::WORLD_EDITOR) {
 			we.mouse.delta = Vec2(io.MouseDelta.x, io.MouseDelta.y);
 			we.mouse.abs_pos = Vec2(io.MousePos.x, io.MousePos.y);
 
 			if (io.MouseDown[0]) {
-				if (we.mode == Mode::SELECT && we.context == Context::WORLD_EDITOR) {
+				if (we.mode == Mode::SELECT && context == Context::WORLD_EDITOR) {
 					SDL_Point p = { we.mouse.grid_pos.x, we.mouse.grid_pos.y };
 
 					for (int i = 0; i < we.sector_rects.size(); i++) {
@@ -65,7 +65,7 @@ namespace Velce {
         // --------------
 
         // mode buttons
-        ImGui::Begin("Properties");
+
         if (ImGui::Button("Move")) {
             we.mode = Mode::MOVE;
         }
@@ -77,6 +77,8 @@ namespace Velce {
         if (ImGui::Button("Select")) {
             we.mode = Mode::SELECT;
         }
+        ImGui::SameLine();
+        ImGui::Button("Save map");
 
         std::string tbx_mode = "Move";
         if (we.mode == Mode::CREATE)
@@ -85,7 +87,6 @@ namespace Velce {
             tbx_mode = "Selection";
         ImGui::Text(("Mode: " + tbx_mode).c_str());
         ImGui::Text(("Sector count: " + std::to_string(we.sector_rects.size())).c_str());
-        ImGui::End();
 
         // reset selected sector if mode was switched
         if (we.mode != Mode::SELECT && we.selected_sector != nullptr)
@@ -95,7 +96,7 @@ namespace Velce {
         if (we.selected_sector != nullptr) {
 			ImGui::Begin("Properties");
             if (ImGui::Button("Edit sector")) {
-                we.context = Context::SECTOR_EDITOR;
+                context = Context::SECTOR_EDITOR;
             }
 
             ImGui::SameLine();
@@ -231,10 +232,16 @@ namespace Velce {
     void Editor::SectorEditor() {
         SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
         SDL_RenderClear(renderer);
-    
-        ImGui::Begin("Sector editor");
-        char spritesheet_path[50] = "/../res/assets/art/";
-        ImGui::InputText("test", spritesheet_path, 100);
+
+        if (ImGui::Button("Exit")) {
+            context = Context::WORLD_EDITOR;
+        }
+
+        ImGui::Begin("Tileset");
+        if (ImGui::Button("Add tileset")) {
+
+        }
+        std::string path = "/../res/assets/art/demo_tileset.png";
         ImGui::End();
     }
 

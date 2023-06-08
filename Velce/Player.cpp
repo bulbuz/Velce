@@ -2,7 +2,7 @@
 
 namespace Velce {
 
-	Player::Player(SDL_Renderer* r, int x, int y, std::string path) : Actor(r, x, y, path, Color(255, 255, 255)), animator(renderer, path) { // remove white colorkey
+	Player::Player(SDL_Renderer* r, int x, int y, std::string path) : Actor(r, x, y, path, Color(255, 255, 255)), animator(renderer) { // remove white colorkey
 		// physics constants 
 		// source: https://2dengine.com/p/platformers
 		walk_speed = 350;
@@ -20,19 +20,21 @@ namespace Velce {
 		AnimConfig ic;
 		ic.width = 22;
 		ic.height = 32;
-		ic.margin_x = 18;
-		ic.margin_y = 24;
-		ic.padding_x = 34;
-		ic.padding_y = 32;
+		ic.sheet.margin_x = 18;
+		ic.sheet.margin_y = 24;
+		ic.sheet.padding_x = 34;
+		ic.sheet.padding_y = 32;
 		ic.frame_count = 6;
 		ic.start_frame = 1;
 		ic.frame_duration = 200;
 		ic.show_hitbox = true;
-		ic.scale = 8;
-		animator.SetStateConfig(IDLE, ic);
+		ic.sheet.scale = 8;
 
-		rect.w = ic.width * ic.scale;
-		rect.h = ic.height * ic.scale;
+		ic.sheet.LoadImage(renderer, path);
+		animator.ConfigureState(IDLE, ic);
+
+		rect.w = ic.width * ic.sheet.scale;
+		rect.h = ic.height * ic.sheet.scale;
 		// ---------------------------------------
 	}
 

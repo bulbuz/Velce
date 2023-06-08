@@ -15,6 +15,7 @@ TODO
 - disable selection by clicking elsewhere
 - spritesheet loader
 - level editor interface
+- save world layout
 
 - layers
 - decouple editor apps?
@@ -23,3 +24,4 @@ TODO
 OPTIMIZATION
 ----------------
 - fix replace copies with pointers if possible
+- modify the animation system to not use multiple copies of the spritesheet texture
