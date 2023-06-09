@@ -22,7 +22,7 @@ namespace Velce
 
     class Editor {
     public:
-        Editor(SDL_Renderer* renderer, int w, int h);
+        Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD);
         void Run();
         void WorldEditor();
         void SectorEditor();
@@ -52,6 +52,8 @@ namespace Velce
 
         Context context;
 
+        std::string* CWD;
+
         struct WorldEditor {
 
             std::vector<SDL_Rect> sector_rects;
@@ -77,10 +79,14 @@ namespace Velce
 
         struct SectorEditor {
             Spritesheet cur_sheet;
+            bool show_tile_settings = false;
+            std::vector<Spritesheet> sheets;
+            SDL_Texture* tileset_buffer;
+            int TILE_SIZE = 32;
         } se;
 
     private:
         void RenderWorldEditor();
-
+        void DrawTileset();
     };
 } // namespace Velce

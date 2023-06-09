@@ -144,12 +144,14 @@
     <ClInclude Include="..\res\vendor\imgui\include\imstb_truetype.h" />
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Animator.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Editor.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Sector.h" />
+    <ClInclude Include="Tile.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
@@ -163,11 +165,13 @@
     <ClCompile Include="..\res\vendor\imgui\src\imgui_widgets.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Editor.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Sector.cpp" />
+    <ClCompile Include="Tile.cpp" />
     <ClCompile Include="Velce.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>

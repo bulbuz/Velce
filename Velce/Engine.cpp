@@ -46,7 +46,7 @@ namespace Velce {
 		CWD = std::filesystem::current_path().string() + "/../";
 
 		game = nullptr;
-		editor = new Editor(renderer, WIN_WIDTH, WIN_HEIGHT);
+		editor = new Editor(renderer, WIN_WIDTH, WIN_HEIGHT, &CWD);
 		is_running = true;
 		run_game = false;
 	}

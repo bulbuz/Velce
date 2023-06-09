@@ -60,13 +60,22 @@ namespace Velce {
 
 	// OBS! MANUALLY CALL SDL_DestroyTexture() on the image!!!
 	struct Spritesheet {
-		double scale = 1;
+		int sheet_width;
+		int sheet_height;
+
+		int tile_width; // dimensions of a single item
+		int tile_height;
+
+		int scale = 1;
 
 		int padding_x = 0; // horizontal space between sprites 
 		int padding_y = 0; // vertical space between sprites
 
 		int margin_x = 0; // horizontal surrounding space
 		int margin_y = 0; // vertical surrounding space
+
+		Vec2 margin;
+		Vec2 padding;
 
 		SDL_Texture* texture = NULL;
 
@@ -75,6 +84,8 @@ namespace Velce {
 			LOG(texture);
 			if (texture == NULL)
 				std::cerr << "Failed to load spritesheet! SDL_Error: " << SDL_GetError() << std::endl;
+
+			SDL_QueryTexture(texture, NULL, NULL, &sheet_width, &sheet_height);
 		}
 
 		void RenderAt(SDL_Renderer* renderer, SDL_Rect* src_rect, SDL_Rect* dst_rect, SDL_RendererFlip flip) {

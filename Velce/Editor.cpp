@@ -2,7 +2,7 @@
 
 namespace Velce {
 
-    Editor::Editor(SDL_Renderer* renderer, int w, int h) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h),
+    Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h),
         WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24) {
         we.mode = Mode::MOVE;
         context = Context::SECTOR_EDITOR;
@@ -18,6 +18,10 @@ namespace Velce {
         grid_color = Color(80, 80, 80);
         select_color = Color(0, 188, 212);
         sector_color = Color(76, 175, 80);
+
+        this->CWD = CWD;
+
+        se.tileset_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
     }
 
     void Editor::Run() {
@@ -239,10 +243,59 @@ namespace Velce {
 
         ImGui::Begin("Tileset");
         if (ImGui::Button("Add tileset")) {
-
+            se.show_tile_settings = true;
         }
-        std::string path = "/../res/assets/art/demo_tileset.png";
+
+        if (se.show_tile_settings) {
+			ImGui::Begin("Tileset Settings");
+			ImGui::SliderInt("Tile Width", &se.cur_sheet.tile_width, 0, 64);
+			ImGui::SliderInt("Tile Height", &se.cur_sheet.tile_height, 0, 64);
+            ImGui::SliderInt("Tile Margin X", &se.cur_sheet.margin_x, 0, 64);
+            ImGui::SliderInt("Tile Margin Y", &se.cur_sheet.margin_y, 0, 64);
+
+            ImGui::SliderInt("Tile Padding X", &se.cur_sheet.padding_x, 0, 64);
+            ImGui::SliderInt("Tile Padding Y", &se.cur_sheet.padding_y, 0, 64);
+            ImGui::SliderInt("Scaling", &se.cur_sheet.scale, 0, 16);
+
+            std::string p = *CWD + "res/assets/art/demo_tileset.png";
+			char* path = &p[0];
+            ImGui::InputText("spritesheet path", path, sizeof(path));
+
+            char name[] = "";
+            ImGui::InputText("Name", name, sizeof(name));
+
+            if (ImGui::Button("Add")) {
+                se.cur_sheet.LoadImage(renderer, path);
+                se.show_tile_settings = false;
+            }
+
+			ImGui::End();
+        }
+
+        if (se.cur_sheet.texture != NULL) {
+            DrawTileset();
+            ImGui::Image((void*)se.tileset_buffer, ImVec2(VIEWPORT_WIDTH, VIEWPORT_HEIGHT));
+        }
         ImGui::End();
+    }
+
+    void Editor::DrawTileset() {
+
+        SDL_SetRenderTarget(renderer, se.tileset_buffer);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_RenderClear(renderer);
+
+        for (int i = 0; i < se.cur_sheet.sheet_height / se.cur_sheet.tile_height; i++) {
+			for (int j = 0; j < se.cur_sheet.sheet_width / se.cur_sheet.tile_width; j++) {
+                SDL_Rect src_rect{j * se.cur_sheet.tile_width, i * se.cur_sheet.tile_height, se.cur_sheet.tile_width, se.cur_sheet.tile_width};
+                SDL_Rect dst_rect{j * se.TILE_SIZE, i * se.TILE_SIZE, se.TILE_SIZE, se.TILE_SIZE};
+
+                SDL_RenderCopy(renderer, se.cur_sheet.texture, &src_rect, &dst_rect);
+
+                SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
+                SDL_RenderDrawRect(renderer, &dst_rect);
+			}
+        }
     }
 
 } // namespace Velce
