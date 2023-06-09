@@ -2,12 +2,18 @@
 
 namespace Velce {
 
-    Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h),
-        WORLD_WIDTH(80), WORLD_HEIGHT(40), TILE_SIZE(24) {
+    Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h) {
         we.mode = Mode::MOVE;
-        context = Context::SECTOR_EDITOR;
+        se.mode = Mode::MOVE;
+        context = Context::WORLD_EDITOR;
+
+        we.WORLD_WIDTH = 80;
+        we.WORLD_HEIGHT = 40;
+        TILE_SIZE = 24;
+
         we.zoom = 1;
-        we.zoom_speed = 1 / 10.0;
+        se.zoom = 1;
+        zoom_speed = 1 / 10.0;
 
         we.create_start_pos.x = -1; we.create_start_pos.y = -1;
         we.selected_sector = nullptr;
@@ -26,14 +32,15 @@ namespace Velce {
 
     void Editor::Run() {
         Input();
+        ImGui::Begin("debug");
+        ImGui::End();
 
         WIN_WIDTH = std::min((int)ImGui::GetIO().DisplaySize.x, VIEWPORT_WIDTH);
         WIN_HEIGHT = std::min((int)ImGui::GetIO().DisplaySize.y, VIEWPORT_HEIGHT);
 
         if (context == Context::WORLD_EDITOR) {
             WorldEditor();
-        }
-        else if (context == Context::SECTOR_EDITOR) {
+        } else if (context == Context::SECTOR_EDITOR) {
             SectorEditor();
         }
     }
@@ -41,13 +48,14 @@ namespace Velce {
     void Editor::Input() {
         ImGuiIO io = ImGui::GetIO();
 
-        if (context == Context::WORLD_EDITOR) {
-			we.mouse.delta = Vec2(io.MouseDelta.x, io.MouseDelta.y);
-			we.mouse.abs_pos = Vec2(io.MousePos.x, io.MousePos.y);
+		mouse.holding_left_click = io.MouseDown[0];
+		mouse.delta = Vec2(io.MouseDelta.x, io.MouseDelta.y);
+		mouse.abs_pos = Vec2(io.MousePos.x, io.MousePos.y);
 
+        if (context == Context::WORLD_EDITOR) {
 			if (io.MouseDown[0]) {
 				if (we.mode == Mode::SELECT && context == Context::WORLD_EDITOR) {
-					SDL_Point p = { we.mouse.grid_pos.x, we.mouse.grid_pos.y };
+					SDL_Point p = { mouse.grid_pos.x, mouse.grid_pos.y };
 
 					for (int i = 0; i < we.sector_rects.size(); i++) {
 						if (SDL_PointInRect(&p, &we.sector_rects[i])) {
@@ -56,11 +64,13 @@ namespace Velce {
 					}
 				}
 			}
-
-			we.mouse.holding_left_click = io.MouseDown[0];
-
-			we.zoom += io.MouseWheel * we.zoom_speed;
+			we.zoom += io.MouseWheel * zoom_speed;
 			we.zoom = std::max(we.zoom, 0.6);
+        }
+
+        if (context == Context::SECTOR_EDITOR) {
+			se.zoom += io.MouseWheel * zoom_speed;
+			se.zoom = std::max(se.zoom, 0.6);
         }
     }
 
@@ -69,7 +79,6 @@ namespace Velce {
         // --------------
 
         // mode buttons
-
         if (ImGui::Button("Move")) {
             we.mode = Mode::MOVE;
         }
@@ -89,7 +98,8 @@ namespace Velce {
             tbx_mode = "Creation";
         else if (we.mode == Mode::SELECT)
             tbx_mode = "Selection";
-        ImGui::Text(("Mode: " + tbx_mode).c_str());
+
+        ImGui::Text(("mode: " + tbx_mode).c_str());
         ImGui::Text(("Sector count: " + std::to_string(we.sector_rects.size())).c_str());
 
         // reset selected sector if mode was switched
@@ -119,45 +129,45 @@ namespace Velce {
         // update
         // ------
         ImVec2 window_pos = ImGui::GetCursorScreenPos();
-        we.mouse.rel_pos = Vec2(we.mouse.abs_pos.x - window_pos.x, we.mouse.abs_pos.y - window_pos.y);
-        we.mouse.grid_pos = we.mouse.rel_pos - we.scroll;
-        we.mouse.grid_pos.x /= TILE_SIZE * we.zoom; we.mouse.grid_pos.y /= TILE_SIZE * we.zoom;
+        mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
+        mouse.grid_pos = mouse.rel_pos - we.scroll;
+        mouse.grid_pos.x /= TILE_SIZE * we.zoom; mouse.grid_pos.y /= TILE_SIZE * we.zoom;
 
         ImGui::Begin("debug");
-        ImGui::Text(("grid_pos: " + std::to_string(we.mouse.grid_pos.x) + " " + std::to_string(we.mouse.grid_pos.y)).c_str());
+        ImGui::Text(("grid_pos: " + std::to_string(mouse.grid_pos.x) + " " + std::to_string(mouse.grid_pos.y)).c_str());
         ImGui::End();
 
         // behavior code
-        if (ImGui::IsWindowFocused() && we.mouse.holding_left_click && we.mouse.rel_pos.x > 0 && we.mouse.rel_pos.x <= WIN_WIDTH 
-            && we.mouse.rel_pos.y >= 0 && we.mouse.rel_pos.y <= WIN_HEIGHT) {
+        if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH 
+            && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
             switch (we.mode) {
             case Mode::MOVE:
-                we.scroll = we.scroll + we.mouse.delta;
+                we.scroll = we.scroll + mouse.delta;
                 break;
 
             case Mode::CREATE:
                 if (we.create_start_pos == Vec2(-1, -1)) {
-                    if (we.mouse.grid_pos.x == std::clamp(we.mouse.grid_pos.x, 0, WORLD_WIDTH) && 
-                        we.mouse.grid_pos.y == std::clamp(we.mouse.grid_pos.y, 0, WORLD_HEIGHT)) {
-                        we.create_start_pos = we.mouse.grid_pos;
+                    if (mouse.grid_pos.x == std::clamp(mouse.grid_pos.x, 0, we.WORLD_WIDTH) && 
+                        mouse.grid_pos.y == std::clamp(mouse.grid_pos.y, 0, we.WORLD_HEIGHT)) {
+                        we.create_start_pos = mouse.grid_pos;
                         we.selection_box = { 0, 0, 0, 0 };
                     }
                 } else {
                     // empty selection grid
                     we.selection_box = { we.create_start_pos.x, we.create_start_pos.y,
-                        (we.mouse.grid_pos.x - we.create_start_pos.x) + 1, (we.mouse.grid_pos.y - we.create_start_pos.y) + 1 };
+                        (mouse.grid_pos.x - we.create_start_pos.x) + 1, (mouse.grid_pos.y - we.create_start_pos.y) + 1 };
                 }
                 break;
 
             case Mode::SELECT:
                 if (we.selected_sector != nullptr) {
                     if (we.grabbed_delta == Vec2(-1, -1)) {
-                        we.grabbed_delta = we.mouse.grid_pos - Vec2(we.selected_sector->x, we.selected_sector->y);
+                        we.grabbed_delta = mouse.grid_pos - Vec2(we.selected_sector->x, we.selected_sector->y);
                     } else {
-                        Vec2 delta = we.mouse.grid_pos - we.grabbed_delta;
-                        if (delta.x >= 0 && delta.x + we.selected_sector->w <= WORLD_WIDTH)
+                        Vec2 delta = mouse.grid_pos - we.grabbed_delta;
+                        if (delta.x >= 0 && delta.x + we.selected_sector->w <= we.WORLD_WIDTH)
                             we.selected_sector->x = delta.x;
-                        if (delta.y >= 0 && delta.y + we.selected_sector->h <= WORLD_HEIGHT)
+                        if (delta.y >= 0 && delta.y + we.selected_sector->h <= we.WORLD_HEIGHT)
                             we.selected_sector->y = delta.y;
                     }
                 }
@@ -167,7 +177,7 @@ namespace Velce {
             }
         }
 
-        if (ImGui::IsWindowFocused() && !we.mouse.holding_left_click) {
+        if (ImGui::IsWindowFocused() && !mouse.holding_left_click) {
             if (we.mode == Mode::CREATE) {
                 // create the actual sector
                 if (we.create_start_pos != Vec2(-1, -1)) {
@@ -183,8 +193,8 @@ namespace Velce {
                     }
 
                     if (we.selection_box.w && we.selection_box.h)
-                        if (we.selection_box.x >= 0 && we.selection_box.x + we.selection_box.w <= WORLD_WIDTH &&
-                            we.selection_box.y >= 0 && we.selection_box.y + we.selection_box.h <= WORLD_HEIGHT)
+                        if (we.selection_box.x >= 0 && we.selection_box.x + we.selection_box.w <= we.WORLD_WIDTH &&
+                            we.selection_box.y >= 0 && we.selection_box.y + we.selection_box.h <= we.WORLD_HEIGHT)
                             we.sector_rects.push_back(we.selection_box);
                 }
                 // reset selection grid
@@ -210,14 +220,8 @@ namespace Velce {
             SDL_RenderFillRectF(renderer, &selection_box_render);
         }
 
-        // render grid
-        for (int i = 0; i < WORLD_HEIGHT; i++) {
-            for (int j = 0; j < WORLD_WIDTH; j++) {
-                SDL_FRect tile{ j * TILE_SIZE * we.zoom + we.scroll.x, i * TILE_SIZE * we.zoom + we.scroll.y, TILE_SIZE * we.zoom, TILE_SIZE * we.zoom };
-                SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
-                SDL_RenderDrawRectF(renderer, &tile);
-            }
-        }
+        RenderGrid(we.WORLD_WIDTH, we.WORLD_HEIGHT);
+
         // draw created sectors
         for (const auto& rect : we.sector_rects) {
             SDL_FRect sector_rect{ rect.x * TILE_SIZE * we.zoom + we.scroll.x, rect.y * TILE_SIZE * we.zoom + we.scroll.y,
@@ -233,62 +237,132 @@ namespace Velce {
         }
     }
 
-    void Editor::SectorEditor() {
-        SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
-        SDL_RenderClear(renderer);
-
-        if (ImGui::Button("Exit")) {
-            context = Context::WORLD_EDITOR;
+    void Editor::RenderGrid(int WIDTH, int HEIGHT) {
+        // render grid
+        Vec2 scroll;
+        double zoom;
+        if (context == Context::WORLD_EDITOR) {
+            scroll = we.scroll;
+            zoom = we.zoom;
         }
 
-        ImGui::Begin("Tileset");
-        if (ImGui::Button("Add tileset")) {
-            se.show_tile_settings = true;
+        if (context == Context::SECTOR_EDITOR) {
+            scroll = se.scroll; 
+            zoom = se.zoom;
         }
 
-        if (se.show_tile_settings) {
-			ImGui::Begin("Tileset Settings");
-			ImGui::SliderInt("Tile Width", &se.cur_sheet.tile_width, 0, 64);
-			ImGui::SliderInt("Tile Height", &se.cur_sheet.tile_height, 0, 64);
-            ImGui::SliderInt("Tile Margin X", &se.cur_sheet.margin_x, 0, 64);
-            ImGui::SliderInt("Tile Margin Y", &se.cur_sheet.margin_y, 0, 64);
-
-            ImGui::SliderInt("Tile Padding X", &se.cur_sheet.padding_x, 0, 64);
-            ImGui::SliderInt("Tile Padding Y", &se.cur_sheet.padding_y, 0, 64);
-            ImGui::SliderInt("Scaling", &se.cur_sheet.scale, 0, 16);
-
-            std::string p = *CWD + "res/assets/art/demo_tileset.png";
-			char* path = &p[0];
-            ImGui::InputText("spritesheet path", path, sizeof(path));
-
-            char name[] = "";
-            ImGui::InputText("Name", name, sizeof(name));
-
-            if (ImGui::Button("Add")) {
-                se.cur_sheet.LoadImage(renderer, path);
-                se.show_tile_settings = false;
+        for (int i = 0; i < HEIGHT; i++) {
+            for (int j = 0; j < WIDTH; j++) {
+                SDL_FRect tile{ j * TILE_SIZE * zoom + scroll.x, i * TILE_SIZE * zoom + scroll.y, TILE_SIZE * zoom, TILE_SIZE * zoom };
+                SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
+                SDL_RenderDrawRectF(renderer, &tile);
             }
-
-			ImGui::End();
         }
+    }
 
-        if (se.cur_sheet.texture != NULL) {
-            DrawTileset();
-            ImGui::Image((void*)se.tileset_buffer, ImVec2(VIEWPORT_WIDTH, VIEWPORT_HEIGHT));
-        }
+    void Editor::AddTileset() {
+		ImGui::Begin("Tileset Settings");
+		ImGui::SliderInt("Tile Width", &se.cur_sheet.tile_size.x, 0, 64);
+		ImGui::SliderInt("Tile Height", &se.cur_sheet.tile_size.y, 0, 64);
+		se.cur_sheet.tile_size.x = 8;
+		se.cur_sheet.tile_size.y = 8;
+
+		ImGui::SliderInt("Tile Margin X", &se.cur_sheet.margin.x, 0, 64);
+		ImGui::SliderInt("Tile Margin Y", &se.cur_sheet.margin.y, 0, 64);
+
+		ImGui::SliderInt("Tile Padding X", &se.cur_sheet.padding.x, 0, 64);
+		ImGui::SliderInt("Tile Padding Y", &se.cur_sheet.padding.y, 0, 64);
+		ImGui::SliderInt("Scaling", &se.cur_sheet.scale, 0, 16);
+
+		std::string p = *CWD + "res/assets/art/demo_tileset.png";
+		char* path = &p[0];
+		ImGui::InputText("spritesheet path", path, sizeof(path));
+
+		char name[50] = "";
+		ImGui::InputText("Name", name, sizeof(name));
+
+		if (ImGui::Button("Add")) {
+			se.cur_sheet.LoadImage(renderer, path);
+            se.sheets.push_back(se.cur_sheet);
+			se.show_tile_settings = false;
+		}
         ImGui::End();
     }
 
-    void Editor::DrawTileset() {
+    void Editor::SectorEditor() {
+        // clear screen
+        SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
+        SDL_RenderClear(renderer);
+
+		// top bar buttons (different modes)
+        { 
+            if (ImGui::Button("Play")) {
+
+            }
+
+            if (ImGui::Button("Move")) {
+                se.mode = Mode::MOVE;
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Draw")) {
+                se.mode = Mode::CREATE;
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Select")) {
+                se.mode = Mode::SELECT;
+            }
+
+            if (ImGui::Button("Erase")) {
+                se.mode = Mode::DELETE;
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Save sector")) {
+
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Exit")) {
+                context = Context::WORLD_EDITOR;
+            }
+            if (ImGui::Button("Add tileset")) {
+                se.show_tile_settings = true;
+            }
+        }
+
+		if (se.show_tile_settings) {
+			AddTileset();
+		}
+
+        if (ImGui::IsWindowFocused() && mouse.holding_left_click) {
+            switch (se.mode) {
+            case Mode::MOVE:
+                se.scroll = se.scroll + mouse.delta;
+                break;
+            }
+        }
+
+        // render grid
+        RenderGrid(we.selected_sector->w * blocks_per_tile, we.selected_sector->h * blocks_per_tile);
+
+        // render tileset window
+        if (se.cur_sheet.texture != NULL) {
+            ImGui::Begin("Tileset");
+            RenderTileset();
+            ImGui::Image((void*)se.tileset_buffer, ImVec2(VIEWPORT_WIDTH, VIEWPORT_HEIGHT));
+            ImGui::End();
+        }
+
+    }
+
+    void Editor::RenderTileset() {
 
         SDL_SetRenderTarget(renderer, se.tileset_buffer);
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
-        for (int i = 0; i < se.cur_sheet.sheet_height / se.cur_sheet.tile_height; i++) {
-			for (int j = 0; j < se.cur_sheet.sheet_width / se.cur_sheet.tile_width; j++) {
-                SDL_Rect src_rect{j * se.cur_sheet.tile_width, i * se.cur_sheet.tile_height, se.cur_sheet.tile_width, se.cur_sheet.tile_width};
-                SDL_Rect dst_rect{j * se.TILE_SIZE, i * se.TILE_SIZE, se.TILE_SIZE, se.TILE_SIZE};
+        for (int i = 0; i < se.cur_sheet.size.y / se.cur_sheet.tile_size.y; i++) {
+			for (int j = 0; j < se.cur_sheet.size.x / se.cur_sheet.tile_size.x; j++) {
+                SDL_Rect src_rect{j * se.cur_sheet.tile_size.x, i * se.cur_sheet.tile_size.y, se.cur_sheet.tile_size.x, se.cur_sheet.tile_size.y};
+                SDL_Rect dst_rect{j * se.TILESET_TILE_SIZE, i * se.TILESET_TILE_SIZE, se.TILESET_TILE_SIZE, se.TILESET_TILE_SIZE};
 
                 SDL_RenderCopy(renderer, se.cur_sheet.texture, &src_rect, &dst_rect);
 

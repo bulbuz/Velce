@@ -30,18 +30,21 @@ namespace Velce
 
     private:
         enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE };
-        enum class Mode { SELECT, MOVE, CREATE, DELETE };
+        enum class Mode { SELECT, MOVE, CREATE, DELETE, NONE };
+
+        std::string* CWD;
 
         SDL_Renderer* renderer;
         const int VIEWPORT_WIDTH;
         const int VIEWPORT_HEIGHT;
+
+        double TILE_SIZE;
+
         int WIN_WIDTH;
         int WIN_HEIGHT;
 
-        // dimensions in tiles
-        const int WORLD_WIDTH;
-        const int WORLD_HEIGHT;
-        double TILE_SIZE;
+		double zoom_speed;
+
         int blocks_per_tile; // number of blocks one world tile corresponds to
 
         // colors
@@ -52,14 +55,16 @@ namespace Velce
 
         Context context;
 
-        std::string* CWD;
+		Mouse mouse;
 
         struct WorldEditor {
+			// dimensions in tiles
+			int WORLD_WIDTH;
+			int WORLD_HEIGHT;
 
+			Vec2 scroll;
             std::vector<SDL_Rect> sector_rects;
-
-            double zoom;
-            double zoom_speed;
+			double zoom;
 
             // preview of sector creation
             SDL_Rect selection_box;
@@ -68,8 +73,6 @@ namespace Velce
 
             Mode mode;
 
-            Mouse mouse;
-            Vec2 scroll;
             Vec2 create_start_pos;
             Vec2 grabbed_delta;
 
@@ -79,14 +82,19 @@ namespace Velce
 
         struct SectorEditor {
             Spritesheet cur_sheet;
+			Vec2 scroll;
             bool show_tile_settings = false;
             std::vector<Spritesheet> sheets;
             SDL_Texture* tileset_buffer;
-            int TILE_SIZE = 32;
+            int TILESET_TILE_SIZE = 32;
+            Mode mode;
+            double zoom;
         } se;
 
     private:
+        void AddTileset();
         void RenderWorldEditor();
-        void DrawTileset();
+        void RenderTileset();
+        void RenderGrid(int WIDTH, int HEIGHT);
     };
 } // namespace Velce

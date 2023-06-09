@@ -14,8 +14,8 @@ namespace Velce
             elapsed -= config.frame_duration / 1000.0;
             cur_frame = (cur_frame + 1) % config.frame_count + 1;
         }
-        int x = (cur_frame - 1) * (config.width + config.sheet.padding_x) + config.sheet.margin_x;
-        int y = config.sheet.margin_y;
+        int x = (cur_frame - 1) * (config.width + config.sheet.padding.x) + config.sheet.margin.x;
+        int y = config.sheet.margin.y;
         SDL_Rect src_rect{ x, y, config.width, config.height };
         SDL_Rect dst_rect{ pos.x, pos.y, config.width * config.sheet.scale, config.height * config.sheet.scale };
 

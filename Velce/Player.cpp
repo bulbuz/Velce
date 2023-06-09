@@ -20,10 +20,10 @@ namespace Velce {
 		AnimConfig ic;
 		ic.width = 22;
 		ic.height = 32;
-		ic.sheet.margin_x = 18;
-		ic.sheet.margin_y = 24;
-		ic.sheet.padding_x = 34;
-		ic.sheet.padding_y = 32;
+		ic.sheet.margin.x = 18;
+		ic.sheet.margin.y = 24;
+		ic.sheet.padding.x = 34;
+		ic.sheet.padding.y = 32;
 		ic.frame_count = 6;
 		ic.start_frame = 1;
 		ic.frame_duration = 200;
