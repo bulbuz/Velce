@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "Debug.h"
+#include "Sector.h"
 #include "Utils.h"
 
 namespace Velce
@@ -23,6 +24,7 @@ namespace Velce
     class Editor {
     public:
         Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD);
+        ~Editor();
         void Run();
         void WorldEditor();
         void SectorEditor();
@@ -55,7 +57,11 @@ namespace Velce
 
         Context context;
 
+        Sector* cur_sector = nullptr;
+
 		Mouse mouse;
+
+        int zoomed = 0;
 
         struct WorldEditor {
 			// dimensions in tiles
@@ -84,11 +90,12 @@ namespace Velce
             Spritesheet cur_sheet;
 			Vec2 scroll;
             bool show_tile_settings = false;
-            std::vector<Spritesheet> sheets;
             SDL_Texture* tileset_buffer;
-            int TILESET_TILE_SIZE = 32;
+            int TILESET_TILE_SIZE = 64;
             Mode mode;
             double zoom;
+            char name[15] = "";
+            Tile cur_tile;
         } se;
 
     private:
@@ -96,5 +103,6 @@ namespace Velce
         void RenderWorldEditor();
         void RenderTileset();
         void RenderGrid(int WIDTH, int HEIGHT);
+        void RenderTiles();
     };
 } // namespace Velce

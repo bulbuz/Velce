@@ -69,6 +69,8 @@ namespace Velce {
 		Vec2 margin; // surrounding space
 		Vec2 padding; // internal space (between sprites)
 
+		std::string path;
+
 		SDL_Texture* texture = NULL;
 
 		void LoadImage(SDL_Renderer* renderer, std::string path) {

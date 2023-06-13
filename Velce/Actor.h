@@ -10,9 +10,9 @@
 #include "Utils.h"
 
 namespace Velce {
-	class Actor
-	{
+	class Actor {
 	public:
+		Actor();
 		Actor(SDL_Renderer* r, int x, int y, std::string path = "", Color color_key = EMPTY_COLOR);
 		~Actor();
 
@@ -27,6 +27,8 @@ namespace Velce {
 		int h;
 
 		void OnDestroy();
+
+	private:
 	};
 }
 

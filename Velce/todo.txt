@@ -27,3 +27,8 @@ OPTIMIZATION
 ----------------
 - fix replace copies with pointers if possible
 - modify the animation system to not use multiple copies of the spritesheet texture
+
+NOTES
+----------------
+The world object should manage all the sector switching and handle loading and unloading with 
+the help of a hash table storing the entrance connections

@@ -1,5 +1,7 @@
 #include "Actor.h"
 namespace Velce {
+	Actor::Actor() {
+	}
 
 	Actor::Actor(SDL_Renderer* r, int x, int y, std::string path, Color color_key) {
 		this->x = x;
