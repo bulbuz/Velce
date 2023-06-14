@@ -11,4 +11,7 @@ namespace Velce {
 	Vec2 Tile::GetGridPos() {
 		return Vec2(clip.x, clip.y);
 	}
+	int Tile::GetSpritesheetID() {
+		return spritesheetID;
+	}
 }

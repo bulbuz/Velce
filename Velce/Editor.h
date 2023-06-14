@@ -103,6 +103,7 @@ namespace Velce
         void RenderWorldEditor();
         void RenderTileset();
         void RenderGrid(int WIDTH, int HEIGHT);
-        void RenderTiles();
+        void TilesetWindow();
+        void RenderSectorTiles();
     };
 } // namespace Velce

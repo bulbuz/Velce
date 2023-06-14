@@ -12,17 +12,20 @@ namespace Velce {
     class Sector {
     public:
         // size of the sector in tiles
-        Sector(Vec2 size);
+        Sector(SDL_Renderer*, Vec2 size);
         ~Sector();
 
-        void SetTile(Tile tile);
+        void SetTile(Tile tile, Vec2 grid_pos);
         void AddSpritesheet(Spritesheet sheet);
         int GetSpritesheetID(Spritesheet* sheet);
+
+        void RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE);
 
         // debugging
         void PrintGrid();
 
     private:
+        SDL_Renderer* renderer;
         Vec2 size;
         // the grid storing all the tiles
         std::vector<std::vector<Tile>> grid;

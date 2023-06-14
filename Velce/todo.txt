@@ -5,18 +5,15 @@ TODO
 // engine
 - SDL_Texture wrapper class? (automatic cleanup)
 - input class (potentially command pattern)
-- replace maps with unordered_maps where necessary
 - fix actor class stuff
 - check for exceptions
-- replace padding and margin vars with Vec2 struct
 - remove width and height members from AnimConfig struct and use the spritesheets instead
 
 // game
 
 // editor
+- why does it create a new sector??
 - disable selection by clicking elsewhere
-- spritesheet loader
-- level editor interface
 - save world layout
 
 - layers
@@ -27,6 +24,7 @@ OPTIMIZATION
 ----------------
 - fix replace copies with pointers if possible
 - modify the animation system to not use multiple copies of the spritesheet texture
+- replace maps with unordered_maps where necessary
 
 NOTES
 ----------------

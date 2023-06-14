@@ -27,12 +27,15 @@ namespace Velce {
 
         this->CWD = CWD;
 
-        se.tileset_buffer = NULL; //SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
+        se.tileset_buffer = NULL;
     }
 
     void Editor::Run() {
         Input();
+
         ImGui::Begin("debug");
+        ImGui::Text((std::to_string(mouse.rel_pos.x) + " "  + std::to_string(mouse.rel_pos.y)).c_str());
+        ImGui::Text((std::to_string(mouse.abs_pos.x) + " "  + std::to_string(mouse.abs_pos.y)).c_str());
         ImGui::End();
 
         WIN_WIDTH = std::min((int)ImGui::GetIO().DisplaySize.x, VIEWPORT_WIDTH);
@@ -42,6 +45,9 @@ namespace Velce {
         } else if (context == Context::SECTOR_EDITOR) {
             SectorEditor();
         }
+        ImGui::Begin("debug");
+        ImGui::Text(("grid_pos: " + std::to_string(mouse.grid_pos.x) + " " + std::to_string(mouse.grid_pos.y)).c_str());
+        ImGui::End();
     }
 
     void Editor::Input() {
@@ -50,7 +56,6 @@ namespace Velce {
 		mouse.holding_left_click = io.MouseDown[0];
 		mouse.delta = Vec2(io.MouseDelta.x, io.MouseDelta.y);
 		mouse.abs_pos = Vec2(io.MousePos.x, io.MousePos.y);
-
 
         if (context == Context::WORLD_EDITOR && ImGui::IsWindowFocused()) {
 			if (io.MouseDown[0] && ImGui::IsWindowHovered()) {
@@ -97,7 +102,7 @@ namespace Velce {
         else if (we.mode == Mode::SELECT)
             tbx_mode = "Select";
 
-        ImGui::Text(("mode: " + tbx_mode).c_str());
+        ImGui::Text(("Mode: " + tbx_mode).c_str());
         ImGui::Text(("Sectors: " + std::to_string(we.sector_rects.size())).c_str());
 
         // reset selected sector if mode was switched
@@ -111,7 +116,7 @@ namespace Velce {
             if (ImGui::Button("Edit sector")) {
 				// enter the sector editor and create a sector
                 context = Context::SECTOR_EDITOR;
-                cur_sector = new Sector(Vec2(we.selected_sector->w, we.selected_sector->w));
+                cur_sector = new Sector(renderer, Vec2(we.selected_sector->w * blocks_per_tile, we.selected_sector->w * blocks_per_tile));
             }
 
             ImGui::SameLine();
@@ -141,9 +146,6 @@ namespace Velce {
             we.zoom = std::max(we.zoom, 0.6);
         }
 
-        ImGui::Begin("debug");
-        ImGui::Text(("grid_pos: " + std::to_string(mouse.grid_pos.x) + " " + std::to_string(mouse.grid_pos.y)).c_str());
-        ImGui::End();
 
         // behavior code
         if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH 
@@ -259,6 +261,7 @@ namespace Velce {
 
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
+
                 SDL_FRect tile{ j * TILE_SIZE * zoom + scroll.x, i * TILE_SIZE * zoom + scroll.y, TILE_SIZE * zoom, TILE_SIZE * zoom };
                 SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
                 SDL_RenderDrawRectF(renderer, &tile);
@@ -304,8 +307,6 @@ namespace Velce {
         SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
         SDL_RenderClear(renderer);
 
-        ImVec2 window_pos = ImGui::GetCursorScreenPos();
-        mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
         if (mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
             se.zoom += zoomed * zoom_speed;
             se.zoom = std::max(se.zoom, 0.6);
@@ -350,6 +351,10 @@ namespace Velce {
 			AddTileset();
 		}
 
+		ImVec2 window_pos = ImGui::GetCursorScreenPos();
+        mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
+        mouse.grid_pos = mouse.rel_pos - se.scroll;
+        mouse.grid_pos.x /= TILE_SIZE * se.zoom; mouse.grid_pos.y /= TILE_SIZE * se.zoom;
         if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH 
             && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
             switch (se.mode) {
@@ -358,6 +363,9 @@ namespace Velce {
                 break;
 
             case Mode::CREATE:
+                if (se.cur_tile.GetSpritesheetID() != -1) {
+                    cur_sector->SetTile(se.cur_tile, mouse.grid_pos);
+                }
                 break;
             }
         }
@@ -365,30 +373,33 @@ namespace Velce {
         // render grid
         RenderGrid(we.selected_sector->w * blocks_per_tile, we.selected_sector->h * blocks_per_tile);
 
-        // render tileset window
+        cur_sector->RenderGrid(se.scroll, se.zoom, TILE_SIZE);
+
+        // render tileset window if a tileset is available
         if (se.cur_sheet.texture != NULL) {
-            ImGui::Begin("Tileset");
-
-            if (ImGui::IsWindowFocused() && mouse.holding_left_click) {
-                ImVec2 window_pos = ImGui::GetCursorScreenPos();
-                Vec2 grid_pos((mouse.abs_pos.x - window_pos.x) / se.TILESET_TILE_SIZE, (mouse.abs_pos.y - window_pos.y) / se.TILESET_TILE_SIZE);
-
-                // add tile to sector if drawing
-                int spritesheetID = cur_sector->GetSpritesheetID(&se.cur_sheet);
-                assert(spritesheetID != -1);
-                se.cur_tile = Tile(SDL_Rect{grid_pos.x, grid_pos.y, se.cur_sheet.tile_size.x,se. cur_sheet.tile_size.y}, spritesheetID);
-
-				// debug window
-				ImGui::Begin("debug");
-				ImGui::Text(("grid_pos: " + std::to_string(grid_pos.x) + " " + std::to_string(grid_pos.y)).c_str());
-				ImGui::End();
-            }
-
-            RenderTileset();
-            int scaling = se.TILESET_TILE_SIZE / se.cur_sheet.tile_size.x;
-            ImGui::Image((void*)se.tileset_buffer, ImVec2(se.cur_sheet.size.x * scaling, se.cur_sheet.size.y * scaling));
-            ImGui::End();
+            TilesetWindow();
         }
+    }
+
+    void Editor::TilesetWindow() {
+		ImGui::Begin("Tileset");
+
+		if (ImGui::IsWindowFocused() && mouse.holding_left_click && ImGui::IsWindowHovered()) {
+			se.mode = Mode::CREATE;
+
+			ImVec2 window_pos = ImGui::GetCursorScreenPos();
+			Vec2 grid_pos((mouse.abs_pos.x - window_pos.x) / se.TILESET_TILE_SIZE, (mouse.abs_pos.y - window_pos.y) / se.TILESET_TILE_SIZE);
+
+			// add tile to sector if drawing
+			int spritesheetID = cur_sector->GetSpritesheetID(&se.cur_sheet);
+			assert(spritesheetID != -1);
+			se.cur_tile = Tile(SDL_Rect{grid_pos.x, grid_pos.y, se.cur_sheet.tile_size.x,se. cur_sheet.tile_size.y}, spritesheetID);
+		}
+
+		RenderTileset();
+		int scaling = se.TILESET_TILE_SIZE / se.cur_sheet.tile_size.x;
+		ImGui::Image((void*)se.tileset_buffer, ImVec2(se.cur_sheet.size.x * scaling, se.cur_sheet.size.y * scaling));
+		ImGui::End();
     }
 
     void Editor::RenderTileset() {
@@ -405,6 +416,14 @@ namespace Velce {
 
                 SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
                 SDL_RenderDrawRect(renderer, &dst_rect);
+
+                // highlight tile if selected
+                Vec2 pos = se.cur_tile.GetGridPos();
+                int id = se.cur_tile.GetSpritesheetID();
+                if (id != -1 && pos.x == j && pos.y == i) {
+					SDL_SetRenderDrawColor(renderer, select_color.r, select_color.g, select_color.b, 255);
+					SDL_RenderDrawRect(renderer, &dst_rect);
+                }
 			}
         }
     }

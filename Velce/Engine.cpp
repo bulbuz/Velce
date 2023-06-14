@@ -68,6 +68,8 @@ namespace Velce {
 			ImGui::Begin("Editor", NULL);
 			SDL_SetRenderTarget(renderer, editor_buffer);
 			editor->Run();
+
+
 			ImGui::Image((void*)editor_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
 			ImGui::End();
 		}
@@ -98,6 +100,7 @@ namespace Velce {
 				SDL_RenderClear(renderer);
 			}
 			ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
+
 			ImGui::End();
 		}
 	}

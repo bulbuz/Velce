@@ -15,6 +15,7 @@ namespace Velce {
 		Tile();
 		Tile(SDL_Rect clip, int spritesheetID, int scale = 1);
 		Vec2 GetGridPos();
+		int GetSpritesheetID();
 
 	private:
 		// the id of the spritesheet in the sector it belongs to
