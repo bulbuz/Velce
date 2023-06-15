@@ -2,6 +2,7 @@
 
 namespace Velce {
 
+
     Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h) {
         we.mode = Mode::MOVE;
         se.mode = Mode::MOVE;
@@ -157,11 +158,15 @@ namespace Velce {
 
             case Mode::CREATE:
                 if (we.create_start_pos == Vec2(-1, -1)) {
+					/*
                     if (mouse.grid_pos.x == std::clamp(mouse.grid_pos.x, 0, we.WORLD_WIDTH) && 
                         mouse.grid_pos.y == std::clamp(mouse.grid_pos.y, 0, we.WORLD_HEIGHT)) {
                         we.create_start_pos = mouse.grid_pos;
                         we.selection_box = { 0, 0, 0, 0 };
                     }
+					*/
+					we.create_start_pos = mouse.grid_pos;
+					we.selection_box = { 0, 0, 0, 0 };
                 } else {
                     // empty selection grid
                     we.selection_box = { we.create_start_pos.x, we.create_start_pos.y,
@@ -225,8 +230,8 @@ namespace Velce {
 
         {   // draw the selection box 
             SDL_SetRenderDrawColor(renderer, sector_color.r, sector_color.g, sector_color.b, 255);
-            SDL_FRect selection_box_render{ we.selection_box.x * TILE_SIZE * we.zoom + we.scroll.x, we.selection_box.y * TILE_SIZE * we.zoom + we.scroll.y,
-                we.selection_box.w * TILE_SIZE * we.zoom, we.selection_box.h * TILE_SIZE * we.zoom };
+            SDL_FRect selection_box_render{ (float)(we.selection_box.x * TILE_SIZE * we.zoom + we.scroll.x), (float)(we.selection_box.y * TILE_SIZE * we.zoom + we.scroll.y),
+                (float)(we.selection_box.w * TILE_SIZE * we.zoom), (float)(we.selection_box.h * TILE_SIZE * we.zoom)};
             SDL_RenderFillRectF(renderer, &selection_box_render);
         }
 
@@ -234,8 +239,8 @@ namespace Velce {
 
         // draw created sectors
         for (const auto& rect : we.sector_rects) {
-            SDL_FRect sector_rect{ rect.x * TILE_SIZE * we.zoom + we.scroll.x, rect.y * TILE_SIZE * we.zoom + we.scroll.y,
-                rect.w * TILE_SIZE * we.zoom, rect.h * TILE_SIZE * we.zoom };
+            SDL_FRect sector_rect{ (float)(rect.x * TILE_SIZE * we.zoom + we.scroll.x), (float)(rect.y * TILE_SIZE * we.zoom + we.scroll.y),
+                (float)(rect.w * TILE_SIZE * we.zoom), (float)(rect.h * TILE_SIZE * we.zoom)};
 
             SDL_SetRenderDrawColor(renderer, sector_color.r, sector_color.g, sector_color.b, 255);
             SDL_RenderFillRectF(renderer, &sector_rect);
@@ -262,7 +267,7 @@ namespace Velce {
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
 
-                SDL_FRect tile{ j * TILE_SIZE * zoom + scroll.x, i * TILE_SIZE * zoom + scroll.y, TILE_SIZE * zoom, TILE_SIZE * zoom };
+                SDL_FRect tile{ (float)(j * TILE_SIZE * zoom + scroll.x), (float)(i * TILE_SIZE * zoom + scroll.y), (float)(TILE_SIZE * zoom), float(TILE_SIZE * zoom)};
                 SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
                 SDL_RenderDrawRectF(renderer, &tile);
             }
@@ -436,9 +441,11 @@ namespace Velce {
     }
 
     Editor::~Editor() {
+		/*
         delete CWD;
         delete cur_sector;
         delete we.selected_sector;
         delete se.tileset_buffer;
+		*/
     }
 } // namespace Velce
