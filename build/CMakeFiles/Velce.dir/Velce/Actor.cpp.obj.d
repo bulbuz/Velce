@@ -1,13 +1,13 @@
 CMakeFiles/Velce.dir/Velce/Actor.cpp.obj: \
  C:\Users\Adrian\Desktop\Velce\Velce\Actor.cpp \
  C:\Users\Adrian\Desktop\Velce\Velce\Actor.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_main.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_stdinc.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_config.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_platform.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/begin_code.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/close_code.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_main.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_stdinc.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_config.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_platform.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/begin_code.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/close_code.h \
  C:/MinGW/i686-w64-mingw32/include/winsdkver.h \
  C:/MinGW/i686-w64-mingw32/include/winapifamily.h \
  C:/MinGW/i686-w64-mingw32/include/sdkddkver.h \
@@ -25,20 +25,20 @@ CMakeFiles/Velce.dir/Velce/Actor.cpp.obj: \
  C:/MinGW/i686-w64-mingw32/include/_mingw_stdarg.h \
  C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/stdint.h \
  C:/MinGW/i686-w64-mingw32/include/stdint.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_assert.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_atomic.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_audio.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_error.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_endian.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_mutex.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_thread.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_assert.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_atomic.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_audio.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_error.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_endian.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_mutex.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_thread.h \
  C:/MinGW/i686-w64-mingw32/include/process.h \
  C:/MinGW/i686-w64-mingw32/include/corecrt_startup.h \
  C:/MinGW/i686-w64-mingw32/include/sys/types.h \
  C:/MinGW/i686-w64-mingw32/include/_mingw_off_t.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_rwops.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_clipboard.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_cpuinfo.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_rwops.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_clipboard.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_cpuinfo.h \
  C:/MinGW/i686-w64-mingw32/include/intrin.h \
  C:/MinGW/i686-w64-mingw32/include/setjmp.h \
  C:/MinGW/i686-w64-mingw32/include/psdk_inc/intrin-impl.h \
@@ -147,43 +147,43 @@ CMakeFiles/Velce.dir/Velce/Actor.cpp.obj: \
  C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/ammintrin.h \
  C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/xopintrin.h \
  C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/cpuid.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_events.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_video.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_pixels.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_rect.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_surface.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_blendmode.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_keyboard.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_keycode.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_scancode.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_mouse.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_joystick.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_guid.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_gamecontroller.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_sensor.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_quit.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_gesture.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_touch.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_filesystem.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_haptic.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_hidapi.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_hints.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_loadso.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_log.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_messagebox.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_metal.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_power.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_render.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_shape.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_system.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_timer.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_version.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_locale.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_misc.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/include/SDL_image.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/SDL_version.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/begin_code.h \
- C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/include/close_code.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_events.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_video.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_pixels.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_rect.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_surface.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_blendmode.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_keyboard.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_keycode.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_scancode.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_mouse.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_joystick.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_guid.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_gamecontroller.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_sensor.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_quit.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_gesture.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_touch.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_filesystem.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_haptic.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_hidapi.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_hints.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_loadso.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_log.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_messagebox.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_metal.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_power.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_render.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_shape.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_system.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_timer.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_version.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_locale.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_misc.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/include/SDL2/SDL_image.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/SDL_version.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/begin_code.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/include/SDL2/close_code.h \
  C:\Users\Adrian\Desktop\Velce\Velce\imgui.h \
  C:\Users\Adrian\Desktop\Velce\Velce\imconfig.h \
  C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/float.h \

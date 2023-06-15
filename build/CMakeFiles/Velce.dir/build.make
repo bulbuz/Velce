@@ -382,9 +382,9 @@ Velce.exe: CMakeFiles/Velce.dir/Velce/imgui_tables.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/Velce/imgui_widgets.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/build.make
 Velce.exe: CMakeFiles/Velce.dir/compiler_depend.ts
-Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2main.lib
-Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2.lib
-Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/../lib/x86/SDL2_image.lib
+Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2main.a
+Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2.dll.a
+Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/lib/libSDL2_image.dll.a
 Velce.exe: CMakeFiles/Velce.dir/linkLibs.rsp
 Velce.exe: CMakeFiles/Velce.dir/objects1.rsp
 Velce.exe: CMakeFiles/Velce.dir/link.txt

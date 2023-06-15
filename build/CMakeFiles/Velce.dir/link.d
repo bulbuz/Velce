@@ -2,9 +2,9 @@ Velce.exe: \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/crtbegin.o \
   CMakeFiles\Velce.dir/objects.a \
-  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2main.lib \
-  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2.lib \
-  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/../lib/x86/SDL2_image.lib \
+  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2main.a \
+  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2.dll.a \
+  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/lib/libSDL2_image.dll.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libmingw32.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libkernel32.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libuser32.a \
@@ -24,6 +24,8 @@ Velce.exe: \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libmingwex.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libmsvcrt.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libkernel32.a \
+  C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libgdi32.a \
+  C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libcomdlg32.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libadvapi32.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libshell32.a \
   C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libuser32.a \
@@ -44,11 +46,11 @@ C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/crtbegin.o:
 
 CMakeFiles\Velce.dir/objects.a:
 
-C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2main.lib:
+C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2main.a:
 
-C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/../lib/x86/SDL2.lib:
+C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/libSDL2.dll.a:
 
-C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/../lib/x86/SDL2_image.lib:
+C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/lib/libSDL2_image.dll.a:
 
 C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libmingw32.a:
 
@@ -87,6 +89,10 @@ C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib
 C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libmsvcrt.a:
 
 C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libkernel32.a:
+
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libgdi32.a:
+
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libcomdlg32.a:
 
 C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/12.2.0/../../../../i686-w64-mingw32/lib/../lib/libadvapi32.a:
 
