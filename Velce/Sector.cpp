@@ -10,6 +10,10 @@ namespace Velce {
         LOG("sector removed!");
     }
 
+    void Sector::RemoveTile(Vec2 grid_pos) {
+        grid[grid_pos.y][grid_pos.x] = Tile();
+    }
+
     void Sector::SetTile(Tile tile, Vec2 grid_pos) {
         grid[grid_pos.y][grid_pos.x] = tile;
     }

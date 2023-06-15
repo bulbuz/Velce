@@ -367,6 +367,13 @@ namespace Velce {
                     cur_sector->SetTile(se.cur_tile, mouse.grid_pos);
                 }
                 break;
+
+            case Mode::DELETE:
+
+                break;
+
+            default:
+                break;
             }
         }
 

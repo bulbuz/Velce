@@ -61,9 +61,6 @@ namespace Velce {
 	}
 	
 	void Engine::Update() {
-		ImGui::BeginMainMenuBar();
-		ImGui::BeginMenu("file");
-		ImGui::EndMainMenuBar();
 		{
 			ImGui::Begin("Editor", NULL);
 			SDL_SetRenderTarget(renderer, editor_buffer);
