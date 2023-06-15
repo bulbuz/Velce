@@ -158,15 +158,15 @@ namespace Velce {
 
             case Mode::CREATE:
                 if (we.create_start_pos == Vec2(-1, -1)) {
-					/*
                     if (mouse.grid_pos.x == std::clamp(mouse.grid_pos.x, 0, we.WORLD_WIDTH) && 
                         mouse.grid_pos.y == std::clamp(mouse.grid_pos.y, 0, we.WORLD_HEIGHT)) {
                         we.create_start_pos = mouse.grid_pos;
                         we.selection_box = { 0, 0, 0, 0 };
                     }
-					*/
+                    /*
 					we.create_start_pos = mouse.grid_pos;
 					we.selection_box = { 0, 0, 0, 0 };
+                    */
                 } else {
                     // empty selection grid
                     we.selection_box = { we.create_start_pos.x, we.create_start_pos.y,
@@ -441,11 +441,9 @@ namespace Velce {
     }
 
     Editor::~Editor() {
-		/*
         delete CWD;
         delete cur_sector;
         delete we.selected_sector;
         delete se.tileset_buffer;
-		*/
     }
 } // namespace Velce

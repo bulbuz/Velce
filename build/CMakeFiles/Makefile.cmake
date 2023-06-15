@@ -38,12 +38,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.0-rc2/CMakeSystem.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/sdl2-config-version.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/sdl2-config.cmake"
-  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/cmake/SDL2/sdl2-config-version.cmake"
-  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/i686-w64-mingw32/lib/cmake/SDL2/sdl2-config.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/cmake/SDL2/sdl2-config-version.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/cmake/SDL2/sdl2-config.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/sdl2_image-config-version.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/sdl2_image-config.cmake"
-  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
-  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/i686-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake"
   )
 
 # The corresponding makefile is:

@@ -1,7 +1,7 @@
 set(CMAKE_C_COMPILER "C:/MinGW/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "12.2.0")
+set(CMAKE_C_COMPILER_VERSION "13.1.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -42,7 +42,7 @@ set(CMAKE_C_LINKER_PREFERENCE 10)
 set(CMAKE_C_LINKER_DEPFILE_SUPPORTED TRUE)
 
 # Save compiler ABI information.
-set(CMAKE_C_SIZEOF_DATA_PTR "4")
+set(CMAKE_C_SIZEOF_DATA_PTR "8")
 set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include;C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include-fixed;C:/MinGW/i686-w64-mingw32/include")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0;C:/MinGW/lib/gcc;C:/MinGW/i686-w64-mingw32/lib;C:/MinGW/lib")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/MinGW/x86_64-w64-mingw32/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/MinGW/lib/gcc;C:/MinGW/x86_64-w64-mingw32/lib;C:/MinGW/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

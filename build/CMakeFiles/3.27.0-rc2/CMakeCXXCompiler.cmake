@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "C:/MinGW/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "C:/MinGW/bin/c++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "12.2.0")
+set(CMAKE_CXX_COMPILER_VERSION "13.1.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -53,7 +53,7 @@ set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 set(CMAKE_CXX_LINKER_DEPFILE_SUPPORTED TRUE)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "4")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
 set(CMAKE_CXX_COMPILER_ABI "")
 set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/c++;C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/c++/i686-w64-mingw32;C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include/c++/backward;C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include;C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0/include-fixed;C:/MinGW/i686-w64-mingw32/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/MinGW/lib/gcc/i686-w64-mingw32/12.2.0;C:/MinGW/lib/gcc;C:/MinGW/i686-w64-mingw32/lib;C:/MinGW/lib")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/MinGW/x86_64-w64-mingw32/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/MinGW/lib/gcc;C:/MinGW/x86_64-w64-mingw32/lib;C:/MinGW/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

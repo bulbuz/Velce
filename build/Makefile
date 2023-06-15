@@ -64,26 +64,6 @@ CMAKE_BINARY_DIR = C:\Users\Adrian\Desktop\Velce\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/Adrian/Desktop/Velce/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -148,437 +128,437 @@ Velce/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/build
 .PHONY : Velce/fast
 
-Velce/Actor.obj: Velce/Actor.cpp.obj
-.PHONY : Velce/Actor.obj
+src/Actor.obj: src/Actor.cpp.obj
+.PHONY : src/Actor.obj
 
 # target to build an object file
-Velce/Actor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Actor.cpp.obj
-.PHONY : Velce/Actor.cpp.obj
+src/Actor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Actor.cpp.obj
+.PHONY : src/Actor.cpp.obj
 
-Velce/Actor.i: Velce/Actor.cpp.i
-.PHONY : Velce/Actor.i
+src/Actor.i: src/Actor.cpp.i
+.PHONY : src/Actor.i
 
 # target to preprocess a source file
-Velce/Actor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Actor.cpp.i
-.PHONY : Velce/Actor.cpp.i
+src/Actor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Actor.cpp.i
+.PHONY : src/Actor.cpp.i
 
-Velce/Actor.s: Velce/Actor.cpp.s
-.PHONY : Velce/Actor.s
+src/Actor.s: src/Actor.cpp.s
+.PHONY : src/Actor.s
 
 # target to generate assembly for a file
-Velce/Actor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Actor.cpp.s
-.PHONY : Velce/Actor.cpp.s
+src/Actor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Actor.cpp.s
+.PHONY : src/Actor.cpp.s
 
-Velce/Animator.obj: Velce/Animator.cpp.obj
-.PHONY : Velce/Animator.obj
+src/Animator.obj: src/Animator.cpp.obj
+.PHONY : src/Animator.obj
 
 # target to build an object file
-Velce/Animator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Animator.cpp.obj
-.PHONY : Velce/Animator.cpp.obj
+src/Animator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Animator.cpp.obj
+.PHONY : src/Animator.cpp.obj
 
-Velce/Animator.i: Velce/Animator.cpp.i
-.PHONY : Velce/Animator.i
+src/Animator.i: src/Animator.cpp.i
+.PHONY : src/Animator.i
 
 # target to preprocess a source file
-Velce/Animator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Animator.cpp.i
-.PHONY : Velce/Animator.cpp.i
+src/Animator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Animator.cpp.i
+.PHONY : src/Animator.cpp.i
 
-Velce/Animator.s: Velce/Animator.cpp.s
-.PHONY : Velce/Animator.s
+src/Animator.s: src/Animator.cpp.s
+.PHONY : src/Animator.s
 
 # target to generate assembly for a file
-Velce/Animator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Animator.cpp.s
-.PHONY : Velce/Animator.cpp.s
+src/Animator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Animator.cpp.s
+.PHONY : src/Animator.cpp.s
 
-Velce/Camera.obj: Velce/Camera.cpp.obj
-.PHONY : Velce/Camera.obj
+src/Camera.obj: src/Camera.cpp.obj
+.PHONY : src/Camera.obj
 
 # target to build an object file
-Velce/Camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Camera.cpp.obj
-.PHONY : Velce/Camera.cpp.obj
+src/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Camera.cpp.obj
+.PHONY : src/Camera.cpp.obj
 
-Velce/Camera.i: Velce/Camera.cpp.i
-.PHONY : Velce/Camera.i
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
 
 # target to preprocess a source file
-Velce/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Camera.cpp.i
-.PHONY : Velce/Camera.cpp.i
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
 
-Velce/Camera.s: Velce/Camera.cpp.s
-.PHONY : Velce/Camera.s
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
 
 # target to generate assembly for a file
-Velce/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Camera.cpp.s
-.PHONY : Velce/Camera.cpp.s
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
 
-Velce/Editor.obj: Velce/Editor.cpp.obj
-.PHONY : Velce/Editor.obj
+src/Editor.obj: src/Editor.cpp.obj
+.PHONY : src/Editor.obj
 
 # target to build an object file
-Velce/Editor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Editor.cpp.obj
-.PHONY : Velce/Editor.cpp.obj
+src/Editor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Editor.cpp.obj
+.PHONY : src/Editor.cpp.obj
 
-Velce/Editor.i: Velce/Editor.cpp.i
-.PHONY : Velce/Editor.i
+src/Editor.i: src/Editor.cpp.i
+.PHONY : src/Editor.i
 
 # target to preprocess a source file
-Velce/Editor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Editor.cpp.i
-.PHONY : Velce/Editor.cpp.i
+src/Editor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Editor.cpp.i
+.PHONY : src/Editor.cpp.i
 
-Velce/Editor.s: Velce/Editor.cpp.s
-.PHONY : Velce/Editor.s
+src/Editor.s: src/Editor.cpp.s
+.PHONY : src/Editor.s
 
 # target to generate assembly for a file
-Velce/Editor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Editor.cpp.s
-.PHONY : Velce/Editor.cpp.s
+src/Editor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Editor.cpp.s
+.PHONY : src/Editor.cpp.s
 
-Velce/Engine.obj: Velce/Engine.cpp.obj
-.PHONY : Velce/Engine.obj
+src/Engine.obj: src/Engine.cpp.obj
+.PHONY : src/Engine.obj
 
 # target to build an object file
-Velce/Engine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Engine.cpp.obj
-.PHONY : Velce/Engine.cpp.obj
+src/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Engine.cpp.obj
+.PHONY : src/Engine.cpp.obj
 
-Velce/Engine.i: Velce/Engine.cpp.i
-.PHONY : Velce/Engine.i
+src/Engine.i: src/Engine.cpp.i
+.PHONY : src/Engine.i
 
 # target to preprocess a source file
-Velce/Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Engine.cpp.i
-.PHONY : Velce/Engine.cpp.i
+src/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
 
-Velce/Engine.s: Velce/Engine.cpp.s
-.PHONY : Velce/Engine.s
+src/Engine.s: src/Engine.cpp.s
+.PHONY : src/Engine.s
 
 # target to generate assembly for a file
-Velce/Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Engine.cpp.s
-.PHONY : Velce/Engine.cpp.s
+src/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
 
-Velce/Game.obj: Velce/Game.cpp.obj
-.PHONY : Velce/Game.obj
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
 
 # target to build an object file
-Velce/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Game.cpp.obj
-.PHONY : Velce/Game.cpp.obj
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
 
-Velce/Game.i: Velce/Game.cpp.i
-.PHONY : Velce/Game.i
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-Velce/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Game.cpp.i
-.PHONY : Velce/Game.cpp.i
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-Velce/Game.s: Velce/Game.cpp.s
-.PHONY : Velce/Game.s
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-Velce/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Game.cpp.s
-.PHONY : Velce/Game.cpp.s
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
-Velce/Player.obj: Velce/Player.cpp.obj
-.PHONY : Velce/Player.obj
+src/Player.obj: src/Player.cpp.obj
+.PHONY : src/Player.obj
 
 # target to build an object file
-Velce/Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Player.cpp.obj
-.PHONY : Velce/Player.cpp.obj
+src/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
 
-Velce/Player.i: Velce/Player.cpp.i
-.PHONY : Velce/Player.i
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
 
 # target to preprocess a source file
-Velce/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Player.cpp.i
-.PHONY : Velce/Player.cpp.i
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
 
-Velce/Player.s: Velce/Player.cpp.s
-.PHONY : Velce/Player.s
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
 
 # target to generate assembly for a file
-Velce/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Player.cpp.s
-.PHONY : Velce/Player.cpp.s
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
 
-Velce/Sector.obj: Velce/Sector.cpp.obj
-.PHONY : Velce/Sector.obj
+src/Sector.obj: src/Sector.cpp.obj
+.PHONY : src/Sector.obj
 
 # target to build an object file
-Velce/Sector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Sector.cpp.obj
-.PHONY : Velce/Sector.cpp.obj
+src/Sector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Sector.cpp.obj
+.PHONY : src/Sector.cpp.obj
 
-Velce/Sector.i: Velce/Sector.cpp.i
-.PHONY : Velce/Sector.i
+src/Sector.i: src/Sector.cpp.i
+.PHONY : src/Sector.i
 
 # target to preprocess a source file
-Velce/Sector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Sector.cpp.i
-.PHONY : Velce/Sector.cpp.i
+src/Sector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Sector.cpp.i
+.PHONY : src/Sector.cpp.i
 
-Velce/Sector.s: Velce/Sector.cpp.s
-.PHONY : Velce/Sector.s
+src/Sector.s: src/Sector.cpp.s
+.PHONY : src/Sector.s
 
 # target to generate assembly for a file
-Velce/Sector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Sector.cpp.s
-.PHONY : Velce/Sector.cpp.s
+src/Sector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Sector.cpp.s
+.PHONY : src/Sector.cpp.s
 
-Velce/Tile.obj: Velce/Tile.cpp.obj
-.PHONY : Velce/Tile.obj
+src/Tile.obj: src/Tile.cpp.obj
+.PHONY : src/Tile.obj
 
 # target to build an object file
-Velce/Tile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Tile.cpp.obj
-.PHONY : Velce/Tile.cpp.obj
+src/Tile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Tile.cpp.obj
+.PHONY : src/Tile.cpp.obj
 
-Velce/Tile.i: Velce/Tile.cpp.i
-.PHONY : Velce/Tile.i
+src/Tile.i: src/Tile.cpp.i
+.PHONY : src/Tile.i
 
 # target to preprocess a source file
-Velce/Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Tile.cpp.i
-.PHONY : Velce/Tile.cpp.i
+src/Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Tile.cpp.i
+.PHONY : src/Tile.cpp.i
 
-Velce/Tile.s: Velce/Tile.cpp.s
-.PHONY : Velce/Tile.s
+src/Tile.s: src/Tile.cpp.s
+.PHONY : src/Tile.s
 
 # target to generate assembly for a file
-Velce/Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Tile.cpp.s
-.PHONY : Velce/Tile.cpp.s
+src/Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Tile.cpp.s
+.PHONY : src/Tile.cpp.s
 
-Velce/Velce.obj: Velce/Velce.cpp.obj
-.PHONY : Velce/Velce.obj
+src/Velce.obj: src/Velce.cpp.obj
+.PHONY : src/Velce.obj
 
 # target to build an object file
-Velce/Velce.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Velce.cpp.obj
-.PHONY : Velce/Velce.cpp.obj
+src/Velce.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Velce.cpp.obj
+.PHONY : src/Velce.cpp.obj
 
-Velce/Velce.i: Velce/Velce.cpp.i
-.PHONY : Velce/Velce.i
+src/Velce.i: src/Velce.cpp.i
+.PHONY : src/Velce.i
 
 # target to preprocess a source file
-Velce/Velce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Velce.cpp.i
-.PHONY : Velce/Velce.cpp.i
+src/Velce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Velce.cpp.i
+.PHONY : src/Velce.cpp.i
 
-Velce/Velce.s: Velce/Velce.cpp.s
-.PHONY : Velce/Velce.s
+src/Velce.s: src/Velce.cpp.s
+.PHONY : src/Velce.s
 
 # target to generate assembly for a file
-Velce/Velce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/Velce.cpp.s
-.PHONY : Velce/Velce.cpp.s
+src/Velce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Velce.cpp.s
+.PHONY : src/Velce.cpp.s
 
-Velce/World.obj: Velce/World.cpp.obj
-.PHONY : Velce/World.obj
+src/World.obj: src/World.cpp.obj
+.PHONY : src/World.obj
 
 # target to build an object file
-Velce/World.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/World.cpp.obj
-.PHONY : Velce/World.cpp.obj
+src/World.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/World.cpp.obj
+.PHONY : src/World.cpp.obj
 
-Velce/World.i: Velce/World.cpp.i
-.PHONY : Velce/World.i
+src/World.i: src/World.cpp.i
+.PHONY : src/World.i
 
 # target to preprocess a source file
-Velce/World.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/World.cpp.i
-.PHONY : Velce/World.cpp.i
+src/World.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/World.cpp.i
+.PHONY : src/World.cpp.i
 
-Velce/World.s: Velce/World.cpp.s
-.PHONY : Velce/World.s
+src/World.s: src/World.cpp.s
+.PHONY : src/World.s
 
 # target to generate assembly for a file
-Velce/World.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/World.cpp.s
-.PHONY : Velce/World.cpp.s
+src/World.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/World.cpp.s
+.PHONY : src/World.cpp.s
 
-Velce/imgui.obj: Velce/imgui.cpp.obj
-.PHONY : Velce/imgui.obj
+src/imgui.obj: src/imgui.cpp.obj
+.PHONY : src/imgui.obj
 
 # target to build an object file
-Velce/imgui.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui.cpp.obj
-.PHONY : Velce/imgui.cpp.obj
+src/imgui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui.cpp.obj
+.PHONY : src/imgui.cpp.obj
 
-Velce/imgui.i: Velce/imgui.cpp.i
-.PHONY : Velce/imgui.i
+src/imgui.i: src/imgui.cpp.i
+.PHONY : src/imgui.i
 
 # target to preprocess a source file
-Velce/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui.cpp.i
-.PHONY : Velce/imgui.cpp.i
+src/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui.cpp.i
+.PHONY : src/imgui.cpp.i
 
-Velce/imgui.s: Velce/imgui.cpp.s
-.PHONY : Velce/imgui.s
+src/imgui.s: src/imgui.cpp.s
+.PHONY : src/imgui.s
 
 # target to generate assembly for a file
-Velce/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui.cpp.s
-.PHONY : Velce/imgui.cpp.s
+src/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui.cpp.s
+.PHONY : src/imgui.cpp.s
 
-Velce/imgui_demo.obj: Velce/imgui_demo.cpp.obj
-.PHONY : Velce/imgui_demo.obj
+src/imgui_demo.obj: src/imgui_demo.cpp.obj
+.PHONY : src/imgui_demo.obj
 
 # target to build an object file
-Velce/imgui_demo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_demo.cpp.obj
-.PHONY : Velce/imgui_demo.cpp.obj
+src/imgui_demo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj
+.PHONY : src/imgui_demo.cpp.obj
 
-Velce/imgui_demo.i: Velce/imgui_demo.cpp.i
-.PHONY : Velce/imgui_demo.i
+src/imgui_demo.i: src/imgui_demo.cpp.i
+.PHONY : src/imgui_demo.i
 
 # target to preprocess a source file
-Velce/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_demo.cpp.i
-.PHONY : Velce/imgui_demo.cpp.i
+src/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_demo.cpp.i
+.PHONY : src/imgui_demo.cpp.i
 
-Velce/imgui_demo.s: Velce/imgui_demo.cpp.s
-.PHONY : Velce/imgui_demo.s
+src/imgui_demo.s: src/imgui_demo.cpp.s
+.PHONY : src/imgui_demo.s
 
 # target to generate assembly for a file
-Velce/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_demo.cpp.s
-.PHONY : Velce/imgui_demo.cpp.s
+src/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_demo.cpp.s
+.PHONY : src/imgui_demo.cpp.s
 
-Velce/imgui_draw.obj: Velce/imgui_draw.cpp.obj
-.PHONY : Velce/imgui_draw.obj
+src/imgui_draw.obj: src/imgui_draw.cpp.obj
+.PHONY : src/imgui_draw.obj
 
 # target to build an object file
-Velce/imgui_draw.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_draw.cpp.obj
-.PHONY : Velce/imgui_draw.cpp.obj
+src/imgui_draw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj
+.PHONY : src/imgui_draw.cpp.obj
 
-Velce/imgui_draw.i: Velce/imgui_draw.cpp.i
-.PHONY : Velce/imgui_draw.i
+src/imgui_draw.i: src/imgui_draw.cpp.i
+.PHONY : src/imgui_draw.i
 
 # target to preprocess a source file
-Velce/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_draw.cpp.i
-.PHONY : Velce/imgui_draw.cpp.i
+src/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_draw.cpp.i
+.PHONY : src/imgui_draw.cpp.i
 
-Velce/imgui_draw.s: Velce/imgui_draw.cpp.s
-.PHONY : Velce/imgui_draw.s
+src/imgui_draw.s: src/imgui_draw.cpp.s
+.PHONY : src/imgui_draw.s
 
 # target to generate assembly for a file
-Velce/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_draw.cpp.s
-.PHONY : Velce/imgui_draw.cpp.s
+src/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_draw.cpp.s
+.PHONY : src/imgui_draw.cpp.s
 
-Velce/imgui_impl_sdl2.obj: Velce/imgui_impl_sdl2.cpp.obj
-.PHONY : Velce/imgui_impl_sdl2.obj
+src/imgui_impl_sdl2.obj: src/imgui_impl_sdl2.cpp.obj
+.PHONY : src/imgui_impl_sdl2.obj
 
 # target to build an object file
-Velce/imgui_impl_sdl2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdl2.cpp.obj
-.PHONY : Velce/imgui_impl_sdl2.cpp.obj
+src/imgui_impl_sdl2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj
+.PHONY : src/imgui_impl_sdl2.cpp.obj
 
-Velce/imgui_impl_sdl2.i: Velce/imgui_impl_sdl2.cpp.i
-.PHONY : Velce/imgui_impl_sdl2.i
+src/imgui_impl_sdl2.i: src/imgui_impl_sdl2.cpp.i
+.PHONY : src/imgui_impl_sdl2.i
 
 # target to preprocess a source file
-Velce/imgui_impl_sdl2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdl2.cpp.i
-.PHONY : Velce/imgui_impl_sdl2.cpp.i
+src/imgui_impl_sdl2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.i
+.PHONY : src/imgui_impl_sdl2.cpp.i
 
-Velce/imgui_impl_sdl2.s: Velce/imgui_impl_sdl2.cpp.s
-.PHONY : Velce/imgui_impl_sdl2.s
+src/imgui_impl_sdl2.s: src/imgui_impl_sdl2.cpp.s
+.PHONY : src/imgui_impl_sdl2.s
 
 # target to generate assembly for a file
-Velce/imgui_impl_sdl2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdl2.cpp.s
-.PHONY : Velce/imgui_impl_sdl2.cpp.s
+src/imgui_impl_sdl2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.s
+.PHONY : src/imgui_impl_sdl2.cpp.s
 
-Velce/imgui_impl_sdlrenderer.obj: Velce/imgui_impl_sdlrenderer.cpp.obj
-.PHONY : Velce/imgui_impl_sdlrenderer.obj
+src/imgui_impl_sdlrenderer.obj: src/imgui_impl_sdlrenderer.cpp.obj
+.PHONY : src/imgui_impl_sdlrenderer.obj
 
 # target to build an object file
-Velce/imgui_impl_sdlrenderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdlrenderer.cpp.obj
-.PHONY : Velce/imgui_impl_sdlrenderer.cpp.obj
+src/imgui_impl_sdlrenderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj
+.PHONY : src/imgui_impl_sdlrenderer.cpp.obj
 
-Velce/imgui_impl_sdlrenderer.i: Velce/imgui_impl_sdlrenderer.cpp.i
-.PHONY : Velce/imgui_impl_sdlrenderer.i
+src/imgui_impl_sdlrenderer.i: src/imgui_impl_sdlrenderer.cpp.i
+.PHONY : src/imgui_impl_sdlrenderer.i
 
 # target to preprocess a source file
-Velce/imgui_impl_sdlrenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdlrenderer.cpp.i
-.PHONY : Velce/imgui_impl_sdlrenderer.cpp.i
+src/imgui_impl_sdlrenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.i
+.PHONY : src/imgui_impl_sdlrenderer.cpp.i
 
-Velce/imgui_impl_sdlrenderer.s: Velce/imgui_impl_sdlrenderer.cpp.s
-.PHONY : Velce/imgui_impl_sdlrenderer.s
+src/imgui_impl_sdlrenderer.s: src/imgui_impl_sdlrenderer.cpp.s
+.PHONY : src/imgui_impl_sdlrenderer.s
 
 # target to generate assembly for a file
-Velce/imgui_impl_sdlrenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_impl_sdlrenderer.cpp.s
-.PHONY : Velce/imgui_impl_sdlrenderer.cpp.s
+src/imgui_impl_sdlrenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.s
+.PHONY : src/imgui_impl_sdlrenderer.cpp.s
 
-Velce/imgui_tables.obj: Velce/imgui_tables.cpp.obj
-.PHONY : Velce/imgui_tables.obj
+src/imgui_tables.obj: src/imgui_tables.cpp.obj
+.PHONY : src/imgui_tables.obj
 
 # target to build an object file
-Velce/imgui_tables.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_tables.cpp.obj
-.PHONY : Velce/imgui_tables.cpp.obj
+src/imgui_tables.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj
+.PHONY : src/imgui_tables.cpp.obj
 
-Velce/imgui_tables.i: Velce/imgui_tables.cpp.i
-.PHONY : Velce/imgui_tables.i
+src/imgui_tables.i: src/imgui_tables.cpp.i
+.PHONY : src/imgui_tables.i
 
 # target to preprocess a source file
-Velce/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_tables.cpp.i
-.PHONY : Velce/imgui_tables.cpp.i
+src/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_tables.cpp.i
+.PHONY : src/imgui_tables.cpp.i
 
-Velce/imgui_tables.s: Velce/imgui_tables.cpp.s
-.PHONY : Velce/imgui_tables.s
+src/imgui_tables.s: src/imgui_tables.cpp.s
+.PHONY : src/imgui_tables.s
 
 # target to generate assembly for a file
-Velce/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_tables.cpp.s
-.PHONY : Velce/imgui_tables.cpp.s
+src/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_tables.cpp.s
+.PHONY : src/imgui_tables.cpp.s
 
-Velce/imgui_widgets.obj: Velce/imgui_widgets.cpp.obj
-.PHONY : Velce/imgui_widgets.obj
+src/imgui_widgets.obj: src/imgui_widgets.cpp.obj
+.PHONY : src/imgui_widgets.obj
 
 # target to build an object file
-Velce/imgui_widgets.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_widgets.cpp.obj
-.PHONY : Velce/imgui_widgets.cpp.obj
+src/imgui_widgets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj
+.PHONY : src/imgui_widgets.cpp.obj
 
-Velce/imgui_widgets.i: Velce/imgui_widgets.cpp.i
-.PHONY : Velce/imgui_widgets.i
+src/imgui_widgets.i: src/imgui_widgets.cpp.i
+.PHONY : src/imgui_widgets.i
 
 # target to preprocess a source file
-Velce/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_widgets.cpp.i
-.PHONY : Velce/imgui_widgets.cpp.i
+src/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_widgets.cpp.i
+.PHONY : src/imgui_widgets.cpp.i
 
-Velce/imgui_widgets.s: Velce/imgui_widgets.cpp.s
-.PHONY : Velce/imgui_widgets.s
+src/imgui_widgets.s: src/imgui_widgets.cpp.s
+.PHONY : src/imgui_widgets.s
 
 # target to generate assembly for a file
-Velce/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/Velce/imgui_widgets.cpp.s
-.PHONY : Velce/imgui_widgets.cpp.s
+src/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/imgui_widgets.cpp.s
+.PHONY : src/imgui_widgets.cpp.s
 
 # Help Target
 help:
@@ -587,64 +567,62 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... package
-	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... Velce
-	@echo ... Velce/Actor.obj
-	@echo ... Velce/Actor.i
-	@echo ... Velce/Actor.s
-	@echo ... Velce/Animator.obj
-	@echo ... Velce/Animator.i
-	@echo ... Velce/Animator.s
-	@echo ... Velce/Camera.obj
-	@echo ... Velce/Camera.i
-	@echo ... Velce/Camera.s
-	@echo ... Velce/Editor.obj
-	@echo ... Velce/Editor.i
-	@echo ... Velce/Editor.s
-	@echo ... Velce/Engine.obj
-	@echo ... Velce/Engine.i
-	@echo ... Velce/Engine.s
-	@echo ... Velce/Game.obj
-	@echo ... Velce/Game.i
-	@echo ... Velce/Game.s
-	@echo ... Velce/Player.obj
-	@echo ... Velce/Player.i
-	@echo ... Velce/Player.s
-	@echo ... Velce/Sector.obj
-	@echo ... Velce/Sector.i
-	@echo ... Velce/Sector.s
-	@echo ... Velce/Tile.obj
-	@echo ... Velce/Tile.i
-	@echo ... Velce/Tile.s
-	@echo ... Velce/Velce.obj
-	@echo ... Velce/Velce.i
-	@echo ... Velce/Velce.s
-	@echo ... Velce/World.obj
-	@echo ... Velce/World.i
-	@echo ... Velce/World.s
-	@echo ... Velce/imgui.obj
-	@echo ... Velce/imgui.i
-	@echo ... Velce/imgui.s
-	@echo ... Velce/imgui_demo.obj
-	@echo ... Velce/imgui_demo.i
-	@echo ... Velce/imgui_demo.s
-	@echo ... Velce/imgui_draw.obj
-	@echo ... Velce/imgui_draw.i
-	@echo ... Velce/imgui_draw.s
-	@echo ... Velce/imgui_impl_sdl2.obj
-	@echo ... Velce/imgui_impl_sdl2.i
-	@echo ... Velce/imgui_impl_sdl2.s
-	@echo ... Velce/imgui_impl_sdlrenderer.obj
-	@echo ... Velce/imgui_impl_sdlrenderer.i
-	@echo ... Velce/imgui_impl_sdlrenderer.s
-	@echo ... Velce/imgui_tables.obj
-	@echo ... Velce/imgui_tables.i
-	@echo ... Velce/imgui_tables.s
-	@echo ... Velce/imgui_widgets.obj
-	@echo ... Velce/imgui_widgets.i
-	@echo ... Velce/imgui_widgets.s
+	@echo ... src/Actor.obj
+	@echo ... src/Actor.i
+	@echo ... src/Actor.s
+	@echo ... src/Animator.obj
+	@echo ... src/Animator.i
+	@echo ... src/Animator.s
+	@echo ... src/Camera.obj
+	@echo ... src/Camera.i
+	@echo ... src/Camera.s
+	@echo ... src/Editor.obj
+	@echo ... src/Editor.i
+	@echo ... src/Editor.s
+	@echo ... src/Engine.obj
+	@echo ... src/Engine.i
+	@echo ... src/Engine.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
+	@echo ... src/Sector.obj
+	@echo ... src/Sector.i
+	@echo ... src/Sector.s
+	@echo ... src/Tile.obj
+	@echo ... src/Tile.i
+	@echo ... src/Tile.s
+	@echo ... src/Velce.obj
+	@echo ... src/Velce.i
+	@echo ... src/Velce.s
+	@echo ... src/World.obj
+	@echo ... src/World.i
+	@echo ... src/World.s
+	@echo ... src/imgui.obj
+	@echo ... src/imgui.i
+	@echo ... src/imgui.s
+	@echo ... src/imgui_demo.obj
+	@echo ... src/imgui_demo.i
+	@echo ... src/imgui_demo.s
+	@echo ... src/imgui_draw.obj
+	@echo ... src/imgui_draw.i
+	@echo ... src/imgui_draw.s
+	@echo ... src/imgui_impl_sdl2.obj
+	@echo ... src/imgui_impl_sdl2.i
+	@echo ... src/imgui_impl_sdl2.s
+	@echo ... src/imgui_impl_sdlrenderer.obj
+	@echo ... src/imgui_impl_sdlrenderer.i
+	@echo ... src/imgui_impl_sdlrenderer.s
+	@echo ... src/imgui_tables.obj
+	@echo ... src/imgui_tables.i
+	@echo ... src/imgui_tables.s
+	@echo ... src/imgui_widgets.obj
+	@echo ... src/imgui_widgets.i
+	@echo ... src/imgui_widgets.s
 .PHONY : help
 
 

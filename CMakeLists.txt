@@ -4,9 +4,10 @@ project(Velce)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_SYSTEM_PROCESSOR "x86_64")
 file(GLOB all_SRCS
-        "${PROJECT_SOURCE_DIR}/Velce/*.h"
-        "${PROJECT_SOURCE_DIR}/Velce/*.cpp"
+        "${PROJECT_SOURCE_DIR}/src/*.h"
+        "${PROJECT_SOURCE_DIR}/src/*.cpp"
 )
 add_executable(Velce ${all_SRCS})
 
@@ -24,3 +25,4 @@ target_include_directories( Velce
 )
 
 target_link_libraries(Velce PUBLIC ${SDL2_LIBRARIES} SDL2_image::SDL2_image mingw32)
+
