@@ -75,6 +75,7 @@ void Editor::Input() {
     }
 
     if (context == Context::SECTOR_EDITOR && ImGui::IsWindowFocused()) {
+
     }
 
     zoomed = io.MouseWheel;
