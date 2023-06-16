@@ -1,0 +1,110 @@
+[
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Actor.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Actor.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Actor.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Actor.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Animator.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Animator.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Animator.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Animator.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Camera.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Camera.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Camera.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Editor.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Editor.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Editor.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Editor.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Engine.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Engine.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Engine.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Engine.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Game.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Game.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Game.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Game.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Player.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Player.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Player.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Player.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Sector.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Sector.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Sector.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Sector.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Tile.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Tile.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Tile.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Tile.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Velce.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Velce.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/Velce.cpp",
+  "output": "CMakeFiles/Velce.dir/src/Velce.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\World.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\World.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/World.cpp",
+  "output": "CMakeFiles/Velce.dir/src/World.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_demo.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_demo.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_demo.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_draw.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_draw.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_draw.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_impl_sdl2.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_impl_sdl2.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdl2.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_impl_sdlrenderer.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_impl_sdlrenderer.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdlrenderer.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_tables.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_tables.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_tables.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe  @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\imgui_widgets.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\imgui_widgets.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/imgui_widgets.cpp",
+  "output": "CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj"
+}
+]

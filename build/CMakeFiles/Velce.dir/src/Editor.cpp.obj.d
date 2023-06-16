@@ -331,4 +331,5 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/begin_code.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/close_code.h \
- C:\Users\Adrian\Desktop\Velce\src\Utils.h
+ C:\Users\Adrian\Desktop\Velce\src\Utils.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_render.h
