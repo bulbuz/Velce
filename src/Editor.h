@@ -4,6 +4,7 @@
 #include "imgui.h"
 
 #include <algorithm>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -11,99 +12,99 @@
 #include "Sector.h"
 #include "Utils.h"
 
-namespace Velce
-{
-    struct Mouse {
-        Vec2 grid_pos;
-        Vec2 rel_pos;
-        Vec2 abs_pos;
-        Vec2 delta;
-        bool holding_left_click = false;
-    };
+using namespace Velce;
 
-    class Editor {
-    public:
-        Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD);
-        ~Editor();
-        void Run();
-        void WorldEditor();
-        void SectorEditor();
-        void Input();
+struct Mouse {
+    Vec2 grid_pos;
+    Vec2 rel_pos;
+    Vec2 abs_pos;
+    Vec2 delta;
+    bool holding_left_click = false;
+};
 
-    private:
-        enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE };
-        enum class Mode { SELECT, MOVE, CREATE, DELETE, NONE };
+class Editor {
+public:
+    Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD);
+    ~Editor();
+    void Run();
+    void WorldEditor();
+    void SectorEditor();
+    void Input();
 
-        std::string* CWD;
+private:
+    enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE};
+    enum class Mode { SELECT, MOVE, CREATE, DELETE, ADD_GATE, NONE };
 
-        SDL_Renderer* renderer;
-        const int VIEWPORT_WIDTH;
-        const int VIEWPORT_HEIGHT;
+    std::string* CWD;
 
-        double TILE_SIZE;
+    SDL_Renderer* renderer;
+    const int VIEWPORT_WIDTH;
+    const int VIEWPORT_HEIGHT;
 
-        int WIN_WIDTH;
-        int WIN_HEIGHT;
+    double TILE_SIZE;
 
-		double zoom_speed;
+    int WIN_WIDTH;
+    int WIN_HEIGHT;
 
-        int blocks_per_tile; // number of blocks one world tile corresponds to
+    double zoom_speed;
 
-        // colors
-        Color background_color;
-        Color grid_color;
-        Color select_color;
-        Color sector_color;
+    int blocks_per_tile; // number of blocks one world tile corresponds to
 
-        Context context;
+    // colors
+    Color background_color;
+    Color grid_color;
+    Color select_color;
+    Color sector_color;
 
-        Sector* cur_sector = nullptr;
+    Context context;
 
-		Mouse mouse;
+    Sector* cur_sector = nullptr;
 
-        int zoomed = 0;
+    Mouse mouse;
 
-        struct WorldEditor {
-			// dimensions in tiles
-			int WORLD_WIDTH;
-			int WORLD_HEIGHT;
+    int zoomed = 0;
 
-			Vec2 scroll;
-            std::vector<SDL_Rect> sector_rects;
-			double zoom;
+    struct WorldEditor {
+        // dimensions in tiles
+        int WORLD_WIDTH;
+        int WORLD_HEIGHT;
 
-            // preview of sector creation
-            SDL_Rect selection_box;
+        Vec2 scroll;
+        std::vector<SDL_Rect> sector_rects;
+        double zoom;
 
-            SDL_Rect* selected_sector;
+        // preview of sector creation
+        SDL_Rect selection_box;
 
-            Mode mode;
+        SDL_Rect* selected_sector;
 
-            Vec2 create_start_pos;
-            Vec2 grabbed_delta;
+        Mode mode;
 
-            // testing vars
-            bool unselect = false;
-        } we;
+        Vec2 create_start_pos;
+        Vec2 grabbed_delta;
 
-        struct SectorEditor {
-            Spritesheet cur_sheet;
-			Vec2 scroll;
-            bool show_tile_settings = false;
-            SDL_Texture* tileset_buffer;
-            int TILESET_TILE_SIZE = 64;
-            Mode mode;
-            double zoom;
-            char name[15] = "";
-            Tile cur_tile;
-        } se;
+        // testing vars
+        bool unselect = false;
+    } we;
 
-    private:
-        void AddTileset();
-        void RenderWorldEditor();
-        void RenderTileset();
-        void RenderGrid(int WIDTH, int HEIGHT);
-        void TilesetWindow();
-        void RenderSectorTiles();
-    };
-} // namespace Velce
+    struct SectorEditor {
+        Spritesheet cur_sheet;
+        Vec2 scroll;
+        bool show_tile_settings = false;
+        SDL_Texture* tileset_buffer;
+        int TILESET_TILE_SIZE = 64;
+        Mode mode;
+        double zoom;
+        char name[15] = "";
+        Tile cur_tile;
+    } se;
+
+private:
+    void AddTileset();
+    void RenderWorldEditor();
+    void RenderTileset();
+    void RenderGrid(int WIDTH, int HEIGHT);
+    void RenderSectorTiles();
+    void TilesetWindow();
+    void SaveMap();
+};

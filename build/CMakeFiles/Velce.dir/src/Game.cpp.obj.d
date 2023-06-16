@@ -347,11 +347,40 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:\Users\Adrian\Desktop\Velce\src\Debug.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:\Users\Adrian\Desktop\Velce\src\Utils.h \
- C:\Users\Adrian\Desktop\Velce\src\Animator.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/regex \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stack \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_stack.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_constants.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_error.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.tcc \
+ C:\Users\Adrian\Desktop\Velce\src\Animator.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \

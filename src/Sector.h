@@ -8,29 +8,29 @@
 #include "Tile.h"
 #include "Utils.h"
 
-namespace Velce {
-    class Sector {
-    public:
-        // size of the sector in tiles
-        Sector(SDL_Renderer*, Vec2 size);
-        ~Sector();
+using namespace Velce;
 
-        void RemoveTile(Vec2 grid_pos);
-        void SetTile(Tile tile, Vec2 grid_pos);
-        void AddSpritesheet(Spritesheet sheet);
-        int GetSpritesheetID(Spritesheet* sheet);
+class Sector {
+public:
+    // size of the sector in tiles
+    Sector(SDL_Renderer*, Vec2 size);
+    ~Sector();
 
-        void RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE);
+    void RemoveTile(Vec2 grid_pos);
+    void SetTile(Tile tile, Vec2 grid_pos);
+    void AddSpritesheet(Spritesheet sheet);
+    int GetSpritesheetID(Spritesheet* sheet);
+    Vec2 GetSize();
 
-        // debugging
-        void PrintGrid();
+    void RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE);
 
-    private:
-        SDL_Renderer* renderer;
-        Vec2 size;
-        // the grid storing all the tiles
-        std::vector<std::vector<Tile>> grid;
-        std::vector<Spritesheet> spritesheets;
-    };
+    // debugging
+    void PrintGrid();
 
-} // namespace Velce
+private:
+    SDL_Renderer* renderer;
+    Vec2 size;
+    // the grid storing all the tiles
+    std::vector<std::vector<Tile>> grid;
+    std::vector<Spritesheet> spritesheets;
+};
