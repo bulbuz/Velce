@@ -13,33 +13,6 @@
 
 #define EMPTY_COLOR Color(-1, -1, -1)
 
-template<typename T>
-void dbg(T t) {
-    ImGui::Begin("debug");
-    ImGui::Text( std::to_string(t).c_str());
-    ImGui::End();
-}
-
-template<typename T, typename... Args>
-void dbg(T t, Args... args) {
-    ImGui::Begin("debug");
-    ImGui::Text( std::to_string(t).c_str());
-    ImGui::End();
-
-    dbg(args...);
-}
-
-template<typename T>
-// checks if value is in the given range (exclusive)
-inline bool InRangeEx(T val, T lo, T hi) {
-    return val >= lo && val < hi;
-}
-
-template<typename T>
-// checks if value is in the given range (inclusive)
-inline bool InRange(T val, T lo, T hi) {
-    return val >= lo && val < hi;
-}
 
 // 2D Vector
 struct Vec2 {
@@ -150,3 +123,42 @@ enum ACTOR_STATE {
     FALLING,
     IDLE
 };
+
+template<typename T>
+void dbg(T t) {
+    ImGui::Begin("debug");
+    ImGui::Text( std::to_string(t).c_str());
+    ImGui::End();
+}
+
+template<typename T, typename... Args>
+void dbg(T t, Args... args) {
+    ImGui::Begin("debug");
+    ImGui::Text( std::to_string(t).c_str());
+    ImGui::SameLine();
+    ImGui::End();
+
+    dbg(args...);
+}
+
+template<typename T, typename... Args>
+void dbg(std::string s, T t, Args... args) {
+    ImGui::Begin("debug");
+    ImGui::Text( (s + std::to_string(t)).c_str());
+    ImGui::SameLine();
+    ImGui::End();
+
+    dbg(args...);
+}
+
+// checks if value is in the given range (exclusive the upper bound)
+template<typename T>
+inline bool InRangeEx(T val, T lo, T hi) {
+    return val >= lo && val < hi;
+}
+
+// checks if value is in the given range (inclusive)
+template<typename T>
+inline bool InRange(T val, T lo, T hi) {
+    return val >= lo && val <= hi;
+}

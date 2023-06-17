@@ -12,8 +12,6 @@
 #include "Sector.h"
 #include "Utils.h"
 
-using namespace Velce;
-
 struct Mouse {
     Vec2 grid_pos;
     Vec2 rel_pos;
@@ -21,6 +19,23 @@ struct Mouse {
     Vec2 delta;
     bool holding_left_click = false;
 };
+
+class Action {
+public:
+    Mouse mouse;
+    void Update();
+
+private:
+
+};
+
+class Select : Action {
+public:
+
+private:
+    Vec2 start_pos;
+};
+
 
 class Editor {
 public:

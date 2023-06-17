@@ -3,9 +3,9 @@
 #include <algorithm>
 #include <fstream>
 
-using namespace Velce;
+Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : 
+    renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h) {
 
-Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : renderer(renderer), VIEWPORT_WIDTH(w), VIEWPORT_HEIGHT(h) {
     we.mode = Mode::MOVE;
     se.mode = Mode::MOVE;
     context = Context::WORLD_EDITOR;
@@ -36,10 +36,8 @@ Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) : rendere
 void Editor::Run() {
     Input();
 
-    ImGui::Begin("debug");
-    ImGui::Text((std::to_string(mouse.rel_pos.x) + " "  + std::to_string(mouse.rel_pos.y)).c_str());
-    ImGui::Text((std::to_string(mouse.abs_pos.x) + " "  + std::to_string(mouse.abs_pos.y)).c_str());
-    ImGui::End();
+    dbg(std::string("mouse.rel_pos: "), mouse.rel_pos.x, mouse.rel_pos.y);
+    dbg(std::string("mouse.abs_pos: "), mouse.abs_pos.x, mouse.abs_pos.y);
 
     WIN_WIDTH = std::min((int)ImGui::GetIO().DisplaySize.x, VIEWPORT_WIDTH);
     WIN_HEIGHT = std::min((int)ImGui::GetIO().DisplaySize.y, VIEWPORT_HEIGHT);
@@ -49,7 +47,7 @@ void Editor::Run() {
         SectorEditor();
     }
     ImGui::Begin("debug");
-    ImGui::Text(("grid_pos: " + std::to_string(mouse.grid_pos.x) + " " + std::to_string(mouse.grid_pos.y)).c_str());
+    ImGui::Text("%s", ("grid_pos: " + std::to_string(mouse.grid_pos.x) + " " + std::to_string(mouse.grid_pos.y)).c_str());
     ImGui::End();
 }
 
@@ -108,8 +106,8 @@ void Editor::WorldEditor() {
     else if (we.mode == Mode::SELECT)
         tbx_mode = "Select";
 
-    ImGui::Text(("Mode: " + tbx_mode).c_str());
-    ImGui::Text(("Sectors: " + std::to_string(we.sector_rects.size())).c_str());
+    ImGui::Text("%s", ("Mode: " + tbx_mode).c_str());
+    ImGui::Text("%s", ("Sectors: " + std::to_string(we.sector_rects.size())).c_str());
 
     // reset selected sector if mode was switched
     if (we.mode != Mode::SELECT && we.selected_sector != nullptr)
@@ -148,14 +146,13 @@ void Editor::WorldEditor() {
     mouse.grid_pos = mouse.rel_pos - we.scroll;
     mouse.grid_pos.x /= TILE_SIZE * we.zoom; mouse.grid_pos.y /= TILE_SIZE * we.zoom;
 
-    if (mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
+    if (InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
         we.zoom += zoomed * zoom_speed;
         we.zoom = std::max(we.zoom, 0.6);
     }
 
     // behavior code
-    if (ImGui::IsWindowFocused() && mouse.holding_left_click && mouse.rel_pos.x >= 0 && mouse.rel_pos.x <= WIN_WIDTH 
-        && mouse.rel_pos.y >= 0 && mouse.rel_pos.y <= WIN_HEIGHT) {
+    if (ImGui::IsWindowFocused() && mouse.holding_left_click && InRange(mouse.rel_pos.x, 0, WIN_HEIGHT) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
         switch (we.mode) {
         case Mode::MOVE:
             we.scroll = we.scroll + mouse.delta;
@@ -163,13 +160,12 @@ void Editor::WorldEditor() {
 
         case Mode::CREATE:
             if (we.create_start_pos == Vec2(-1, -1)) {
-                if (mouse.grid_pos.x == std::clamp(mouse.grid_pos.x, 0, we.WORLD_WIDTH) && 
-                    mouse.grid_pos.y == std::clamp(mouse.grid_pos.y, 0, we.WORLD_HEIGHT)) {
+                if (InRange(mouse.grid_pos.x, 0, we.WORLD_WIDTH) && InRange(mouse.grid_pos.y, 0, we.WORLD_HEIGHT)) {
                     we.create_start_pos = mouse.grid_pos;
+                    // empty selection grid
                     we.selection_box = { 0, 0, 0, 0 };
                 }
             } else {
-                // empty selection grid
                 we.selection_box = { we.create_start_pos.x, we.create_start_pos.y,
                     (mouse.grid_pos.x - we.create_start_pos.x) + 1, (mouse.grid_pos.y - we.create_start_pos.y) + 1 };
             }
@@ -245,8 +241,12 @@ void Editor::RenderWorldEditor() {
 
     {   // draw the selection box 
         SDL_SetRenderDrawColor(renderer, sector_color.r, sector_color.g, sector_color.b, 255);
-        SDL_FRect selection_box_render{ (float)(we.selection_box.x * TILE_SIZE * we.zoom + we.scroll.x), (float)(we.selection_box.y * TILE_SIZE * we.zoom + we.scroll.y),
-            (float)(we.selection_box.w * TILE_SIZE * we.zoom), (float)(we.selection_box.h * TILE_SIZE * we.zoom)};
+
+        float x = we.selection_box.x * TILE_SIZE * we.zoom + we.scroll.x;
+        float y = we.selection_box.y * TILE_SIZE * we.zoom + we.scroll.y;
+        float w = we.selection_box.w * TILE_SIZE * we.zoom;
+        float h = we.selection_box.h * TILE_SIZE * we.zoom;
+        SDL_FRect selection_box_render{ x, y, w, h};
         SDL_RenderFillRectF(renderer, &selection_box_render);
     }
 
@@ -281,8 +281,11 @@ void Editor::RenderGrid(int WIDTH, int HEIGHT) {
 
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < WIDTH; j++) {
-
-            SDL_FRect tile{ (float)(j * TILE_SIZE * zoom + scroll.x), (float)(i * TILE_SIZE * zoom + scroll.y), (float)(TILE_SIZE * zoom), float(TILE_SIZE * zoom)};
+            float x = j * TILE_SIZE * zoom + scroll.x;
+            float y = i * TILE_SIZE * zoom + scroll.y;
+            float w = TILE_SIZE * zoom;
+            float h = TILE_SIZE * zoom;
+            SDL_FRect tile{ x, y, w, h};
             SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
             SDL_RenderDrawRectF(renderer, &tile);
         }
@@ -354,18 +357,18 @@ void Editor::SectorEditor() {
         }
         ImGui::SameLine();
         if (ImGui::Button("Save sector")) {
-
+            // TODO
         }
         ImGui::SameLine();
         if (ImGui::Button("Exit")) {
             context = Context::WORLD_EDITOR;
         }
-        if (ImGui::Button("Add tileset")) {
-            se.show_tile_settings = true;
-        }
-        ImGui::SameLine();
         if (ImGui::Button("Add gate")) {
             se.mode = Mode::ADD_GATE;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Add tileset")) {
+            se.show_tile_settings = true;
         }
     }
 
@@ -375,7 +378,7 @@ void Editor::SectorEditor() {
     else if (se.mode == Mode::DELETE)
         tbx_mode = "Erase";
 
-    ImGui::Text(("mode: " + tbx_mode).c_str());
+    ImGui::Text("%s", ("mode: " + tbx_mode).c_str());
 
     if (se.show_tile_settings) {
         AddTileset();
@@ -385,13 +388,14 @@ void Editor::SectorEditor() {
     mouse.rel_pos = Vec2(mouse.abs_pos.x - window_pos.x, mouse.abs_pos.y - window_pos.y);
     mouse.grid_pos = mouse.rel_pos - se.scroll;
     mouse.grid_pos.x /= TILE_SIZE * se.zoom; mouse.grid_pos.y /= TILE_SIZE * se.zoom;
-    if (ImGui::IsWindowFocused() && mouse.holding_left_click && InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
-
+    if (ImGui::IsWindowFocused() && mouse.holding_left_click && 
+            InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
         if (se.mode == Mode::MOVE) {
             se.scroll = se.scroll + mouse.delta;
         }
 
-        if (InRangeEx(mouse.grid_pos.x, 0, cur_sector->GetSize().x) && InRangeEx(mouse.grid_pos.y, 0, cur_sector->GetSize().y)) {
+        if (InRangeEx(mouse.grid_pos.x, 0, cur_sector->GetSize().x) && 
+                InRangeEx(mouse.grid_pos.y, 0, cur_sector->GetSize().y)) {
             if (se.mode == Mode::CREATE) {
                 if (se.cur_tile.GetSpritesheetID() != -1) {
                     cur_sector->SetTile(se.cur_tile, mouse.grid_pos);
@@ -420,12 +424,14 @@ void Editor::TilesetWindow() {
         se.mode = Mode::CREATE;
 
         ImVec2 window_pos = ImGui::GetCursorScreenPos();
-        Vec2 grid_pos((mouse.abs_pos.x - window_pos.x) / se.TILESET_TILE_SIZE, (mouse.abs_pos.y - window_pos.y) / se.TILESET_TILE_SIZE);
+        Vec2 grid_pos((mouse.abs_pos.x - window_pos.x) / se.TILESET_TILE_SIZE, 
+                (mouse.abs_pos.y - window_pos.y) / se.TILESET_TILE_SIZE);
 
         // add tile to sector if drawing
         int spritesheetID = cur_sector->GetSpritesheetID(&se.cur_sheet);
         assert(spritesheetID != -1);
-        se.cur_tile = Tile(SDL_Rect{grid_pos.x, grid_pos.y, se.cur_sheet.tile_size.x,se. cur_sheet.tile_size.y}, spritesheetID);
+        se.cur_tile = Tile(SDL_Rect{grid_pos.x, grid_pos.y,
+                se.cur_sheet.tile_size.x,se. cur_sheet.tile_size.y}, spritesheetID);
     }
 
     RenderTileset();
