@@ -141,8 +141,14 @@ void dbg(T t, Args... args) {
     dbg(args...);
 }
 
+inline void dbg(const char* s) {
+    ImGui::Begin("debug");
+    ImGui::Text("%s", s);
+    ImGui::End();
+}
+
 template<typename T, typename... Args>
-void dbg(std::string s, T t, Args... args) {
+void dbg(const char* s, T t, Args... args) {
     ImGui::Begin("debug");
     ImGui::Text( (s + std::to_string(t)).c_str());
     ImGui::SameLine();
@@ -151,7 +157,7 @@ void dbg(std::string s, T t, Args... args) {
     dbg(args...);
 }
 
-// checks if value is in the given range (exclusive the upper bound)
+// checks if value is in the given range (excluded the upper bound)
 template<typename T>
 inline bool InRangeEx(T val, T lo, T hi) {
     return val >= lo && val < hi;

@@ -12,7 +12,7 @@ TODO
 // game
 
 // editor
-- why does it create a new sector??
+- 
 - disable selection by clicking elsewhere
 - save world layout
 
@@ -28,5 +28,5 @@ OPTIMIZATION
 
 NOTES
 ----------------
-The world object should manage all the sector switching and handle loading and unloading with 
+The world object should manage all the sector switching and handle loading/unloading with 
 the help of a hash table storing the entrance connections

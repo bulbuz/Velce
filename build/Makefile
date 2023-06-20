@@ -272,6 +272,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Gate.obj: src/Gate.cpp.obj
+.PHONY : src/Gate.obj
+
+# target to build an object file
+src/Gate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Gate.cpp.obj
+.PHONY : src/Gate.cpp.obj
+
+src/Gate.i: src/Gate.cpp.i
+.PHONY : src/Gate.i
+
+# target to preprocess a source file
+src/Gate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Gate.cpp.i
+.PHONY : src/Gate.cpp.i
+
+src/Gate.s: src/Gate.cpp.s
+.PHONY : src/Gate.s
+
+# target to generate assembly for a file
+src/Gate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Gate.cpp.s
+.PHONY : src/Gate.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -587,6 +611,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Gate.obj
+	@echo ... src/Gate.i
+	@echo ... src/Gate.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

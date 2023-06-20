@@ -399,4 +399,8 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
- C:\Users\Adrian\Desktop\Velce\src\World.h
+ C:\Users\Adrian\Desktop\Velce\src\World.h \
+ C:\Users\Adrian\Desktop\Velce\src\Sector.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+ C:\Users\Adrian\Desktop\Velce\src\Gate.h \
+ C:\Users\Adrian\Desktop\Velce\src\Tile.h

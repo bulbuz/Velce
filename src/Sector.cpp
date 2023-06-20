@@ -1,6 +1,5 @@
 #include "Sector.h"
 #include "Utils.h"
-#include <SDL_render.h>
 #include <string>
 
 using namespace Velce;
@@ -41,6 +40,14 @@ Vec2 Sector::GetSize() {
     return size;
 }
 
+SDL_Rect* Sector::GetRect() {
+    return &rect;
+}
+
+void Sector::SetRect(SDL_Rect rect) {
+    this->rect = rect;
+}
+
 void Sector::RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE) {
     for (int i = 0; i < size.y; i++) {
         for (int j = 0; j < size.x; j++) {
@@ -53,6 +60,14 @@ void Sector::RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE) {
             }
         }
     }
+}
+
+void Sector::AddGate(Gate gate) {
+    gates.push_back(gate);
+}
+
+std::vector<Gate>* Sector::GetGates() {
+    return &gates;
 }
 
 // debugging purposes

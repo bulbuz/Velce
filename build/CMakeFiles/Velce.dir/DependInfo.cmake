@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Adrian/Desktop/Velce/src/Editor.cpp" "CMakeFiles/Velce.dir/src/Editor.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Editor.cpp.obj.d"
   "C:/Users/Adrian/Desktop/Velce/src/Engine.cpp" "CMakeFiles/Velce.dir/src/Engine.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Engine.cpp.obj.d"
   "C:/Users/Adrian/Desktop/Velce/src/Game.cpp" "CMakeFiles/Velce.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Game.cpp.obj.d"
+  "C:/Users/Adrian/Desktop/Velce/src/Gate.cpp" "CMakeFiles/Velce.dir/src/Gate.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Gate.cpp.obj.d"
   "C:/Users/Adrian/Desktop/Velce/src/Player.cpp" "CMakeFiles/Velce.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Player.cpp.obj.d"
   "C:/Users/Adrian/Desktop/Velce/src/Sector.cpp" "CMakeFiles/Velce.dir/src/Sector.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Sector.cpp.obj.d"
   "C:/Users/Adrian/Desktop/Velce/src/Tile.cpp" "CMakeFiles/Velce.dir/src/Tile.cpp.obj" "gcc" "CMakeFiles/Velce.dir/src/Tile.cpp.obj.d"
