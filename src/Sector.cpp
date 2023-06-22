@@ -2,8 +2,8 @@
 #include "Utils.h"
 #include <string>
 
-using namespace Velce;
-
+namespace Velce {
+    
 Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size) {
     LOG("sector created!");
     grid.resize(size.y, std::vector<Tile>(size.x, Tile()));
@@ -66,11 +66,14 @@ void Sector::AddGate(Gate gate) {
     gates.push_back(gate);
 }
 
+
 std::vector<Gate>* Sector::GetGates() {
     return &gates;
 }
 
 // debugging purposes
 void Sector::PrintGrid() {
+
+}
 
 }

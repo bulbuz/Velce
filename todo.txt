@@ -16,6 +16,7 @@ TODO
 - disable selection by clicking elsewhere
 - save world layout
 
+- save sector editor settings by a struct
 - layers
 - decouple editor apps?
 - save and load from file

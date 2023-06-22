@@ -26,4 +26,3 @@ target_include_directories( Velce
 )
 
 target_link_libraries(Velce PUBLIC ${SDL2_LIBRARIES} SDL2_image::SDL2_image mingw32)
-

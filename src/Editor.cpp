@@ -1,5 +1,6 @@
 #include "Editor.h"
 #include "Utils.h"
+#include "imgui.h"
 #include <SDL_rect.h>
 #include <SDL_render.h>
 #include <algorithm>
@@ -61,19 +62,11 @@ void Editor::Input() {
 
     if (context == Context::WORLD_EDITOR && ImGui::IsWindowFocused()) {
         if (io.MouseDown[0] && ImGui::IsWindowHovered()) {
-            if (we.mode == Mode::SELECT && context == Context::WORLD_EDITOR) {
-
-                // don't select another sector while moving the selected sector
-                if (we.grabbed_delta == Vec2(-1, -1)) {
-                    SDL_Point p = { mouse.grid_pos.x, mouse.grid_pos.y };
-                    
-                    // check which sector was selected
-                    for (auto& sector : we.sectors) {
-                        if (SDL_PointInRect(&p, sector.GetRect())) {
-                            cur_sector = &sector;
-                        }
-                    }
-                }
+            // don't select another sector while moving the selected sector
+            if (we.mode == Mode::SELECT && we.grabbed_delta == Vec2(-1, -1)) {
+                Sector* res = ClickedOnSector();
+                if (res != nullptr)
+                    cur_sector = res;
             }
         }
     }
@@ -83,6 +76,18 @@ void Editor::Input() {
     }
 
     zoomed = io.MouseWheel;
+}
+
+Sector* Editor::ClickedOnSector() {
+
+    SDL_Point p = { mouse.grid_pos.x, mouse.grid_pos.y };
+    // check which sector was selected
+    for (auto& sector : we.sectors) {
+        if (SDL_PointInRect(&p, sector.GetRect()))
+            return &sector;
+    }
+
+    return nullptr;
 }
 
 void Editor::WorldEditor() {
@@ -105,14 +110,17 @@ void Editor::WorldEditor() {
     if (ImGui::Button("Save map")) {
         SaveMap();
     }
+    ImGui::SameLine();
+    if (ImGui::Button("Connect gates")) {
+        we.mode = Mode::CONNECT;
+    }
 
     std::string tbx_mode = "Move";
     if (we.mode == Mode::CREATE)
         tbx_mode = "Create";
     else if (we.mode == Mode::SELECT)
         tbx_mode = "Select";
-
-    ImGui::Text("%s", ("Mode: " + tbx_mode).c_str());
+ImGui::Text("%s", ("Mode: " + tbx_mode).c_str());
     ImGui::Text("%s", ("Sectors: " + std::to_string(we.sectors.size())).c_str());
 
     // reset selected sector if mode was switched
@@ -153,11 +161,13 @@ void Editor::WorldEditor() {
     if (InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
         we.zoom += zoomed * zoom_speed;
         we.zoom = std::max(we.zoom, 0.6);
+        
     }
 
-    // behavior code
+    // OnClick behaviors code
     if (ImGui::IsWindowFocused() && mouse.holding_left_click && 
             InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
+
 
         switch (we.mode) {
         case Mode::MOVE:
@@ -172,7 +182,7 @@ void Editor::WorldEditor() {
             break;
 
         case Mode::SELECT:
-            if (cur_sector != nullptr) {
+            if (cur_sector != nullptr && we.selected_gate == nullptr) {
                 SDL_Rect* rect = cur_sector->GetRect();
                 if (we.grabbed_delta == Vec2(-1, -1)) {
                     we.grabbed_delta = mouse.grid_pos - Vec2(rect->x, rect->y);
@@ -185,12 +195,30 @@ void Editor::WorldEditor() {
                 }
             }
             break;
+        case Mode::CONNECT:
+            if (we.selected_gate != nullptr)
+                break;
+
+            for (auto& sector : we.sectors) {
+                if (InRange(mouse.grid_pos.x, sector.GetRect()->x, sector.GetRect()->x + sector.GetRect()->w)
+                    && InRange(mouse.grid_pos.y, sector.GetRect()->y, sector.GetRect()->y + sector.GetRect()->h)) {
+                    for (auto& gate : *sector.GetGates()) {
+                        SDL_FPoint m_pos{(float) mouse.rel_pos.x, (float) mouse.rel_pos.y};
+                        SDL_FRect r = GetWorldGateRect(&gate, sector.GetRect());
+                        if (SDL_PointInFRect(&m_pos, &r)) {
+                            we.selected_gate = &gate;
+                            we.gate_sector = &sector;
+                        }
+                    }
+                }
+            }
+            break;
         default:
             break;
         }
     }
 
-    if (ImGui::IsWindowFocused() && !mouse.holding_left_click) {
+    if (ImGui::IsWindowFocused() && ImGui::IsWindowHovered() && !mouse.holding_left_click) {
         if (we.mode == Mode::CREATE) {
             SDL_Rect box = mouse.GetSelection();
             if (box.w && box.h)
@@ -201,9 +229,28 @@ void Editor::WorldEditor() {
                     we.sectors.push_back(Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
                     we.sectors.back().SetRect(box);
                 }
-
             mouse.OnRelease();
         }
+
+        if (we.mode == Mode::CONNECT && we.selected_gate != nullptr) {
+            for (auto& sector : we.sectors) {
+                if (InRange(mouse.grid_pos.x, sector.GetRect()->x, sector.GetRect()->x + sector.GetRect()->w)
+                    && InRange(mouse.grid_pos.y, sector.GetRect()->y, sector.GetRect()->y + sector.GetRect()->h)) {
+                    for (auto& gate : *sector.GetGates()) {
+                        SDL_FPoint m_pos{(float) mouse.rel_pos.x, (float) mouse.rel_pos.y};
+                        SDL_FRect r = GetWorldGateRect(&gate, sector.GetRect());
+                        if (SDL_PointInFRect(&m_pos, &r) && &gate != we.selected_gate) {
+                            we.selected_gate->AddEndpoint(&gate);
+                            we.selected_gate = nullptr;
+                            we.gate_sector = nullptr;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+
         we.grabbed_delta = Vec2(-1, -1);
     }
 
@@ -265,21 +312,53 @@ void Editor::RenderWorldEditor() {
         std::vector<Gate>* gates = sector.GetGates();
         for (auto& gate : *gates) {
             SDL_Rect* gate_rect = gate.GetRect();
-            SDL_FRect gate_world_rect;
-            gate_world_rect.x = rect->x + (float) gate_rect->x / blocks_per_tile;
-            gate_world_rect.y = rect->y + (float) gate_rect->y / blocks_per_tile;
-            gate_world_rect.w = (float) gate_rect->w / blocks_per_tile;
-            gate_world_rect.h = (float) gate_rect->h / blocks_per_tile;
-
-            gate_world_rect.x = gate_world_rect.x * TILE_SIZE * we.zoom + we.scroll.x;
-            gate_world_rect.y = gate_world_rect.y * TILE_SIZE * we.zoom + we.scroll.y;
-            gate_world_rect.w *= TILE_SIZE * we.zoom;
-            gate_world_rect.h *= TILE_SIZE * we.zoom;
+            SDL_FRect gate_world_rect = GetWorldGateRect(&gate, rect);
 
             SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
             SDL_RenderFillRectF(renderer, &gate_world_rect);
         }
     }
+
+    if (we.selected_gate != nullptr) {
+        SDL_FRect r = GetWorldGateRect(we.selected_gate, we.gate_sector->GetRect());
+        Vec2 start = Vec2(r.x + r.w / 2, r.y + r.h / 2);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+        SDL_RenderDrawLine(renderer, start.x, start.y, mouse.rel_pos.x, mouse.rel_pos.y);
+    }
+
+
+    for (auto& sector : we.sectors) {
+        for (auto& gate : *sector.GetGates()) {
+            for (auto& endpoint : gate.GetEndpoints()) {
+                SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+                // RENDER CONNECTIONS
+
+                SDL_FRect start_rect = GetWorldGateRect(&gate, gate.GetSectorRect());
+                SDL_FRect end_rect = GetWorldGateRect(endpoint, endpoint->GetSectorRect());
+                Vec2 start(start_rect.x + start_rect.w / 2, start_rect.y + start_rect.h / 2);
+                Vec2 end(end_rect.x + end_rect.w / 2, end_rect.y + end_rect.h / 2);
+                SDL_RenderDrawLine(renderer, start.x, start.y, end.x, end.y);
+            }
+        }
+    }
+}
+
+SDL_FRect Editor::GetWorldGateRect(Gate* gate, SDL_Rect* sector_rect) {
+    assert(gate != nullptr);
+    assert(sector_rect != nullptr);
+    SDL_Rect* gate_rect = gate->GetRect();
+    SDL_FRect gate_world_rect;
+    gate_world_rect.x = sector_rect->x + (float) gate_rect->x / blocks_per_tile;
+    gate_world_rect.y = sector_rect->y + (float) gate_rect->y / blocks_per_tile;
+    gate_world_rect.w = (float) gate_rect->w / blocks_per_tile;
+    gate_world_rect.h = (float) gate_rect->h / blocks_per_tile;
+
+    gate_world_rect.x = gate_world_rect.x * TILE_SIZE * we.zoom + we.scroll.x;
+    gate_world_rect.y = gate_world_rect.y * TILE_SIZE * we.zoom + we.scroll.y;
+    gate_world_rect.w *= TILE_SIZE * we.zoom;
+    gate_world_rect.h *= TILE_SIZE * we.zoom;
+
+    return gate_world_rect;
 }
 
 void Editor::RenderGrid(int WIDTH, int HEIGHT) {
@@ -377,6 +456,7 @@ void Editor::SectorEditor() {
         ImGui::SameLine();
         if (ImGui::Button("Exit")) {
             context = Context::WORLD_EDITOR;
+            ResetSectorEditor();
         }
         if (ImGui::Button("Add gate")) {
             se.mode = Mode::ADD_GATE;
@@ -396,6 +476,10 @@ void Editor::SectorEditor() {
         tbx_mode = "Create";
     else if (se.mode == Mode::DELETE)
         tbx_mode = "Erase";
+    else if (se.mode == Mode::ADD_GATE)
+        tbx_mode = "Add gate";
+    else if (se.mode == Mode::REMOVE_GATE)
+        tbx_mode = "Remove gate";
 
     ImGui::Text("%s", ("mode: " + tbx_mode).c_str());
 
@@ -439,18 +523,19 @@ void Editor::SectorEditor() {
         }
     }
 
-    if (ImGui::IsWindowFocused() && !mouse.holding_left_click) {
+    if (ImGui::IsWindowFocused() && ImGui::IsWindowHovered() && !mouse.holding_left_click) {
         if (se.mode == Mode::ADD_GATE) {
             SDL_Rect box = mouse.GetSelection();
             if (box.w && box.h)
                 if (box.x >= 0 && box.x + box.w <= cur_sector->GetSize().x &&
                     box.y >= 0 && box.y + box.h <= cur_sector->GetSize().y) {
-
-                    cur_sector->AddGate(Gate(box));
+                    Gate g(box);
+                    g.SetSectorRect(cur_sector->GetRect());
+                    cur_sector->AddGate(g);
                 }
 
             mouse.OnRelease();
-        }
+        }     
     }
 
     // render grid
@@ -460,7 +545,6 @@ void Editor::SectorEditor() {
     cur_sector->RenderGrid(se.scroll, se.zoom, TILE_SIZE);
     
     {   // draw the selection box 
-
         SDL_Rect box = mouse.GetSelection();
         if (box.w || box.h) {
             SDL_SetRenderDrawColor(renderer, 200, 0, 0, 255);
@@ -540,8 +624,17 @@ void Editor::RenderTileset() {
     }
 }
 
-Editor::~Editor() {
-    delete CWD;
-    delete cur_sector;
+void Editor::ResetSectorEditor() {
+    se.cur_sheet = Spritesheet();
+    se.scroll = Vec2();
+    se.show_tile_settings = false;
     SDL_DestroyTexture(se.tileset_buffer);
+    se.tileset_buffer = NULL;
+    se.mode = Mode::MOVE;
+    se.zoom = 1;
+    se.cur_tile = Tile();
+}
+
+Editor::~Editor() {
+
 }

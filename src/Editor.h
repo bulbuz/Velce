@@ -48,7 +48,7 @@ struct Mouse {
 
     }
 
-    // returns empty rect if notthing is selected
+    // returns empty rect if nothing is selected
     SDL_Rect GetSelection() {
         if (start_pos != Vec2(-1, -1)) {
             
@@ -88,7 +88,7 @@ public:
 
 private:
     enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE};
-    enum class Mode { SELECT, MOVE, CREATE, DELETE, ADD_GATE, REMOVE_GATE, NONE };
+    enum class Mode { SELECT, MOVE, CREATE, DELETE, ADD_GATE, REMOVE_GATE, CONNECT, NONE };
 
     World* world;
 
@@ -121,7 +121,8 @@ private:
 
     int zoomed = 0;
 
-    struct WorldEditor {
+    // World Editor struct
+    struct We {
         // dimensions in tiles
         int WORLD_WIDTH;
         int WORLD_HEIGHT;
@@ -136,9 +137,12 @@ private:
 
         // testing vars
         bool unselect = false;
-    } we;
+        Gate* selected_gate = nullptr;
+        Sector* gate_sector = nullptr;
+    };
 
-    struct SectorEditor {
+    // Sector editor struct
+    struct Se {
         Spritesheet cur_sheet;
         Vec2 scroll;
         bool show_tile_settings = false;
@@ -148,8 +152,10 @@ private:
         double zoom;
         char name[15] = "";
         Tile cur_tile;
+    };
 
-    } se;
+    We we;
+    Se se;
 
 private:
     void AddTileset();
@@ -159,4 +165,7 @@ private:
     void RenderSectorTiles();
     void TilesetWindow();
     void SaveMap();
+    void ResetSectorEditor();
+    Sector* ClickedOnSector();
+    SDL_FRect GetWorldGateRect(Gate* gate, SDL_Rect* sector_rect);
 };
