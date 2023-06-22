@@ -403,4 +403,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:\Users\Adrian\Desktop\Velce\src\Sector.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:\Users\Adrian\Desktop\Velce\src\Gate.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
  C:\Users\Adrian\Desktop\Velce\src\Tile.h
