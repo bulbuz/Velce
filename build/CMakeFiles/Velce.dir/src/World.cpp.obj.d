@@ -304,21 +304,18 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
  C:\Users\Adrian\Desktop\Velce\src\Gate.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
- C:\Users\Adrian\Desktop\Velce\src\Tile.h \
- C:\Users\Adrian\Desktop\Velce\src\Actor.h \
+ C:\Users\Adrian\Desktop\Velce\src\Utils.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/include/SDL2/SDL_image.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/begin_code.h \
@@ -331,45 +328,11 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: \
  C:/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/MinGW/x86_64-w64-mingw32/include/assert.h \
  C:\Users\Adrian\Desktop\Velce\src\Debug.h \
- C:\Users\Adrian\Desktop\Velce\src\Utils.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/regex \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stack \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_stack.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_constants.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_error.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.tcc
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+ C:\Users\Adrian\Desktop\Velce\src\Tile.h \
+ C:\Users\Adrian\Desktop\Velce\src\Actor.h

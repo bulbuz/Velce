@@ -363,6 +363,9 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
@@ -371,33 +374,13 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:\Users\Adrian\Desktop\Velce\src\Debug.h \
  C:\Users\Adrian\Desktop\Velce\src\Gate.h \
+ C:\Users\Adrian\Desktop\Velce\src\Utils.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
  C:\Users\Adrian\Desktop\Velce\src\Sector.h \
  C:\Users\Adrian\Desktop\Velce\src\Tile.h \
  C:\Users\Adrian\Desktop\Velce\src\Actor.h \
- C:\Users\Adrian\Desktop\Velce\src\Utils.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/regex \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stack \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_stack.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_constants.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_error.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.tcc \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.tcc \
  C:\Users\Adrian\Desktop\Velce\src\World.h \
  C:\Users\Adrian\Desktop\Velce\src\Game.h \
  C:\Users\Adrian\Desktop\Velce\src\Player.h \

@@ -15,6 +15,11 @@ Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(siz
 
 Sector::~Sector() {
     LOG("sector removed!");
+    
+    for (auto it = gates.begin(); it != gates.end(); it++) {
+        DestroyGate(it);
+        it--;
+    }
 }
 
 void Sector::RemoveTile(Vec2 grid_pos) {
@@ -38,6 +43,14 @@ int Sector::GetSpritesheetID(Spritesheet* sheet) {
         i++;
     }
     return -1;
+}
+
+void Sector::DestroyGate(std::list<Gate>::iterator it) {
+    std::set<Gate*> endpoints = it->GetEndpoints();
+    for (auto endpoint : endpoints) {
+        endpoint->RemoveEndpoint(&*it);
+    }
+    gates.erase(it);
 }
 
 Vec2 Sector::GetSize() {

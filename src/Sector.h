@@ -36,6 +36,8 @@ namespace Velce {
         // debugging
         void PrintGrid();
 
+        void DestroyGate(std::list<Gate>::iterator it);
+
     private:
         SDL_Renderer* renderer;
         Vec2 size;
@@ -47,5 +49,6 @@ namespace Velce {
 
         // rect for editor representation
         SDL_Rect rect;
+
     };
 }

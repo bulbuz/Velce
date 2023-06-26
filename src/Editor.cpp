@@ -1,10 +1,14 @@
+
 #include "Editor.h"
 #include "Utils.h"
 #include "imgui.h"
+
 #include <SDL_rect.h>
 #include <SDL_render.h>
+
 #include <algorithm>
 #include <fstream>
+#include <iterator>
 
 using namespace Velce;
 
@@ -198,11 +202,6 @@ void Editor::WorldEditor() {
                         rect->y = delta.y;
                 }
 
-                /*
-                for (auto gate : *cur_sector->GetGates()) {
-                    gate.SetSectorRect(cur_sector->GetRect());
-                }
-                */
             }
             break;
         case Mode::CONNECT:
@@ -526,14 +525,11 @@ void Editor::SectorEditor() {
             SDL_Point p{mouse.grid_pos.x, mouse.grid_pos.y};
 
             std::list<Gate>* gates = cur_sector->GetGates();
+
             for (auto it = gates->begin(); it != gates->end(); it++) {
                 if (SDL_PointInRect(&p, it->GetRect())) {
                     // REMOVES GATE FROM ALL OTHER ENDPOINTS
-                    std::set<Gate*> endpoints = it->GetEndpoints();
-                    for (auto endpoint : endpoints) {
-                        endpoint->RemoveEndpoint(&*it);
-                    }
-                    gates->erase(it--);
+                    cur_sector->DestroyGate(it);
                 }
             }
         }

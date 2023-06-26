@@ -12,7 +12,7 @@ TODO
 // game
 
 // editor
-- 
+- REMOVABLE
 - disable selection by clicking elsewhere
 - save world layout
 
