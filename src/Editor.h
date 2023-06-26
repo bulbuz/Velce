@@ -5,6 +5,7 @@
 
 #include <algorithm>
 #include <fstream>
+#include <list>
 #include <map>
 #include <string>
 #include <vector>
@@ -88,7 +89,7 @@ public:
 
 private:
     enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE};
-    enum class Mode { SELECT, MOVE, CREATE, DELETE, ADD_GATE, REMOVE_GATE, CONNECT, NONE };
+    enum class Mode { SELECT, MOVE, CREATE, DELETE, CREATE_GATE, REMOVE_GATE, CONNECT, NONE };
 
     World* world;
 
@@ -128,7 +129,8 @@ private:
         int WORLD_HEIGHT;
 
         Vec2 scroll;
-        std::vector<Sector> sectors;
+        std::list<Sector> sectors;
+
         double zoom;
 
         Mode mode;

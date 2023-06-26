@@ -8,7 +8,6 @@
 #include "Debug.h"
 
 #include <iostream>
-#include <regex>
 #include <string>
 
 #define EMPTY_COLOR Color(-1, -1, -1)
@@ -123,6 +122,7 @@ enum ACTOR_STATE {
     FALLING,
     IDLE
 };
+
 
 template<typename T>
 void dbg(T t) {

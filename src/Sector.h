@@ -3,6 +3,7 @@
 #include <SDL.h>
 
 #include <iostream>
+#include <list>
 #include <vector>
 
 #include "Gate.h"
@@ -14,6 +15,7 @@ namespace Velce {
     class Sector {
     public:
         // size of the sector in tiles
+        Sector();
         Sector(SDL_Renderer* renderer, Vec2 size);
         ~Sector();
 
@@ -24,7 +26,7 @@ namespace Velce {
         Vec2 GetSize();
 
         void AddGate(Gate gate);
-        std::vector<Gate>* GetGates();
+        std::list<Gate>* GetGates();
 
         SDL_Rect* GetRect();
         void SetRect(SDL_Rect rect);
@@ -41,7 +43,7 @@ namespace Velce {
         std::vector<std::vector<Tile>> grid;
         std::vector<Spritesheet> spritesheets;
 
-        std::vector<Gate> gates;
+        std::list<Gate> gates;
 
         // rect for editor representation
         SDL_Rect rect;
