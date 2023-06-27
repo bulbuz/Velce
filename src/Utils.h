@@ -3,6 +3,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
+#include <crossguid/guid.hpp>
 #include "imgui.h"
 
 #include "Debug.h"

@@ -21,7 +21,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/FeatureSummary.cmake"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/FetchContent.cmake"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/FindGit.cmake"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+  "C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
@@ -36,6 +42,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.0-rc2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.27.0-rc2/CMakeSystem.cmake"
+  "_deps/crossguid-src/CMakeLists.txt"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/sdl2-config-version.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/cmake/sdl2-config.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/cmake/SDL2/sdl2-config-version.cmake"
@@ -44,6 +51,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/cmake/sdl2_image-config.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
   "C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/cmake/yaml-cpp/yaml-cpp-config.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake"
+  "C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake"
   )
 
 # The corresponding makefile is:
@@ -54,10 +65,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "_deps/crossguid-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/crossguid-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Velce.dir/DependInfo.cmake"
+  "_deps/crossguid-build/CMakeFiles/crossguid.dir/DependInfo.cmake"
+  "_deps/crossguid-build/CMakeFiles/crossguid-test.dir/DependInfo.cmake"
   )

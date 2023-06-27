@@ -1,3 +1,7 @@
 C:/Users/Adrian/Desktop/Velce/build/CMakeFiles/Velce.dir
 C:/Users/Adrian/Desktop/Velce/build/CMakeFiles/edit_cache.dir
 C:/Users/Adrian/Desktop/Velce/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-build/CMakeFiles/crossguid.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-build/CMakeFiles/crossguid-test.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-build/CMakeFiles/edit_cache.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-build/CMakeFiles/rebuild_cache.dir

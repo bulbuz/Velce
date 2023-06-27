@@ -45,8 +45,10 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
@@ -55,76 +57,106 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -134,6 +166,9 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -144,7 +179,9 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -259,6 +296,7 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -360,8 +398,10 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
@@ -370,10 +410,12 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -381,13 +423,18 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -400,33 +447,49 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -438,15 +501,19 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -456,6 +523,9 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -466,7 +536,9 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -581,6 +653,7 @@ CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Ani
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -687,6 +760,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
@@ -704,6 +778,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -712,14 +787,19 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -732,10 +812,13 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -750,6 +833,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -761,6 +845,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -768,9 +853,12 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -783,13 +871,16 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
@@ -797,6 +888,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -806,6 +898,8 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -819,7 +913,9 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -934,6 +1030,7 @@ CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Edito
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -1041,6 +1138,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
@@ -1059,6 +1157,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -1071,6 +1170,8 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
@@ -1104,6 +1205,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -1118,6 +1220,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -1129,6 +1232,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -1138,6 +1242,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
@@ -1157,6 +1262,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
@@ -1197,6 +1303,8 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -1328,6 +1436,7 @@ CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engin
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -1440,8 +1549,10 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
@@ -1457,6 +1568,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -1468,6 +1580,8 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
@@ -1501,10 +1615,13 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
@@ -1513,7 +1630,9 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -1521,7 +1640,9 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -1531,6 +1652,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
@@ -1549,6 +1671,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
@@ -1587,6 +1710,8 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -1716,6 +1841,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cp
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -1824,8 +1950,10 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
@@ -1834,10 +1962,12 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -1845,13 +1975,18 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -1864,20 +1999,27 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -1885,6 +2027,8 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -1892,9 +2036,12 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -1906,15 +2053,19 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -1924,6 +2075,8 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -1935,7 +2088,9 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -2050,6 +2205,7 @@ CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cp
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -2151,8 +2307,10 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
@@ -2161,10 +2319,12 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -2172,13 +2332,18 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -2191,35 +2356,51 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -2231,17 +2412,21 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -2263,6 +2448,9 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -2273,7 +2461,9 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -2389,6 +2579,7 @@ CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Playe
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -2492,8 +2683,10 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
@@ -2503,10 +2696,12 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -2514,14 +2709,19 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -2534,21 +2734,28 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -2556,6 +2763,8 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -2563,9 +2772,12 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -2577,16 +2789,20 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -2596,6 +2812,8 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -2607,7 +2825,9 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -2722,6 +2942,7 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Secto
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -2826,8 +3047,10 @@ CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
@@ -2836,76 +3059,106 @@ CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -2915,6 +3168,9 @@ CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -2925,7 +3181,9 @@ CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cp
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -3040,6 +3298,7 @@ CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cp
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -3143,6 +3402,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
@@ -3161,6 +3421,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -3173,6 +3434,8 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
@@ -3206,6 +3469,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -3220,6 +3484,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -3231,6 +3496,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -3240,6 +3506,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
@@ -3259,6 +3526,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
@@ -3299,6 +3567,8 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -3430,6 +3700,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -3542,8 +3813,10 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
@@ -3553,10 +3826,12 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
@@ -3564,14 +3839,19 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -3584,21 +3864,28 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -3606,6 +3893,8 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -3613,9 +3902,12 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -3627,16 +3919,20 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -3646,6 +3942,8 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -3657,7 +3955,9 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h \
   C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h \
@@ -3772,6 +4072,7 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h \
   C:/MinGW/x86_64-w64-mingw32/include/winsdkver.h \
+  _deps/crossguid-src/include/crossguid/guid.hpp \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_assert.h \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_atomic.h \
@@ -5196,12 +5497,10 @@ Velce.exe: C:/MinGW/x86_64-w64-mingw32/lib/crt2.o \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2.dll.a \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2main.a \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/libSDL2_image.dll.a \
-  CMakeFiles/Velce.dir/objects.a
+  C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/libyaml-cpp.a \
+  CMakeFiles/Velce.dir/objects.a \
+  _deps/crossguid-build/libcrossguid.a
 
-
-C:/MinGW/x86_64-w64-mingw32/include/synchapi.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h:
 
@@ -5237,13 +5536,11 @@ C:/MinGW/x86_64-w64-mingw32/include/apisetcconv.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmivlintrin.h:
 
-C:/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxbf16intrin.h:
+C:/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h:
 
-C:/MinGW/x86_64-w64-mingw32/lib/libmsvcrt.a:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxbf16intrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxifmaintrin.h:
 
@@ -5277,25 +5574,19 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx5124vnniwintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16intrin.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/excpt.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16vlintrin.h:
 
+C:/MinGW/x86_64-w64-mingw32/include/wctype.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bitalgintrin.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/wctype.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512cdintrin.h:
 
@@ -5315,11 +5606,11 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512erintrin.h:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsaveoptintrin.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512fp16intrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsaveoptintrin.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/guiddef.h:
 
@@ -5345,6 +5636,8 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512pfintrin.h:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clzerointrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h:
@@ -5362,6 +5655,10 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmi2vlintrin.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:
 
 C:/MinGW/x86_64-w64-mingw32/lib/libuser32.a:
 
@@ -5397,9 +5694,11 @@ C:/MinGW/x86_64-w64-mingw32/include/stdint.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Actor.h:
 
+C:/MinGW/x86_64-w64-mingw32/lib/libmoldname.a:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vp2intersectvlintrin.h:
 
-C:/MinGW/x86_64-w64-mingw32/lib/libmoldname.a:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxintrin.h:
 
@@ -5427,27 +5726,25 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h:
 
+C:/MinGW/x86_64-w64-mingw32/lib/libole32.a:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h:
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_metal.h:
 
-C:/MinGW/x86_64-w64-mingw32/lib/libole32.a:
-
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_haptic.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm3dnow.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/processtopologyapi.h:
-
-C:/Users/Adrian/Desktop/Velce/src/imgui_widgets.cpp:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h:
 
@@ -5459,15 +5756,45 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/shaintrin.h:
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_events.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
 
+C:/Users/Adrian/Desktop/Velce/src/imgui_widgets.cpp:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/excpt.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Velce.cpp:
+
+_deps/crossguid-src/include/crossguid/guid.hpp:
+
+C:/MinGW/x86_64-w64-mingw32/include/synchapi.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/enqcmdintrin.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h:
 
@@ -5483,13 +5810,21 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/wingdi.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h:
 
@@ -5506,6 +5841,10 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h:
 C:/MinGW/x86_64-w64-mingw32/include/virtdisk.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h:
+
+C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_mouse.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/fileapi.h:
 
@@ -5533,6 +5872,8 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/hresetintrin.h:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h:
@@ -5543,13 +5884,23 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h:
 
-C:/MinGW/x86_64-w64-mingw32/lib/libpthread.dll.a:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/sys/timeb.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map:
+
+C:/MinGW/x86_64-w64-mingw32/include/basetsd.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/limits.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/securityappcontainer.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_gesture.h:
 
@@ -5559,13 +5910,23 @@ C:/MinGW/x86_64-w64-mingw32/include/_mingw_unicode.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h:
 
-C:/MinGW/x86_64-w64-mingw32/lib/libkernel32.a:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Game.cpp:
 
@@ -5577,7 +5938,13 @@ C:/MinGW/x86_64-w64-mingw32/include/ktmtypes.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Editor.cpp:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype:
 
@@ -5587,11 +5954,19 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale:
 
+C:/MinGW/x86_64-w64-mingw32/include/minwindef.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare:
+
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_gamecontroller.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib:
 
@@ -5633,6 +6008,10 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list:
 
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:
+
+C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/close_code.h:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
 
 C:/MinGW/x86_64-w64-mingw32/include/jobapi.h:
@@ -5641,15 +6020,19 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
 
+C:/MinGW/x86_64-w64-mingw32/include/heapapi.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc:
+
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new:
+
+C:/MinGW/x86_64-w64-mingw32/lib/libgcc_s.a:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/winapifamily.h:
-
-C:/MinGW/x86_64-w64-mingw32/lib/libgcc_s.a:
-
-C:/MinGW/x86_64-w64-mingw32/lib/libmingwex.a:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept:
 
@@ -5675,9 +6058,13 @@ C:/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo:
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/rdseedintrin.h:
+
+C:/Users/Adrian/Desktop/Velce/src/imgui_tables.cpp:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
 
@@ -5688,10 +6075,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/systemtopologyapi.h:
 
@@ -5708,6 +6091,10 @@ C:/MinGW/x86_64-w64-mingw32/include/processenv.h:
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
+
+C:/MinGW/x86_64-w64-mingw32/include/wow64apiset.h:
+
+C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
@@ -5728,8 +6115,6 @@ C:/MinGW/x86_64-w64-mingw32/include/vadefs.h:
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/enqcmdintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/f16cintrin.h:
 
@@ -5765,19 +6150,15 @@ C:/Users/Adrian/Desktop/Velce/src/imstb_truetype.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/keylockerintrin.h:
 
-C:/MinGW/x86_64-w64-mingw32/include/utilapiset.h:
-
 C:/MinGW/x86_64-w64-mingw32/lib/libshell32.a:
+
+C:/MinGW/x86_64-w64-mingw32/include/utilapiset.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/lwpintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/lzcntintrin.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm3dnow.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/movdirintrin.h:
 
@@ -5803,12 +6184,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xtestintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/raointintrin.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/rdseedintrin.h:
-
-C:/Users/Adrian/Desktop/Velce/src/imgui_tables.cpp:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/rtmintrin.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/sgxintrin.h:
@@ -5818,10 +6193,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/smmintrin.h:
 C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdl2.h:
 
 C:/MinGW/x86_64-w64-mingw32/lib/crt2.o:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h:
 
@@ -5898,12 +6269,6 @@ C:/MinGW/x86_64-w64-mingw32/include/crtdefs.h:
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm:
 
 C:/MinGW/x86_64-w64-mingw32/include/float.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/limits.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/securityappcontainer.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/locale.h:
 
@@ -5987,10 +6352,6 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_main.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h:
-
-C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_mouse.h:
-
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_mutex.h:
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_pixels.h:
@@ -6017,10 +6378,6 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_video.h:
 
-C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/close_code.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:
-
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/include/SDL2/SDL_image.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/profileapi.h:
@@ -6031,10 +6388,6 @@ C:/MinGW/x86_64-w64-mingw32/include/fibersapi.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Animator.cpp:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:
-
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map:
 
 C:/Users/Adrian/Desktop/Velce/src/Animator.h:
@@ -6043,17 +6396,9 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h:
 
 C:/Users/Adrian/Desktop/Velce/src/Tile.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h:
-
 C:/MinGW/x86_64-w64-mingw32/include/windef.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc:
-
-C:/MinGW/x86_64-w64-mingw32/include/basetsd.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/namespaceapi.h:
 
@@ -6067,13 +6412,9 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
+C:/MinGW/x86_64-w64-mingw32/lib/libiconv.a:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream:
-
-C:/MinGW/x86_64-w64-mingw32/lib/libiconv.a:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator:
 
@@ -6097,16 +6438,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h:
 
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/wingdi.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h:
-
 C:/MinGW/x86_64-w64-mingw32/include/winnetwk.h:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h:
@@ -6122,12 +6453,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h:
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem:
-
-C:/MinGW/x86_64-w64-mingw32/include/heapapi.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h:
 
@@ -6145,10 +6470,6 @@ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc:
 
 C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc:
 
-C:/MinGW/x86_64-w64-mingw32/include/wow64apiset.h:
-
-C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
-
 C:/MinGW/x86_64-w64-mingw32/include/math.h:
 
 C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdlrenderer.h:
@@ -6158,8 +6479,6 @@ C:/Users/Adrian/Desktop/Velce/src/Sector.cpp:
 C:/Users/Adrian/Desktop/Velce/src/Tile.cpp:
 
 C:/Users/Adrian/Desktop/Velce/src/World.cpp:
-
-C:/MinGW/x86_64-w64-mingw32/lib/libgdi32.a:
 
 C:/MinGW/x86_64-w64-mingw32/include/apiset.h:
 
@@ -6178,8 +6497,6 @@ C:/MinGW/x86_64-w64-mingw32/include/imm.h:
 C:/MinGW/x86_64-w64-mingw32/include/libloaderapi.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/minwinbase.h:
-
-C:/MinGW/x86_64-w64-mingw32/include/minwindef.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/pshpack1.h:
 
@@ -6223,9 +6540,19 @@ C:/MinGW/x86_64-w64-mingw32/lib/libadvapi32.a:
 
 C:/MinGW/x86_64-w64-mingw32/lib/libcomdlg32.a:
 
+C:/MinGW/x86_64-w64-mingw32/lib/libgdi32.a:
+
+C:/MinGW/x86_64-w64-mingw32/lib/libkernel32.a:
+
 C:/MinGW/x86_64-w64-mingw32/lib/libmingw32.a:
 
+C:/MinGW/x86_64-w64-mingw32/lib/libmingwex.a:
+
+C:/MinGW/x86_64-w64-mingw32/lib/libmsvcrt.a:
+
 C:/MinGW/x86_64-w64-mingw32/lib/liboleaut32.a:
+
+C:/MinGW/x86_64-w64-mingw32/lib/libpthread.dll.a:
 
 C:/MinGW/x86_64-w64-mingw32/lib/libuuid.a:
 
@@ -6243,4 +6570,8 @@ C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libS
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/libSDL2_image.dll.a:
 
+C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/libyaml-cpp.a:
+
 CMakeFiles/Velce.dir/objects.a:
+
+_deps/crossguid-build/libcrossguid.a:

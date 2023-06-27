@@ -63,21 +63,40 @@ CMAKE_BINARY_DIR = C:\Users\Adrian\Desktop\Velce\build
 
 # The main recursive "all" target.
 all: CMakeFiles/Velce.dir/all
+all: _deps/crossguid-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: _deps/crossguid-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Velce.dir/clean
+clean: _deps/crossguid-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/crossguid-build
+
+# Recursive "all" directory target.
+_deps/crossguid-build/all: _deps/crossguid-build/CMakeFiles/crossguid.dir/all
+_deps/crossguid-build/all: _deps/crossguid-build/CMakeFiles/crossguid-test.dir/all
+.PHONY : _deps/crossguid-build/all
+
+# Recursive "preinstall" directory target.
+_deps/crossguid-build/preinstall:
+.PHONY : _deps/crossguid-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/crossguid-build/clean: _deps/crossguid-build/CMakeFiles/crossguid.dir/clean
+_deps/crossguid-build/clean: _deps/crossguid-build/CMakeFiles/crossguid-test.dir/clean
+.PHONY : _deps/crossguid-build/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Velce.dir
 
 # All Build rule for target.
-CMakeFiles/Velce.dir/all:
+CMakeFiles/Velce.dir/all: _deps/crossguid-build/CMakeFiles/crossguid.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target Velce"
@@ -85,7 +104,7 @@ CMakeFiles/Velce.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Velce.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Velce.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 0
 .PHONY : CMakeFiles/Velce.dir/rule
@@ -98,6 +117,58 @@ Velce: CMakeFiles/Velce.dir/rule
 CMakeFiles/Velce.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/clean
 .PHONY : CMakeFiles/Velce.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/crossguid-build/CMakeFiles/crossguid.dir
+
+# All Build rule for target.
+_deps/crossguid-build/CMakeFiles/crossguid.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=21,22 "Built target crossguid"
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/crossguid-build/CMakeFiles/crossguid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/crossguid-build/CMakeFiles/crossguid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 0
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid.dir/rule
+
+# Convenience name for target.
+crossguid: _deps/crossguid-build/CMakeFiles/crossguid.dir/rule
+.PHONY : crossguid
+
+# clean rule for target.
+_deps/crossguid-build/CMakeFiles/crossguid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid.dir/clean
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/crossguid-build/CMakeFiles/crossguid-test.dir
+
+# All Build rule for target.
+_deps/crossguid-build/CMakeFiles/crossguid-test.dir/all: _deps/crossguid-build/CMakeFiles/crossguid.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid-test.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid-test.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid-test.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid-test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=23,24,25 "Built target crossguid-test"
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid-test.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/crossguid-build/CMakeFiles/crossguid-test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/crossguid-build/CMakeFiles/crossguid-test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Adrian\Desktop\Velce\build\CMakeFiles 0
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid-test.dir/rule
+
+# Convenience name for target.
+crossguid-test: _deps/crossguid-build/CMakeFiles/crossguid-test.dir/rule
+.PHONY : crossguid-test
+
+# clean rule for target.
+_deps/crossguid-build/CMakeFiles/crossguid-test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid-test.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid-test.dir/clean
+.PHONY : _deps/crossguid-build/CMakeFiles/crossguid-test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

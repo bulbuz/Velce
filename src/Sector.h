@@ -1,6 +1,8 @@
 #pragma once
 
 #include <SDL.h>
+#include "imgui.h"
+#include <crossguid/guid.hpp>
 
 #include <iostream>
 #include <list>
@@ -33,10 +35,11 @@ namespace Velce {
         
         void RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE);
 
+        void DestroyGate(std::list<Gate>::iterator it);
+
         // debugging
         void PrintGrid();
-
-        void DestroyGate(std::list<Gate>::iterator it);
+        void PrintID();
 
     private:
         SDL_Renderer* renderer;
@@ -50,5 +53,8 @@ namespace Velce {
         // rect for editor representation
         SDL_Rect rect;
 
+        xg::Guid ID;
+
+    private:
     };
 }

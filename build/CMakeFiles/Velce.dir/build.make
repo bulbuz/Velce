@@ -73,285 +73,285 @@ CMakeFiles/Velce.dir/src/Actor.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Actor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Actor.cpp
 CMakeFiles/Velce.dir/src/Actor.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Velce.dir/src/Actor.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Actor.cpp.obj -MF CMakeFiles\Velce.dir\src\Actor.cpp.obj.d -o CMakeFiles\Velce.dir\src\Actor.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Actor.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Actor.cpp.obj -MF CMakeFiles\Velce.dir\src\Actor.cpp.obj.d -o CMakeFiles\Velce.dir\src\Actor.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Actor.cpp
 
 CMakeFiles/Velce.dir/src/Actor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Actor.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Actor.cpp > CMakeFiles\Velce.dir\src\Actor.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Actor.cpp > CMakeFiles\Velce.dir\src\Actor.cpp.i
 
 CMakeFiles/Velce.dir/src/Actor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Actor.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Actor.cpp -o CMakeFiles\Velce.dir\src\Actor.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Actor.cpp -o CMakeFiles\Velce.dir\src\Actor.cpp.s
 
 CMakeFiles/Velce.dir/src/Animator.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Animator.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Animator.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Animator.cpp
 CMakeFiles/Velce.dir/src/Animator.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Velce.dir/src/Animator.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Animator.cpp.obj -MF CMakeFiles\Velce.dir\src\Animator.cpp.obj.d -o CMakeFiles\Velce.dir\src\Animator.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Animator.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Animator.cpp.obj -MF CMakeFiles\Velce.dir\src\Animator.cpp.obj.d -o CMakeFiles\Velce.dir\src\Animator.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Animator.cpp
 
 CMakeFiles/Velce.dir/src/Animator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Animator.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Animator.cpp > CMakeFiles\Velce.dir\src\Animator.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Animator.cpp > CMakeFiles\Velce.dir\src\Animator.cpp.i
 
 CMakeFiles/Velce.dir/src/Animator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Animator.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Animator.cpp -o CMakeFiles\Velce.dir\src\Animator.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Animator.cpp -o CMakeFiles\Velce.dir\src\Animator.cpp.s
 
 CMakeFiles/Velce.dir/src/Camera.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Camera.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Camera.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Camera.cpp
 CMakeFiles/Velce.dir/src/Camera.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Velce.dir/src/Camera.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Camera.cpp.obj -MF CMakeFiles\Velce.dir\src\Camera.cpp.obj.d -o CMakeFiles\Velce.dir\src\Camera.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Camera.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Camera.cpp.obj -MF CMakeFiles\Velce.dir\src\Camera.cpp.obj.d -o CMakeFiles\Velce.dir\src\Camera.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Camera.cpp
 
 CMakeFiles/Velce.dir/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Camera.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Camera.cpp > CMakeFiles\Velce.dir\src\Camera.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Camera.cpp > CMakeFiles\Velce.dir\src\Camera.cpp.i
 
 CMakeFiles/Velce.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Camera.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Camera.cpp -o CMakeFiles\Velce.dir\src\Camera.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Camera.cpp -o CMakeFiles\Velce.dir\src\Camera.cpp.s
 
 CMakeFiles/Velce.dir/src/Editor.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Editor.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Editor.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Editor.cpp
 CMakeFiles/Velce.dir/src/Editor.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Velce.dir/src/Editor.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Editor.cpp.obj -MF CMakeFiles\Velce.dir\src\Editor.cpp.obj.d -o CMakeFiles\Velce.dir\src\Editor.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Editor.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Editor.cpp.obj -MF CMakeFiles\Velce.dir\src\Editor.cpp.obj.d -o CMakeFiles\Velce.dir\src\Editor.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Editor.cpp
 
 CMakeFiles/Velce.dir/src/Editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Editor.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Editor.cpp > CMakeFiles\Velce.dir\src\Editor.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Editor.cpp > CMakeFiles\Velce.dir\src\Editor.cpp.i
 
 CMakeFiles/Velce.dir/src/Editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Editor.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Editor.cpp -o CMakeFiles\Velce.dir\src\Editor.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Editor.cpp -o CMakeFiles\Velce.dir\src\Editor.cpp.s
 
 CMakeFiles/Velce.dir/src/Engine.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Engine.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Engine.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Engine.cpp
 CMakeFiles/Velce.dir/src/Engine.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Velce.dir/src/Engine.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Engine.cpp.obj -MF CMakeFiles\Velce.dir\src\Engine.cpp.obj.d -o CMakeFiles\Velce.dir\src\Engine.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Engine.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Engine.cpp.obj -MF CMakeFiles\Velce.dir\src\Engine.cpp.obj.d -o CMakeFiles\Velce.dir\src\Engine.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Engine.cpp
 
 CMakeFiles/Velce.dir/src/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Engine.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Engine.cpp > CMakeFiles\Velce.dir\src\Engine.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Engine.cpp > CMakeFiles\Velce.dir\src\Engine.cpp.i
 
 CMakeFiles/Velce.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Engine.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Engine.cpp -o CMakeFiles\Velce.dir\src\Engine.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Engine.cpp -o CMakeFiles\Velce.dir\src\Engine.cpp.s
 
 CMakeFiles/Velce.dir/src/Game.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Game.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Game.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Game.cpp
 CMakeFiles/Velce.dir/src/Game.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Velce.dir/src/Game.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Game.cpp.obj -MF CMakeFiles\Velce.dir\src\Game.cpp.obj.d -o CMakeFiles\Velce.dir\src\Game.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Game.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Game.cpp.obj -MF CMakeFiles\Velce.dir\src\Game.cpp.obj.d -o CMakeFiles\Velce.dir\src\Game.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Game.cpp
 
 CMakeFiles/Velce.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Game.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Game.cpp > CMakeFiles\Velce.dir\src\Game.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Game.cpp > CMakeFiles\Velce.dir\src\Game.cpp.i
 
 CMakeFiles/Velce.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Game.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Game.cpp -o CMakeFiles\Velce.dir\src\Game.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Game.cpp -o CMakeFiles\Velce.dir\src\Game.cpp.s
 
 CMakeFiles/Velce.dir/src/Gate.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Gate.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Gate.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Gate.cpp
 CMakeFiles/Velce.dir/src/Gate.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Velce.dir/src/Gate.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Gate.cpp.obj -MF CMakeFiles\Velce.dir\src\Gate.cpp.obj.d -o CMakeFiles\Velce.dir\src\Gate.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Gate.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Gate.cpp.obj -MF CMakeFiles\Velce.dir\src\Gate.cpp.obj.d -o CMakeFiles\Velce.dir\src\Gate.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Gate.cpp
 
 CMakeFiles/Velce.dir/src/Gate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Gate.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Gate.cpp > CMakeFiles\Velce.dir\src\Gate.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Gate.cpp > CMakeFiles\Velce.dir\src\Gate.cpp.i
 
 CMakeFiles/Velce.dir/src/Gate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Gate.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Gate.cpp -o CMakeFiles\Velce.dir\src\Gate.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Gate.cpp -o CMakeFiles\Velce.dir\src\Gate.cpp.s
 
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Player.cpp
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Velce.dir/src/Player.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Player.cpp.obj -MF CMakeFiles\Velce.dir\src\Player.cpp.obj.d -o CMakeFiles\Velce.dir\src\Player.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Player.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Player.cpp.obj -MF CMakeFiles\Velce.dir\src\Player.cpp.obj.d -o CMakeFiles\Velce.dir\src\Player.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Player.cpp
 
 CMakeFiles/Velce.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Player.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Player.cpp > CMakeFiles\Velce.dir\src\Player.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Player.cpp > CMakeFiles\Velce.dir\src\Player.cpp.i
 
 CMakeFiles/Velce.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Player.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Player.cpp -o CMakeFiles\Velce.dir\src\Player.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Player.cpp -o CMakeFiles\Velce.dir\src\Player.cpp.s
 
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Sector.cpp
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Velce.dir/src/Sector.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Sector.cpp.obj -MF CMakeFiles\Velce.dir\src\Sector.cpp.obj.d -o CMakeFiles\Velce.dir\src\Sector.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Sector.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Sector.cpp.obj -MF CMakeFiles\Velce.dir\src\Sector.cpp.obj.d -o CMakeFiles\Velce.dir\src\Sector.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Sector.cpp
 
 CMakeFiles/Velce.dir/src/Sector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Sector.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Sector.cpp > CMakeFiles\Velce.dir\src\Sector.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Sector.cpp > CMakeFiles\Velce.dir\src\Sector.cpp.i
 
 CMakeFiles/Velce.dir/src/Sector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Sector.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Sector.cpp -o CMakeFiles\Velce.dir\src\Sector.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Sector.cpp -o CMakeFiles\Velce.dir\src\Sector.cpp.s
 
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Tile.cpp
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Velce.dir/src/Tile.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Tile.cpp.obj -MF CMakeFiles\Velce.dir\src\Tile.cpp.obj.d -o CMakeFiles\Velce.dir\src\Tile.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Tile.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Tile.cpp.obj -MF CMakeFiles\Velce.dir\src\Tile.cpp.obj.d -o CMakeFiles\Velce.dir\src\Tile.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Tile.cpp
 
 CMakeFiles/Velce.dir/src/Tile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Tile.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Tile.cpp > CMakeFiles\Velce.dir\src\Tile.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Tile.cpp > CMakeFiles\Velce.dir\src\Tile.cpp.i
 
 CMakeFiles/Velce.dir/src/Tile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Tile.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Tile.cpp -o CMakeFiles\Velce.dir\src\Tile.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Tile.cpp -o CMakeFiles\Velce.dir\src\Tile.cpp.s
 
 CMakeFiles/Velce.dir/src/Velce.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Velce.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Velce.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Velce.cpp
 CMakeFiles/Velce.dir/src/Velce.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Velce.dir/src/Velce.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Velce.cpp.obj -MF CMakeFiles\Velce.dir\src\Velce.cpp.obj.d -o CMakeFiles\Velce.dir\src\Velce.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Velce.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Velce.cpp.obj -MF CMakeFiles\Velce.dir\src\Velce.cpp.obj.d -o CMakeFiles\Velce.dir\src\Velce.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Velce.cpp
 
 CMakeFiles/Velce.dir/src/Velce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Velce.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Velce.cpp > CMakeFiles\Velce.dir\src\Velce.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Velce.cpp > CMakeFiles\Velce.dir\src\Velce.cpp.i
 
 CMakeFiles/Velce.dir/src/Velce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Velce.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Velce.cpp -o CMakeFiles\Velce.dir\src\Velce.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Velce.cpp -o CMakeFiles\Velce.dir\src\Velce.cpp.s
 
 CMakeFiles/Velce.dir/src/World.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/World.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/World.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/World.cpp
 CMakeFiles/Velce.dir/src/World.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Velce.dir/src/World.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/World.cpp.obj -MF CMakeFiles\Velce.dir\src\World.cpp.obj.d -o CMakeFiles\Velce.dir\src\World.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\World.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/World.cpp.obj -MF CMakeFiles\Velce.dir\src\World.cpp.obj.d -o CMakeFiles\Velce.dir\src\World.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\World.cpp
 
 CMakeFiles/Velce.dir/src/World.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/World.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\World.cpp > CMakeFiles\Velce.dir\src\World.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\World.cpp > CMakeFiles\Velce.dir\src\World.cpp.i
 
 CMakeFiles/Velce.dir/src/World.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/World.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\World.cpp -o CMakeFiles\Velce.dir\src\World.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\World.cpp -o CMakeFiles\Velce.dir\src\World.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui.cpp
 CMakeFiles/Velce.dir/src/imgui.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Velce.dir/src/imgui.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui.cpp
 
 CMakeFiles/Velce.dir/src/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui.cpp > CMakeFiles\Velce.dir\src\imgui.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui.cpp > CMakeFiles\Velce.dir\src\imgui.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui.cpp -o CMakeFiles\Velce.dir\src\imgui.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui.cpp -o CMakeFiles\Velce.dir\src\imgui.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_demo.cpp
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_demo.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_demo.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_demo.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_demo.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_demo.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp
 
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_demo.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp > CMakeFiles\Velce.dir\src\imgui_demo.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp > CMakeFiles\Velce.dir\src\imgui_demo.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_demo.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp -o CMakeFiles\Velce.dir\src\imgui_demo.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_demo.cpp -o CMakeFiles\Velce.dir\src\imgui_demo.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_draw.cpp
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_draw.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_draw.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_draw.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_draw.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_draw.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp
 
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_draw.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp > CMakeFiles\Velce.dir\src\imgui_draw.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp > CMakeFiles\Velce.dir\src\imgui_draw.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_draw.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp -o CMakeFiles\Velce.dir\src\imgui_draw.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_draw.cpp -o CMakeFiles\Velce.dir\src\imgui_draw.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdl2.cpp
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp > CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp > CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_impl_sdl2.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp -o CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdl2.cpp -o CMakeFiles\Velce.dir\src\imgui_impl_sdl2.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_impl_sdlrenderer.cpp
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp > CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp > CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_impl_sdlrenderer.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp -o CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_impl_sdlrenderer.cpp -o CMakeFiles\Velce.dir\src\imgui_impl_sdlrenderer.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_tables.cpp
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_tables.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_tables.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_tables.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_tables.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp
 
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_tables.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp > CMakeFiles\Velce.dir\src\imgui_tables.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp > CMakeFiles\Velce.dir\src\imgui_tables.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_tables.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp -o CMakeFiles\Velce.dir\src\imgui_tables.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_tables.cpp -o CMakeFiles\Velce.dir\src\imgui_tables.cpp.s
 
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/imgui_widgets.cpp
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_widgets.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_widgets.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj -MF CMakeFiles\Velce.dir\src\imgui_widgets.cpp.obj.d -o CMakeFiles\Velce.dir\src\imgui_widgets.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp
 
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/imgui_widgets.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp > CMakeFiles\Velce.dir\src\imgui_widgets.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp > CMakeFiles\Velce.dir\src\imgui_widgets.cpp.i
 
 CMakeFiles/Velce.dir/src/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/imgui_widgets.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp -o CMakeFiles\Velce.dir\src\imgui_widgets.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\imgui_widgets.cpp -o CMakeFiles\Velce.dir\src\imgui_widgets.cpp.s
 
 # Object files for target Velce
 Velce_OBJECTS = \
@@ -399,6 +399,8 @@ Velce.exe: CMakeFiles/Velce.dir/src/imgui_tables.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/imgui_widgets.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/build.make
 Velce.exe: CMakeFiles/Velce.dir/compiler_depend.ts
+Velce.exe: _deps/crossguid-build/libcrossguid.a
+Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/libyaml-cpp.a
 Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2main.a
 Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2.dll.a
 Velce.exe: C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/libSDL2_image.dll.a

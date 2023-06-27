@@ -1,14 +1,14 @@
 #include "Sector.h"
 #include "Utils.h"
+#include "imgui.h"
 #include <string>
 
 using namespace Velce;
 
-Sector::Sector() {
-    
+Sector::Sector() : ID(xg::newGuid()) {
 }
 
-Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size) {
+Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size), ID(xg::newGuid()) {
     LOG("sector created!");
     grid.resize(size.y, std::vector<Tile>(size.x, Tile()));
 }
@@ -17,9 +17,16 @@ Sector::~Sector() {
     LOG("sector removed!");
     
     for (auto it = gates.begin(); it != gates.end(); it++) {
-        DestroyGate(it);
-        it--;
+        DestroyGate(it--);
     }
+}
+
+void Sector::PrintID() {
+    ImGui::Begin("debug");
+    ImGui::Text("guid: ");
+    ImGui::SameLine();
+    ImGui::Text("%s", ID.str().c_str());
+    ImGui::End();
 }
 
 void Sector::RemoveTile(Vec2 grid_pos) {

@@ -2,6 +2,8 @@ Velce.exe: \
   C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o \
   C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o \
   CMakeFiles\Velce.dir/objects.a \
+  _deps/crossguid-build/libcrossguid.a \
+  C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/libyaml-cpp.a \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2main.a \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2.dll.a \
   C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/libSDL2_image.dll.a \
@@ -46,6 +48,10 @@ C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32
 C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o:
 
 CMakeFiles\Velce.dir/objects.a:
+
+_deps/crossguid-build/libcrossguid.a:
+
+C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/lib/libyaml-cpp.a:
 
 C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/lib/libSDL2main.a:
 

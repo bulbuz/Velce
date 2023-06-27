@@ -128,6 +128,32 @@ Velce/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/build
 .PHONY : Velce/fast
 
+#=============================================================================
+# Target rules for targets named crossguid
+
+# Build rule for target.
+crossguid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 crossguid
+.PHONY : crossguid
+
+# fast build rule for target.
+crossguid/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid.dir/build
+.PHONY : crossguid/fast
+
+#=============================================================================
+# Target rules for targets named crossguid-test
+
+# Build rule for target.
+crossguid-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 crossguid-test
+.PHONY : crossguid-test
+
+# fast build rule for target.
+crossguid-test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\crossguid-build\CMakeFiles\crossguid-test.dir\build.make _deps/crossguid-build/CMakeFiles/crossguid-test.dir/build
+.PHONY : crossguid-test/fast
+
 src/Actor.obj: src/Actor.cpp.obj
 .PHONY : src/Actor.obj
 
@@ -593,6 +619,8 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Velce
+	@echo ... crossguid
+	@echo ... crossguid-test
 	@echo ... src/Actor.obj
 	@echo ... src/Actor.i
 	@echo ... src/Actor.s

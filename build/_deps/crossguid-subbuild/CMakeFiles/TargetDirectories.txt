@@ -1,0 +1,3 @@
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/CMakeFiles/crossguid-populate.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/CMakeFiles/rebuild_cache.dir

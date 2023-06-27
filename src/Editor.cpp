@@ -48,6 +48,11 @@ void Editor::Run() {
     dbg("grid_pos: ", mouse.grid_pos.x, mouse.grid_pos.y);
     dbg("sector delta: ", we.grabbed_delta.x, we.grabbed_delta.y);
 
+    if (cur_sector != nullptr) {
+        dbg("gate count: ", (int)cur_sector->GetGates()->size(), -1);
+        cur_sector->PrintID();
+    }
+
     WIN_WIDTH = std::min((int)ImGui::GetIO().DisplaySize.x, VIEWPORT_WIDTH);
     WIN_HEIGHT = std::min((int)ImGui::GetIO().DisplaySize.y, VIEWPORT_HEIGHT);
     if (context == Context::WORLD_EDITOR) {
@@ -237,7 +242,6 @@ void Editor::WorldEditor() {
 
                     we.sectors.push_back(Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
                     we.sectors.back().SetRect(box);
-
                 }
             mouse.OnRelease();
         }
@@ -268,17 +272,7 @@ void Editor::WorldEditor() {
 }
 
 void Editor::SaveMap() {
-    std::ofstream map_file(*CWD + "res/data/world_map.txt");
-
-    /*
-     *
-     * FORMAT OF world_map.txt
-     * ----------------------
-     *  int N - number of sectors
-     *
-     */
-
-    map_file.close();
+    YAML::Emitter out;
 }
 
 void Editor::RenderWorldEditor() {
