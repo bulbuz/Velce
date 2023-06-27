@@ -345,7 +345,6 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/MinGW/x86_64-w64-mingw32/include/assert.h \
  C:\Users\Adrian\Desktop\Velce\src\Debug.h \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:\Users\Adrian\Desktop\Velce\src\Utils.h \
  C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-src/include/crossguid/guid.hpp \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
@@ -369,8 +368,10 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+ C:\Users\Adrian\Desktop\Velce\src\Logger.h \
  C:\Users\Adrian\Desktop\Velce\src\Animator.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \

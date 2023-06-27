@@ -6,7 +6,7 @@
 #include <crossguid/guid.hpp>
 #include "imgui.h"
 
-#include "Debug.h"
+#include "Logger.h"
 
 #include <iostream>
 #include <string>
@@ -84,7 +84,7 @@ struct Spritesheet {
 
     void LoadImage(SDL_Renderer* renderer, std::string path) {
         texture = IMG_LoadTexture(renderer, path.c_str());
-        LOG(texture);
+        Logger::LOG(Logger::MODE::INFO, texture);
         if (texture == NULL)
             std::cerr << "Failed to load spritesheet! SDL_Error: " << SDL_GetError() << std::endl;
 

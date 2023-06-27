@@ -322,6 +322,30 @@ src/Gate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Gate.cpp.s
 .PHONY : src/Gate.cpp.s
 
+src/Logger.obj: src/Logger.cpp.obj
+.PHONY : src/Logger.obj
+
+# target to build an object file
+src/Logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.obj
+.PHONY : src/Logger.cpp.obj
+
+src/Logger.i: src/Logger.cpp.i
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -642,6 +666,9 @@ help:
 	@echo ... src/Gate.obj
 	@echo ... src/Gate.i
 	@echo ... src/Gate.s
+	@echo ... src/Logger.obj
+	@echo ... src/Logger.i
+	@echo ... src/Logger.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

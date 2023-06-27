@@ -1,4 +1,5 @@
 #include "Sector.h"
+#include "Logger.h"
 #include "Utils.h"
 #include "imgui.h"
 #include <string>
@@ -9,12 +10,12 @@ Sector::Sector() : ID(xg::newGuid()) {
 }
 
 Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size), ID(xg::newGuid()) {
-    LOG("sector created!");
+    Logger::LOG(Logger::MODE::INFO, "sector created!");
     grid.resize(size.y, std::vector<Tile>(size.x, Tile()));
 }
 
 Sector::~Sector() {
-    LOG("sector removed!");
+    Logger::LOG(Logger::MODE::INFO, "sector removed!");
     
     for (auto it = gates.begin(); it != gates.end(); it++) {
         DestroyGate(it--);

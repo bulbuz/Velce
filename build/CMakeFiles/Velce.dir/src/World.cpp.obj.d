@@ -359,10 +359,11 @@ CMakeFiles/Velce.dir/src/World.cpp.obj: \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/SDL_version.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/begin_code.h \
  C:/Users/Adrian/Desktop/Velce/res/vendor/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2/close_code.h \
- C:\Users\Adrian\Desktop\Velce\src\Debug.h \
+ C:\Users\Adrian\Desktop\Velce\src\Logger.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
  C:\Users\Adrian\Desktop\Velce\src\Tile.h \
- C:\Users\Adrian\Desktop\Velce\src\Actor.h
+ C:\Users\Adrian\Desktop\Velce\src\Actor.h \
+ C:\Users\Adrian\Desktop\Velce\src\Debug.h

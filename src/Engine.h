@@ -14,6 +14,7 @@
 
 #include "Editor.h"
 #include "Game.h"
+#include "Logger.h"
 #include "Player.h"
 
 namespace Velce {

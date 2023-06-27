@@ -169,7 +169,7 @@ private:
     void RenderGrid(int WIDTH, int HEIGHT);
     void RenderSectorTiles();
     void TilesetWindow();
-    void SaveMap();
+    void SaveWorld();
     void ResetSectorEditor();
     Sector* ClickedOnSector();
     SDL_FRect GetWorldGateRect(Gate* gate, SDL_Rect* sector_rect);

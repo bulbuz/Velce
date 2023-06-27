@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Velce.dir/src/Game.cpp.obj.d"
   "CMakeFiles/Velce.dir/src/Gate.cpp.obj"
   "CMakeFiles/Velce.dir/src/Gate.cpp.obj.d"
+  "CMakeFiles/Velce.dir/src/Logger.cpp.obj"
+  "CMakeFiles/Velce.dir/src/Logger.cpp.obj.d"
   "CMakeFiles/Velce.dir/src/Player.cpp.obj"
   "CMakeFiles/Velce.dir/src/Player.cpp.obj.d"
   "CMakeFiles/Velce.dir/src/Sector.cpp.obj"

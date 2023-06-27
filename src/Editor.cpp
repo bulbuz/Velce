@@ -118,7 +118,7 @@ void Editor::WorldEditor() {
     }
     ImGui::SameLine();
     if (ImGui::Button("Save map")) {
-        SaveMap();
+        SaveWorld();
     }
     ImGui::SameLine();
     if (ImGui::Button("Connect gates")) {
@@ -271,8 +271,10 @@ void Editor::WorldEditor() {
     RenderWorldEditor();
 }
 
-void Editor::SaveMap() {
-    YAML::Emitter out;
+void Editor::SaveWorld() {
+    for (auto sector : we.sectors) {
+        YAML::Emitter out;
+    }
 }
 
 void Editor::RenderWorldEditor() {

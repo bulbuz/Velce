@@ -1,4 +1,6 @@
 #include "Engine.h"
+#include "Logger.h"
+#include "imgui.h"
 
 using namespace Velce;
 
@@ -49,6 +51,7 @@ Engine::Engine(int w, int h) : WIN_WIDTH(w), WIN_HEIGHT(h) {
     editor = new Editor(renderer, WIN_WIDTH, WIN_HEIGHT, &CWD);
     is_running = true;
     run_game = false;
+
 }
 
 void Engine::HandleEvents() {
@@ -61,6 +64,10 @@ void Engine::HandleEvents() {
 }
 
 void Engine::Update() {
+    ImGui::Begin("Console");
+    ImGui::Text("%s", Logger::GetBuffer().c_str());
+    ImGui::End();
+
     {
         ImGui::Begin("Editor", NULL);
         SDL_SetRenderTarget(renderer, editor_buffer);
@@ -116,6 +123,7 @@ void Engine::Run() {
     Uint64 now = SDL_GetPerformanceCounter();
     Uint64 last = 0;
 
+    Logger::LOG(Logger::MODE::SYSTEM, "Initialized.");
     while (is_running) {
         last = now;
         now = SDL_GetPerformanceCounter();
@@ -129,6 +137,7 @@ void Engine::Run() {
         HandleEvents();
         Update();
         Render();
+
     }
 }
 

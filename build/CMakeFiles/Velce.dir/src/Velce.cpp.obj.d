@@ -457,6 +457,7 @@ CMakeFiles/Velce.dir/src/Velce.cpp.obj: \
  C:\Users\Adrian\Desktop\Velce\src\Debug.h \
  C:\Users\Adrian\Desktop\Velce\src\Gate.h \
  C:\Users\Adrian\Desktop\Velce\src\Utils.h \
+ C:\Users\Adrian\Desktop\Velce\src\Logger.h \
  C:\Users\Adrian\Desktop\Velce\src\Sector.h \
  C:\Users\Adrian\Desktop\Velce\src\Tile.h \
  C:\Users\Adrian\Desktop\Velce\src\Actor.h \
