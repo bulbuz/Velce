@@ -4,7 +4,6 @@
 #include "imgui.h"
 
 #include <crossguid/guid.hpp>
-#include <yaml-cpp/yaml.h>
 
 #include <algorithm>
 #include <fstream>

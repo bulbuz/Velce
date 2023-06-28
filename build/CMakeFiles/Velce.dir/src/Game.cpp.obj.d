@@ -372,6 +372,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
  C:\Users\Adrian\Desktop\Velce\src\Logger.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
  C:\Users\Adrian\Desktop\Velce\src\Animator.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -395,6 +396,7 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
  C:\Users\Adrian\Desktop\Velce\src\World.h \
  C:\Users\Adrian\Desktop\Velce\src\Sector.h \
+ C:\Users\Adrian\Desktop\Velce\src\SectorSerializer.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \

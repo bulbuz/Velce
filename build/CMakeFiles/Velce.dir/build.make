@@ -173,26 +173,11 @@ CMakeFiles/Velce.dir/src/Gate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Gate.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Gate.cpp -o CMakeFiles\Velce.dir\src\Gate.cpp.s
 
-CMakeFiles/Velce.dir/src/Logger.cpp.obj: CMakeFiles/Velce.dir/flags.make
-CMakeFiles/Velce.dir/src/Logger.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
-CMakeFiles/Velce.dir/src/Logger.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Logger.cpp
-CMakeFiles/Velce.dir/src/Logger.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Velce.dir/src/Logger.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Logger.cpp.obj -MF CMakeFiles\Velce.dir\src\Logger.cpp.obj.d -o CMakeFiles\Velce.dir\src\Logger.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Logger.cpp
-
-CMakeFiles/Velce.dir/src/Logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/Logger.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\Logger.cpp > CMakeFiles\Velce.dir\src\Logger.cpp.i
-
-CMakeFiles/Velce.dir/src/Logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Logger.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Logger.cpp -o CMakeFiles\Velce.dir\src\Logger.cpp.s
-
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Player.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Player.cpp
 CMakeFiles/Velce.dir/src/Player.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Velce.dir/src/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Velce.dir/src/Player.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Player.cpp.obj -MF CMakeFiles\Velce.dir\src\Player.cpp.obj.d -o CMakeFiles\Velce.dir\src\Player.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Player.cpp
 
 CMakeFiles/Velce.dir/src/Player.cpp.i: cmake_force
@@ -207,7 +192,7 @@ CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/Sector.cpp
 CMakeFiles/Velce.dir/src/Sector.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Velce.dir/src/Sector.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Velce.dir/src/Sector.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/Sector.cpp.obj -MF CMakeFiles\Velce.dir\src\Sector.cpp.obj.d -o CMakeFiles\Velce.dir\src\Sector.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\Sector.cpp
 
 CMakeFiles/Velce.dir/src/Sector.cpp.i: cmake_force
@@ -217,6 +202,21 @@ CMakeFiles/Velce.dir/src/Sector.cpp.i: cmake_force
 CMakeFiles/Velce.dir/src/Sector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/Sector.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\Sector.cpp -o CMakeFiles\Velce.dir\src\Sector.cpp.s
+
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj: CMakeFiles/Velce.dir/flags.make
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj: C:/Users/Adrian/Desktop/Velce/src/SectorSerializer.cpp
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj: CMakeFiles/Velce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Adrian\Desktop\Velce\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj -MF CMakeFiles\Velce.dir\src\SectorSerializer.cpp.obj.d -o CMakeFiles\Velce.dir\src\SectorSerializer.cpp.obj -c C:\Users\Adrian\Desktop\Velce\src\SectorSerializer.cpp
+
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Velce.dir/src/SectorSerializer.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adrian\Desktop\Velce\src\SectorSerializer.cpp > CMakeFiles\Velce.dir\src\SectorSerializer.cpp.i
+
+CMakeFiles/Velce.dir/src/SectorSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Velce.dir/src/SectorSerializer.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adrian\Desktop\Velce\src\SectorSerializer.cpp -o CMakeFiles\Velce.dir\src\SectorSerializer.cpp.s
 
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: CMakeFiles/Velce.dir/flags.make
 CMakeFiles/Velce.dir/src/Tile.cpp.obj: CMakeFiles/Velce.dir/includes_CXX.rsp
@@ -377,9 +377,9 @@ Velce_OBJECTS = \
 "CMakeFiles/Velce.dir/src/Engine.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Game.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Gate.cpp.obj" \
-"CMakeFiles/Velce.dir/src/Logger.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Player.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Sector.cpp.obj" \
+"CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Tile.cpp.obj" \
 "CMakeFiles/Velce.dir/src/Velce.cpp.obj" \
 "CMakeFiles/Velce.dir/src/World.cpp.obj" \
@@ -401,9 +401,9 @@ Velce.exe: CMakeFiles/Velce.dir/src/Editor.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Engine.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Game.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Gate.cpp.obj
-Velce.exe: CMakeFiles/Velce.dir/src/Logger.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Player.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Sector.cpp.obj
+Velce.exe: CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Tile.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/Velce.cpp.obj
 Velce.exe: CMakeFiles/Velce.dir/src/World.cpp.obj

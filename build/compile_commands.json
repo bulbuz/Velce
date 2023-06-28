@@ -43,12 +43,6 @@
 },
 {
   "directory": "C:/Users/Adrian/Desktop/Velce/build",
-  "command": "C:\\MinGW\\bin\\c++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Logger.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Logger.cpp",
-  "file": "C:/Users/Adrian/Desktop/Velce/src/Logger.cpp",
-  "output": "CMakeFiles/Velce.dir/src/Logger.cpp.obj"
-},
-{
-  "directory": "C:/Users/Adrian/Desktop/Velce/build",
   "command": "C:\\MinGW\\bin\\c++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Player.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Player.cpp",
   "file": "C:/Users/Adrian/Desktop/Velce/src/Player.cpp",
   "output": "CMakeFiles/Velce.dir/src/Player.cpp.obj"
@@ -58,6 +52,12 @@
   "command": "C:\\MinGW\\bin\\c++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\Sector.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\Sector.cpp",
   "file": "C:/Users/Adrian/Desktop/Velce/src/Sector.cpp",
   "output": "CMakeFiles/Velce.dir/src/Sector.cpp.obj"
+},
+{
+  "directory": "C:/Users/Adrian/Desktop/Velce/build",
+  "command": "C:\\MinGW\\bin\\c++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/Velce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\Velce.dir\\src\\SectorSerializer.cpp.obj -c C:\\Users\\Adrian\\Desktop\\Velce\\src\\SectorSerializer.cpp",
+  "file": "C:/Users/Adrian/Desktop/Velce/src/SectorSerializer.cpp",
+  "output": "CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj"
 },
 {
   "directory": "C:/Users/Adrian/Desktop/Velce/build",

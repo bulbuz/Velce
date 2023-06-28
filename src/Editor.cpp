@@ -41,6 +41,20 @@ Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) :
 }
 
 void Editor::Run() {
+
+    if (ImGui::BeginMenuBar()) {
+        if (ImGui::BeginMenu("File"))  {
+            if (ImGui::MenuItem("Save")) {
+                // TODO save
+            }
+            if (ImGui::MenuItem("Load")) {
+                // TODO load 
+            }
+            ImGui::EndMenu();
+        }
+        ImGui::EndMenuBar();
+    }
+
     Input();
 
     dbg("mouse.rel_pos: ", mouse.rel_pos.x, mouse.rel_pos.y);
@@ -61,6 +75,7 @@ void Editor::Run() {
         SectorEditor();
     }
 }
+
 
 void Editor::Input() {
     ImGuiIO io = ImGui::GetIO();
@@ -273,7 +288,7 @@ void Editor::WorldEditor() {
 
 void Editor::SaveWorld() {
     for (auto sector : we.sectors) {
-        YAML::Emitter out;
+        // not implemented
     }
 }
 

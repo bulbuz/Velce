@@ -12,6 +12,7 @@ Engine::Engine(int w, int h) : WIN_WIDTH(w), WIN_HEIGHT(h) {
         std::cerr << "Failed to initialize SDL! SDL_Error: " << SDL_GetError() << std::endl;
         exit(-1);
     }
+    Logger::LOG(Logger::MODE::SYSTEM, "Initialized SDL");
 
     #ifdef SDL_HINT_IME_SHOW_UI
         SDL_SetHint(SDL_HINT_IME_SHOW_UI, "1");
@@ -41,6 +42,7 @@ Engine::Engine(int w, int h) : WIN_WIDTH(w), WIN_HEIGHT(h) {
 
     SDL_SetWindowResizable(window, SDL_TRUE);
 #endif // RELEASE
+    Logger::LOG(Logger::MODE::SYSTEM, "Created ImGui context");
 
     game_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, WIN_WIDTH, WIN_HEIGHT);
     editor_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, WIN_WIDTH, WIN_HEIGHT);
@@ -69,7 +71,7 @@ void Engine::Update() {
     ImGui::End();
 
     {
-        ImGui::Begin("Editor", NULL);
+        ImGui::Begin("Editor", NULL, ImGuiWindowFlags_MenuBar);
         SDL_SetRenderTarget(renderer, editor_buffer);
         editor->Run();
 
@@ -98,8 +100,7 @@ void Engine::Update() {
 
         if (run_game) {
             game->Run(deltatime);
-        }
-        else {
+        } else {
             SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
             SDL_RenderClear(renderer);
         }

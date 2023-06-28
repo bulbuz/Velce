@@ -21,6 +21,9 @@ TODO
 - decouple editor apps?
 - save and load from file
 
+// ALL
+- change pointers to references where it's possible
+
 OPTIMIZATION
 ----------------
 - fix replace copies with pointers if possible

@@ -322,30 +322,6 @@ src/Gate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Gate.cpp.s
 .PHONY : src/Gate.cpp.s
 
-src/Logger.obj: src/Logger.cpp.obj
-.PHONY : src/Logger.obj
-
-# target to build an object file
-src/Logger.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.obj
-.PHONY : src/Logger.cpp.obj
-
-src/Logger.i: src/Logger.cpp.i
-.PHONY : src/Logger.i
-
-# target to preprocess a source file
-src/Logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.i
-.PHONY : src/Logger.cpp.i
-
-src/Logger.s: src/Logger.cpp.s
-.PHONY : src/Logger.s
-
-# target to generate assembly for a file
-src/Logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Logger.cpp.s
-.PHONY : src/Logger.cpp.s
-
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -393,6 +369,30 @@ src/Sector.s: src/Sector.cpp.s
 src/Sector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/Sector.cpp.s
 .PHONY : src/Sector.cpp.s
+
+src/SectorSerializer.obj: src/SectorSerializer.cpp.obj
+.PHONY : src/SectorSerializer.obj
+
+# target to build an object file
+src/SectorSerializer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/SectorSerializer.cpp.obj
+.PHONY : src/SectorSerializer.cpp.obj
+
+src/SectorSerializer.i: src/SectorSerializer.cpp.i
+.PHONY : src/SectorSerializer.i
+
+# target to preprocess a source file
+src/SectorSerializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/SectorSerializer.cpp.i
+.PHONY : src/SectorSerializer.cpp.i
+
+src/SectorSerializer.s: src/SectorSerializer.cpp.s
+.PHONY : src/SectorSerializer.s
+
+# target to generate assembly for a file
+src/SectorSerializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Velce.dir\build.make CMakeFiles/Velce.dir/src/SectorSerializer.cpp.s
+.PHONY : src/SectorSerializer.cpp.s
 
 src/Tile.obj: src/Tile.cpp.obj
 .PHONY : src/Tile.obj
@@ -666,15 +666,15 @@ help:
 	@echo ... src/Gate.obj
 	@echo ... src/Gate.i
 	@echo ... src/Gate.s
-	@echo ... src/Logger.obj
-	@echo ... src/Logger.i
-	@echo ... src/Logger.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
 	@echo ... src/Sector.obj
 	@echo ... src/Sector.i
 	@echo ... src/Sector.s
+	@echo ... src/SectorSerializer.obj
+	@echo ... src/SectorSerializer.i
+	@echo ... src/SectorSerializer.s
 	@echo ... src/Tile.obj
 	@echo ... src/Tile.i
 	@echo ... src/Tile.s

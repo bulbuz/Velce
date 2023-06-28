@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SDL.h>
+#include "SectorSerializer.h"
 #include "imgui.h"
 #include <crossguid/guid.hpp>
 
@@ -41,6 +42,8 @@ namespace Velce {
         void PrintGrid();
         void PrintID();
 
+        friend class SectorSerializer;
+
     private:
         SDL_Renderer* renderer;
         Vec2 size;
@@ -54,7 +57,5 @@ namespace Velce {
         SDL_Rect rect;
 
         xg::Guid ID;
-
-    private:
     };
 }
