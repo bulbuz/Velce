@@ -28,12 +28,12 @@ endif()
 add_executable(Velce ${all_SRCS})
 target_link_libraries(Velce PRIVATE crossguid)
 
-set(SDL2_DIR ${CMAKE_SOURCE_DIR}/res/vendor/SDL2-2.26.5/cmake/)
-set(SDL2_image_DIR ${CMAKE_SOURCE_DIR}/res/vendor/SDL2_image-2.6.3/cmake/)
+#set(SDL2_DIR ${CMAKE_SOURCE_DIR}/res/vendor/SDL2-2.26.5/cmake/)
+#set(SDL2_image_DIR ${CMAKE_SOURCE_DIR}/res/vendor/SDL2_image-2.6.3/cmake/)
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 
-set(yaml-cpp_DIR res/vendor/YAML_CPP/lib/cmake/yaml-cpp/)
+#set(yaml-cpp_DIR res/vendor/YAML_CPP/lib/cmake/yaml-cpp/)
 find_package(yaml-cpp REQUIRED)
 target_link_libraries(Velce PRIVATE yaml-cpp)
 
@@ -45,4 +45,4 @@ target_include_directories( Velce
 	PUBLIC res/vendor/imgui/src/
 )
 
-target_link_libraries(Velce PUBLIC ${SDL2_LIBRARIES} SDL2_image::SDL2_image mingw32)
+target_link_libraries(Velce PUBLIC ${SDL2_LIBRARIES} SDL2_image::SDL2_image)

@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-src"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-build"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/tmp"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src"
-  "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-src"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-build"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/tmp"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src"
+  "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/Adrian/Desktop/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/bulbus/dev/Velce/build/_deps/crossguid-subbuild/crossguid-populate-prefix/src/crossguid-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

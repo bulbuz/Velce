@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libcrossguid.a"
+  "libcrossguid-dgb.a"
 )

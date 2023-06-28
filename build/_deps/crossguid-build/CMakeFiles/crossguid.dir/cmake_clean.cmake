@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/crossguid.dir/src/guid.cpp.obj"
-  "CMakeFiles/crossguid.dir/src/guid.cpp.obj.d"
-  "libcrossguid.a"
-  "libcrossguid.pdb"
+  "CMakeFiles/crossguid.dir/src/guid.cpp.o"
+  "CMakeFiles/crossguid.dir/src/guid.cpp.o.d"
+  "libcrossguid-dgb.a"
+  "libcrossguid-dgb.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

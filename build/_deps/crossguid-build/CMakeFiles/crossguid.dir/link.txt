@@ -1,2 +1,2 @@
-C:\MinGW\bin\ar.exe qc libcrossguid.a CMakeFiles/crossguid.dir/src/guid.cpp.obj
-C:\MinGW\bin\ranlib.exe libcrossguid.a
+/usr/bin/ar qc libcrossguid-dgb.a CMakeFiles/crossguid.dir/src/guid.cpp.o
+/usr/bin/ranlib libcrossguid-dgb.a

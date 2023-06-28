@@ -1,13 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/crossguid-test.dir/link.d"
-  "CMakeFiles/crossguid-test.dir/test/Test.cpp.obj"
-  "CMakeFiles/crossguid-test.dir/test/Test.cpp.obj.d"
-  "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.obj"
-  "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.obj.d"
-  "crossguid-test.exe"
-  "crossguid-test.exe.manifest"
+  "CMakeFiles/crossguid-test.dir/test/Test.cpp.o"
+  "CMakeFiles/crossguid-test.dir/test/Test.cpp.o.d"
+  "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o"
+  "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o.d"
+  "crossguid-test"
   "crossguid-test.pdb"
-  "libcrossguid-test.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
