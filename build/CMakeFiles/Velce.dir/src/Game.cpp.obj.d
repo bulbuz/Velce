@@ -397,11 +397,66 @@ CMakeFiles/Velce.dir/src/Game.cpp.obj: \
  C:\Users\Adrian\Desktop\Velce\src\World.h \
  C:\Users\Adrian\Desktop\Velce\src\Sector.h \
  C:\Users\Adrian\Desktop\Velce\src\SectorSerializer.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/yaml.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/parser.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/dll.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/emitter.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/binary.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/emitterdef.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/emittermanip.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/null.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/ostream_wrapper.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/emitterstyle.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/stlemitter.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
- C:\Users\Adrian\Desktop\Velce\src\Gate.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
  C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/exceptions.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/mark.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/noexcept.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/traits.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/node.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/iterator_fwd.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/ptr.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/type.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/impl.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/memory.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/node.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/node_ref.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/node_data.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/node_iterator.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/iterator.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/iterator.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/convert.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/valarray \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.tcc \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_before.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/slice_array.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_after.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice_array.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/mask_array.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/indirect_array.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/detail/impl.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/parse.h \
+ C:/Users/Adrian/Desktop/Velce/res/vendor/YAML_CPP/include/yaml-cpp/node/emit.h \
+ C:\Users\Adrian\Desktop\Velce\src\Gate.h \
  C:\Users\Adrian\Desktop\Velce\src\Tile.h

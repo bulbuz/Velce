@@ -1,5 +1,5 @@
-
 #include "Editor.h"
+#include "SectorSerializer.h"
 #include "Utils.h"
 #include "imgui.h"
 
@@ -287,9 +287,6 @@ void Editor::WorldEditor() {
 }
 
 void Editor::SaveWorld() {
-    for (auto sector : we.sectors) {
-        // not implemented
-    }
 }
 
 void Editor::RenderWorldEditor() {
@@ -316,9 +313,7 @@ void Editor::RenderWorldEditor() {
 
     for (auto& sector : we.sectors) {
         SDL_Rect* rect = sector.GetRect();
-        SDL_FRect sector_rect{ (float)(rect->x * TILE_SIZE * we.zoom + we.scroll.x), 
-            (float)(rect->y * TILE_SIZE * we.zoom + we.scroll.y),
-            (float)(rect->w * TILE_SIZE * we.zoom), (float)(rect->h * TILE_SIZE * we.zoom)};
+        SDL_FRect sector_rect = transform_rect(*rect, we.scroll, we.zoom, TILE_SIZE);
 
         SDL_SetRenderDrawColor(renderer, sector_color.r, sector_color.g, sector_color.b, 255);
         SDL_RenderFillRectF(renderer, &sector_rect);
@@ -373,12 +368,9 @@ SDL_FRect Editor::GetWorldGateRect(Gate* gate, SDL_Rect* sector_rect) {
     gate_world_rect.w = (float) gate_rect->w / blocks_per_tile;
     gate_world_rect.h = (float) gate_rect->h / blocks_per_tile;
 
-    gate_world_rect.x = gate_world_rect.x * TILE_SIZE * we.zoom + we.scroll.x;
-    gate_world_rect.y = gate_world_rect.y * TILE_SIZE * we.zoom + we.scroll.y;
-    gate_world_rect.w *= TILE_SIZE * we.zoom;
-    gate_world_rect.h *= TILE_SIZE * we.zoom;
+    SDL_FRect transformed = transform_rect(gate_world_rect, we.scroll, we.zoom, TILE_SIZE);
 
-    return gate_world_rect;
+    return transformed;
 }
 
 void Editor::RenderGrid(int WIDTH, int HEIGHT) {
@@ -584,9 +576,7 @@ void Editor::SectorEditor() {
         std::list<Gate>* gates = cur_sector->GetGates();
         for (auto& gate : *gates) {
             SDL_Rect* rect = gate.GetRect();
-            SDL_FRect r{ (float)(rect->x * TILE_SIZE * se.zoom + se.scroll.x), (float)(rect->y * TILE_SIZE * se.zoom + se.scroll.y),
-                (float)(rect->w * TILE_SIZE * se.zoom), (float)(rect->h * TILE_SIZE * se.zoom)};
-
+            SDL_FRect r = transform_rect(*rect, se.scroll, se.zoom, TILE_SIZE);
             SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
             SDL_RenderDrawRectF(renderer, &r);
         }

@@ -1,5 +1,9 @@
 #pragma once
 
+#include <yaml-cpp/yaml.h>
+
+#include "Sector.h"
+
 #include <string>
 
 namespace Velce {    

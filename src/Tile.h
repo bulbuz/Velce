@@ -2,7 +2,6 @@
 
 #include <SDL.h>
 
-#include "Actor.h"
 #include "Utils.h"
 
 /*

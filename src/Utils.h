@@ -98,6 +98,22 @@ struct Spritesheet {
     }
 };
 
+// transforms virtual rect to fit with scroll etc.
+inline SDL_FRect transform_rect(SDL_Rect rect, Vec2 scroll, double zoom, double TILE_SIZE) {
+    SDL_FRect ret{(float) (rect.x * zoom * TILE_SIZE + scroll.x), (float) (rect.y * zoom * TILE_SIZE + scroll.y),
+        (float) (rect.w * TILE_SIZE * zoom), (float) (rect.h * TILE_SIZE * zoom)};
+
+    return ret;
+}
+
+// transforms virtual rect to fit with scroll etc.
+inline SDL_FRect transform_rect(SDL_FRect rect, Vec2 scroll, double zoom, double TILE_SIZE) {
+    SDL_FRect ret{(float) (rect.x * zoom * TILE_SIZE + scroll.x), (float) (rect.y * zoom * TILE_SIZE + scroll.y),
+        (float) (rect.w * TILE_SIZE * zoom), (float) (rect.h * TILE_SIZE * zoom)};
+
+    return ret;
+}
+
 // structure for animation settings
 struct AnimConfig {
     int width;
