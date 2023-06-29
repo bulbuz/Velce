@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\crossguid-test.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\crossguid-test.dir/objects.a @CMakeFiles\crossguid-test.dir\objects1.rsp
-C:\MinGW\bin\c++.exe -O3 -DNDEBUG -Wl,--dependency-file,CMakeFiles\crossguid-test.dir\link.d -Wl,--whole-archive CMakeFiles\crossguid-test.dir/objects.a -Wl,--no-whole-archive -o crossguid-test.exe -Wl,--out-implib,libcrossguid-test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\crossguid-test.dir\linkLibs.rsp
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o" "CMakeFiles/crossguid-test.dir/test/Test.cpp.o" -o crossguid-test  libcrossguid.a /usr/lib/libuuid.so 

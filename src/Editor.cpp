@@ -513,7 +513,7 @@ void Editor::SectorEditor() {
         if (InRangeEx(mouse.grid_pos.x, 0, cur_sector->GetSize().x) && 
                 InRangeEx(mouse.grid_pos.y, 0, cur_sector->GetSize().y)) {
             if (se.mode == Mode::CREATE) {
-                if (se.cur_tile.GetSpritesheetID() != -1) {
+                if (se.cur_tile.GetSpritesheetID().isValid()) {
                     cur_sector->SetTile(se.cur_tile, mouse.grid_pos);
                 }
             } else if (se.mode == Mode::DELETE) {

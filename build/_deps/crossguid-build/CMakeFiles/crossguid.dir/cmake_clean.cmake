@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/crossguid.dir/src/guid.cpp.obj"
-  "CMakeFiles/crossguid.dir/src/guid.cpp.obj.d"
+  "CMakeFiles/crossguid.dir/src/guid.cpp.o"
+  "CMakeFiles/crossguid.dir/src/guid.cpp.o.d"
   "libcrossguid.a"
   "libcrossguid.pdb"
 )
