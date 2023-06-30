@@ -6,25 +6,35 @@
 #include <string>
 
 #include "Player.h"
-#include "World.h"
+#include "Sector.h"
 
-namespace Velce
-{
+namespace Velce {
+
     class Game {
+
     public:
-        Game(SDL_Renderer* renderer, int w, int h, std::string CWD);
+
+        Game(SDL_Renderer* renderer, int w, int h, std::string CWD, Sector* sector);
         void Run(double dt);
+
+    private:
+
+        Sector* sector;
+        SDL_Renderer* renderer;
+
+        // display dimension
+        const int WIN_WIDTH;
+        const int WIN_HEIGHT;
+
+        Player player;
+
+        std::string CWD;
+
+        friend class Engine;
+
     private:
         void Render();
         void Input();
         void Update(double dt);
-
-        const int WIN_WIDTH;
-        const int WIN_HEIGHT;
-
-        SDL_Renderer* renderer;
-        Player player;
-
-        std::string CWD;
     };
 } // namespace Velce

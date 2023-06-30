@@ -8,9 +8,6 @@
 
 using namespace Velce;
 
-Sector::Sector() : ID(xg::newGuid()) {
-}
-
 Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size), ID(xg::newGuid()) {
     Logger::LOG(Logger::MODE::INFO, "sector created!");
 }
@@ -40,7 +37,6 @@ void Sector::SetTile(Tile tile, Vec2 grid_pos) {
 }
 
 void Sector::AddSpritesheet(Spritesheet sheet) {
-    // spritesheets.push_back(sheet);
 
     // assign identifier to spritesheet
     spritesheets[xg::newGuid()] = sheet;
@@ -54,15 +50,6 @@ xg::Guid Sector::GetSpritesheetID(Spritesheet* sheet) {
             return id;
         }
     }
-    /*
-    int i = 0;
-    for (auto sh : spritesheets) {
-        if (sh.path == sheet->path)
-            return i;
-        i++;
-    }
-    */
-
     // check if id is valid with xg::Guid.isValid()
     return xg::Guid();
 }
@@ -107,12 +94,6 @@ void Sector::AddGate(Gate gate) {
     gates.push_back(gate);
 }
 
-
 std::list<Gate>* Sector::GetGates() {
     return &gates;
-}
-
-// debugging purposes
-void Sector::PrintGrid() {
-
 }

@@ -3,25 +3,20 @@ TODO
 ----------------
 
 // engine
-- SDL_Texture wrapper class? (automatic cleanup)
-- input class (potentially command pattern)
 - fix actor class stuff
 - check for exceptions
 - remove width and height members from AnimConfig struct and use the spritesheets instead
+- edit current path to project dir
 
 // game
 
 // editor
-- REMOVABLE
 - disable selection by clicking elsewhere
-- save world layout
-
 - save sector editor settings by a struct
 - layers
-- decouple editor apps?
 - save and load from file
 
-// ALL
+// GENERAL 
 - change pointers to references where it's possible
 
 OPTIMIZATION
@@ -29,8 +24,3 @@ OPTIMIZATION
 - fix replace copies with pointers if possible
 - modify the animation system to not use multiple copies of the spritesheet texture
 - replace maps with unordered_maps where necessary
-
-NOTES
-----------------
-The world object should manage all the sector switching and handle loading/unloading with 
-the help of a hash table storing the entrance connections

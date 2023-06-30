@@ -23,7 +23,6 @@ YAML::Emitter& operator << (YAML::Emitter& out, const std::pair<int, int> pair) 
     return out;
 }
 
-
 SectorSerializer::SectorSerializer(const Sector& sector) 
     : sector(sector) {
 }

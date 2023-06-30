@@ -16,7 +16,6 @@
 #include "Gate.h"
 #include "Sector.h"
 #include "Utils.h"
-#include "World.h"
 
 using namespace Velce;
 
@@ -88,12 +87,11 @@ public:
     void WorldEditor();
     void SectorEditor();
     void Input();
+    Sector* GetSector(); // Get playtest sector
 
 private:
     enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE};
     enum class Mode { SELECT, MOVE, CREATE, DELETE, CREATE_GATE, REMOVE_GATE, CONNECT, NONE };
-
-    World* world;
 
     SDL_Renderer* renderer;
     const int VIEWPORT_WIDTH;
@@ -131,7 +129,7 @@ private:
         int WORLD_HEIGHT;
 
         Vec2 scroll;
-        std::list<Sector> sectors;
+        std::list<Sector*> sectors;
 
         double zoom;
 

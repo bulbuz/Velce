@@ -20,7 +20,7 @@
 namespace Velce {
 	class Engine {
 	public:
-		void Run();
+		void Start();
 		Engine(int w, int h);
 		~Engine();
 
@@ -34,20 +34,23 @@ namespace Velce {
 		Editor* editor;
 		Game* game;
 		double deltatime;
-		bool is_running;
 
-		void Render();
-		void Update();
-		void HandleEvents();
-		void OnClose();
+		bool run_engine;
+		bool run_game;
+        bool run_editor;
 
 		SDL_Texture* game_buffer;
 		SDL_Texture* editor_buffer;
 
-		bool run_game;
 
 		// current working directory path
 		std::string CWD;
+    private:
+		void Render();
+		void Update();
+		void HandleEvents();
+		void OnClose();
+        void Layout();
 	};
 }
 

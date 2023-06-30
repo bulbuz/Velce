@@ -19,8 +19,11 @@ Engine::Engine(int w, int h) : WIN_WIDTH(w), WIN_HEIGHT(h) {
     #endif
 
     IMG_Init(IMG_INIT_PNG);
+    uint32_t window_flags = SDL_WINDOW_SHOWN;
+    window_flags |= SDL_WINDOW_MAXIMIZED;
+    window_flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
 
-    window = SDL_CreateWindow("Velce", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIN_WIDTH, WIN_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_MAXIMIZED);
+    window = SDL_CreateWindow("Velce", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIN_WIDTH, WIN_HEIGHT, window_flags);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
 #ifndef RELEASE
@@ -51,26 +54,27 @@ Engine::Engine(int w, int h) : WIN_WIDTH(w), WIN_HEIGHT(h) {
 
     game = nullptr;
     editor = new Editor(renderer, WIN_WIDTH, WIN_HEIGHT, &CWD);
-    is_running = true;
-    run_game = false;
 
+    run_engine = true;
+    run_editor = true;
+    run_game = false;
 }
 
 void Engine::HandleEvents() {
     while (SDL_PollEvent(&event)) {
         ImGui_ImplSDL2_ProcessEvent(&event);
         if (event.type == SDL_QUIT) {
-            is_running = false;
+            run_engine= false;
         }
     }
 }
 
-void Engine::Update() {
+void Engine::Layout() {
     ImGui::Begin("Console");
     ImGui::Text("%s", Logger::GetBuffer().c_str());
     ImGui::End();
 
-    {
+    if (run_editor) {
         ImGui::Begin("Editor", NULL, ImGuiWindowFlags_MenuBar);
         SDL_SetRenderTarget(renderer, editor_buffer);
         editor->Run();
@@ -81,32 +85,40 @@ void Engine::Update() {
     }
 
     {
-        SDL_SetRenderTarget(renderer, game_buffer);
-
         ImGui::Begin("Game");
         if (ImGui::Button("Play")) {
-            delete game;
-            game = nullptr;
-            game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD);
             run_game = 1;
         }
 
         ImGui::SameLine();
         if (ImGui::Button("Stop")) {
             run_game = 0;
-            delete game;
-            game = nullptr;
         }
-
-        if (run_game) {
-            game->Run(deltatime);
-        } else {
-            SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-            SDL_RenderClear(renderer);
-        }
-        ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
 
         ImGui::End();
+    }
+}
+
+void Engine::Update() {
+    Layout();
+    if (run_game) {
+        Sector* sector = editor->GetSector();
+        if (game == nullptr && sector != nullptr) {
+            game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD, sector);
+            run_editor = false;
+        }
+
+        if (game != nullptr) {
+            ImGui::Begin("Game");
+            SDL_SetRenderTarget(renderer, game_buffer);
+            ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
+            ImGui::End();
+            game->Run(deltatime);
+        }
+    } else {
+        run_editor = true;
+        delete game;
+        game = nullptr;
     }
 }
 
@@ -120,12 +132,12 @@ void Engine::Render() {
     SDL_RenderPresent(renderer);
 }
 
-void Engine::Run() {
-    Uint64 now = SDL_GetPerformanceCounter();
-    Uint64 last = 0;
+void Engine::Start() {
+    uint64_t now = SDL_GetPerformanceCounter();
+    uint64_t last = 0;
 
     Logger::LOG(Logger::MODE::SYSTEM, "Initialized.");
-    while (is_running) {
+    while (run_engine) {
         last = now;
         now = SDL_GetPerformanceCounter();
         deltatime = (double)((now - last) / (double)(SDL_GetPerformanceFrequency()));
@@ -135,10 +147,11 @@ void Engine::Run() {
         ImGui_ImplSDL2_NewFrame();
         ImGui::NewFrame();
 
+        ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+
         HandleEvents();
         Update();
         Render();
-
     }
 }
 

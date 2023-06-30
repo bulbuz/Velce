@@ -77,6 +77,9 @@ void Editor::Run() {
     }
 }
 
+Sector* Editor::GetSector() {
+    return cur_sector;
+}
 
 void Editor::Input() {
     ImGuiIO io = ImGui::GetIO();
@@ -109,8 +112,8 @@ Sector* Editor::ClickedOnSector() {
 
     // check which sector was selected
     for (auto& sector : we.sectors) {
-        if (SDL_PointInRect(&p, sector.GetRect()))
-            return &sector;
+        if (SDL_PointInRect(&p, sector->GetRect()))
+            return sector;
     }
 
     return nullptr;
@@ -170,7 +173,7 @@ void Editor::WorldEditor() {
 
             // remove sector if deleted
             for (auto it = we.sectors.begin(); it != we.sectors.end(); it++) {
-                if (&*it == cur_sector) {
+                if (*it == cur_sector) {
                     cur_sector = nullptr;
                     we.sectors.erase(it);
                     break;
@@ -230,14 +233,14 @@ void Editor::WorldEditor() {
                 break;
 
             for (auto& sector : we.sectors) {
-                if (InRange(mouse.grid_pos.x, sector.GetRect()->x, sector.GetRect()->x + sector.GetRect()->w)
-                    && InRange(mouse.grid_pos.y, sector.GetRect()->y, sector.GetRect()->y + sector.GetRect()->h)) {
-                    for (auto& gate : *sector.GetGates()) {
+                if (InRange(mouse.grid_pos.x, sector->GetRect()->x, sector->GetRect()->x + sector->GetRect()->w)
+                    && InRange(mouse.grid_pos.y, sector->GetRect()->y, sector->GetRect()->y + sector->GetRect()->h)) {
+                    for (auto& gate : *sector->GetGates()) {
                         SDL_FPoint m_pos{(float) mouse.rel_pos.x, (float) mouse.rel_pos.y};
-                        SDL_FRect r = GetWorldGateRect(&gate, sector.GetRect());
+                        SDL_FRect r = GetWorldGateRect(&gate, sector->GetRect());
                         if (SDL_PointInFRect(&m_pos, &r)) {
                             we.selected_gate = &gate;
-                            we.gate_sector = &sector;
+                            we.gate_sector = sector;
                         }
                     }
                 }
@@ -256,19 +259,19 @@ void Editor::WorldEditor() {
                     
                     // CREATE THE ACTUAL SECTOR
 
-                    we.sectors.push_back(Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
-                    we.sectors.back().SetRect(box);
+                    we.sectors.push_back(new Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
+                    we.sectors.back()->SetRect(box);
                 }
             mouse.OnRelease();
         }
 
         if (we.mode == Mode::CONNECT && we.selected_gate != nullptr) {
             for (auto& sector : we.sectors) {
-                if (InRange(mouse.grid_pos.x, sector.GetRect()->x, sector.GetRect()->x + sector.GetRect()->w)
-                    && InRange(mouse.grid_pos.y, sector.GetRect()->y, sector.GetRect()->y + sector.GetRect()->h)) {
-                    for (auto& gate : *sector.GetGates()) {
+                if (InRange(mouse.grid_pos.x, sector->GetRect()->x, sector->GetRect()->x + sector->GetRect()->w)
+                    && InRange(mouse.grid_pos.y, sector->GetRect()->y, sector->GetRect()->y + sector->GetRect()->h)) {
+                    for (auto& gate : *sector->GetGates()) {
                         SDL_FPoint m_pos{(float) mouse.rel_pos.x, (float) mouse.rel_pos.y};
-                        SDL_FRect r = GetWorldGateRect(&gate, sector.GetRect());
+                        SDL_FRect r = GetWorldGateRect(&gate, sector->GetRect());
                         if (SDL_PointInFRect(&m_pos, &r) && &gate != we.selected_gate) {
                             we.selected_gate->AddEndpoint(&gate);
                             gate.AddEndpoint(we.selected_gate);
@@ -313,7 +316,7 @@ void Editor::RenderWorldEditor() {
     // draw created sectors
 
     for (auto& sector : we.sectors) {
-        SDL_Rect* rect = sector.GetRect();
+        SDL_Rect* rect = sector->GetRect();
         SDL_FRect sector_rect = transform_rect(*rect, we.scroll, we.zoom, TILE_SIZE);
 
         SDL_SetRenderDrawColor(renderer, sector_color.r, sector_color.g, sector_color.b, 255);
@@ -326,7 +329,7 @@ void Editor::RenderWorldEditor() {
 
 
         // draw gates relative to the sectors
-        std::list<Gate>* gates = sector.GetGates();
+        std::list<Gate>* gates = sector->GetGates();
         for (auto& gate : *gates) {
             SDL_Rect* gate_rect = gate.GetRect();
             SDL_FRect gate_world_rect = GetWorldGateRect(&gate, rect);
@@ -344,7 +347,7 @@ void Editor::RenderWorldEditor() {
     }
 
     for (auto& sector : we.sectors) {
-        for (auto& gate : *sector.GetGates()) {
+        for (auto& gate : *sector->GetGates()) {
             for (auto& endpoint : gate.GetEndpoints()) {
                 SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 
@@ -395,6 +398,19 @@ void Editor::RenderGrid(int WIDTH, int HEIGHT) {
             SDL_FRect tile{ x, y, w, h};
             SDL_SetRenderDrawColor(renderer, grid_color.r, grid_color.g, grid_color.b, 255);
             SDL_RenderDrawRectF(renderer, &tile);
+        }
+    }
+    if (context == Context::SECTOR_EDITOR) {
+        for (int i = 0; i < HEIGHT; i += blocks_per_tile) {
+            for (int j = 0; j < WIDTH; j += blocks_per_tile) {
+                float x = j * TILE_SIZE * zoom + scroll.x;
+                float y = i * TILE_SIZE * zoom + scroll.y;
+                float w = TILE_SIZE * zoom * blocks_per_tile;
+                float h = TILE_SIZE * zoom * blocks_per_tile;
+                SDL_FRect tile{ x, y, w, h};
+                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+                SDL_RenderDrawRectF(renderer, &tile);
+            }
         }
     }
 }
