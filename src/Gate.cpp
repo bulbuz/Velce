@@ -1,5 +1,6 @@
 #include "Gate.h"
 #include "Utils.h"
+#include "crossguid/guid.hpp"
 
 using namespace Velce;
 
@@ -7,7 +8,7 @@ Gate::Gate() {
     
 }
 
-Gate::Gate(SDL_Rect r) : rect(r) {
+Gate::Gate(SDL_Rect r) : rect(r), ID(xg::newGuid()) {
 
 }
 

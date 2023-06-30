@@ -1,17 +1,20 @@
 #include "Tile.h"
 
 namespace Velce {
-	Tile::Tile() {
-		spritesheetID = -1;
+	Tile::Tile() : clip{0, 0, 0, 0} {
 	}
 
-	Tile::Tile(SDL_Rect clip, int spritesheetID, int scale) : spritesheetID(spritesheetID), clip(clip) {
+	Tile::Tile(SDL_Rect clip, xg::Guid spritesheetID, int scale) : spritesheetID(spritesheetID), clip(clip) {
 	}
 
 	Vec2 Tile::GetGridPos() {
 		return Vec2(clip.x, clip.y);
 	}
-	int Tile::GetSpritesheetID() {
+    xg::Guid Tile::GetSpritesheetID() {
 		return spritesheetID;
 	}
+
+    SDL_Rect Tile::GetClip() {
+        return clip;
+    }
 }

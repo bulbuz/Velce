@@ -1,0 +1,89 @@
+Sector: 61c570db-ecfd-4895-966b-3a48fdb90c89
+Size: [32, 16]
+Rect: [2, 3, 8, 4]
+Tiles:
+  - Position: [19, 5]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [19, 6]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [19, 7]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [19, 8]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [19, 9]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [19, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [20, 5]
+    Clip: [4, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [20, 9]
+    Clip: [6, 4, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [20, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [21, 5]
+    Clip: [4, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [21, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [22, 5]
+    Clip: [4, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [22, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [23, 5]
+    Clip: [4, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [23, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [24, 5]
+    Clip: [4, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [24, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 5]
+    Clip: [1, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 6]
+    Clip: [1, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 7]
+    Clip: [1, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 8]
+    Clip: [1, 1, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 9]
+    Clip: [1, 0, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+  - Position: [25, 10]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+Spritesheets:
+  - GUID: c0425112-88ba-46b9-9030-df51311a228e
+    Size: [128, 96]
+    Tile size: [16, 16]
+    Padding: [0, 0]
+    Margin: [0, 0]
+    Path: C:\Users\Adrian\Desktop\Velce\build/../res/assets/art/Tileset_Pink.png
+Gates:
+  - Gate: 653dccc6-c99b-4b97-bbc2-ecb3a9022160
+    Sector rect: true
+    Rect: [31, 5, 1, 3]
+    Endpoints: [5302670e-3c13-4bc8-88b6-099319d1db6d]
+  - Gate: 97c45617-39cf-4fea-b07b-bc0ab81997f5
+    Sector rect: true
+    Rect: [0, 5, 1, 2]
+    Endpoints: []

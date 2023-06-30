@@ -1,18 +1,14 @@
 #pragma once
 
+#include "SectorSerializer.h"
 #include "Utils.h"
+#include "crossguid/guid.hpp"
 #include <SDL.h>
 #include <set>
 #include <stdint.h>
 #include <vector>
 
 namespace Velce {
-
-    struct Endpoint {
-        int sector_id = -1;
-        int gate_id = -1;
-    };
-
     class Gate {
     public:
         Gate();
@@ -27,6 +23,8 @@ namespace Velce {
 
         std::set<Gate*> GetEndpoints();
 
+        friend class SectorSerializer;
+
     private:
         // set of the endpoints
         std::set<Gate*> endpoints;
@@ -35,5 +33,6 @@ namespace Velce {
 
         // editor repr
         SDL_Rect rect;
+        xg::Guid ID;
     };
 }

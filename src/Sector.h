@@ -16,7 +16,9 @@
 #include "Utils.h"
 
 namespace Velce {
-    
+    class Gate;
+    class Tile;
+
     class Sector {
     public:
         // size of the sector in tiles

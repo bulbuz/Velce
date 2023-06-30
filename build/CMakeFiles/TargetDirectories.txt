@@ -1,7 +1,0 @@
-/home/bulbus/dev/Velce/build/CMakeFiles/Velce.dir
-/home/bulbus/dev/Velce/build/CMakeFiles/edit_cache.dir
-/home/bulbus/dev/Velce/build/CMakeFiles/rebuild_cache.dir
-/home/bulbus/dev/Velce/build/_deps/crossguid-build/CMakeFiles/crossguid.dir
-/home/bulbus/dev/Velce/build/_deps/crossguid-build/CMakeFiles/crossguid-test.dir
-/home/bulbus/dev/Velce/build/_deps/crossguid-build/CMakeFiles/edit_cache.dir
-/home/bulbus/dev/Velce/build/_deps/crossguid-build/CMakeFiles/rebuild_cache.dir

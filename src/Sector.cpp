@@ -64,7 +64,7 @@ xg::Guid Sector::GetSpritesheetID(Spritesheet* sheet) {
     */
 
     // check if id is valid with xg::Guid.isValid()
-    return xg::Guid("BAD");
+    return xg::Guid();
 }
 
 void Sector::DestroyGate(std::list<Gate>::iterator it) {
@@ -89,8 +89,8 @@ void Sector::SetRect(SDL_Rect rect) {
 
 void Sector::RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE) {
     for (auto& [sector_pos, tile] : tiles) {
-        int id = tile.GetSpritesheetID();
-        if (id > -1) {
+        xg::Guid id = tile.GetSpritesheetID();
+        if (id.isValid()) {
             Vec2 pos = tile.GetGridPos();
             SDL_Rect src_rect{pos.x * spritesheets[id].tile_size.x, 
                 pos.y * spritesheets[id].tile_size.y, 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o" "CMakeFiles/crossguid-test.dir/test/Test.cpp.o" -o crossguid-test  libcrossguid.a /usr/lib/libuuid.so 

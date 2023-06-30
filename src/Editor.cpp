@@ -1,6 +1,7 @@
 #include "Editor.h"
 #include "SectorSerializer.h"
 #include "Utils.h"
+#include "crossguid/guid.hpp"
 #include "imgui.h"
 
 #include <SDL_rect.h>
@@ -423,7 +424,9 @@ void Editor::AddTileset() {
         // load image and store in table of tilesets
         se.cur_sheet.LoadImage(renderer, path);
         int scaling = se.TILESET_TILE_SIZE / se.cur_sheet.tile_size.x;
-        se.tileset_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, SDL_TEXTUREACCESS_TARGET, se.cur_sheet.size.x * scaling, se.cur_sheet.size.y * scaling);
+        se.tileset_buffer = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB24, 
+                SDL_TEXTUREACCESS_TARGET, se.cur_sheet.size.x * scaling, se.cur_sheet.size.y * scaling);
+
         se.cur_sheet.path = p;
         cur_sector->AddSpritesheet(se.cur_sheet);
         se.show_tile_settings = false;
@@ -463,7 +466,10 @@ void Editor::SectorEditor() {
         }
         ImGui::SameLine();
         if (ImGui::Button("Save sector")) {
-            // TODO
+
+            // incomplete
+            SectorSerializer serializer(*cur_sector);
+            serializer.Serialize("../res/data/example.sect");
         }
         ImGui::SameLine();
         if (ImGui::Button("Exit")) {
@@ -600,8 +606,8 @@ void Editor::TilesetWindow() {
                 (mouse.abs_pos.y - window_pos.y) / se.TILESET_TILE_SIZE);
 
         // add tile to sector if drawing
-        int spritesheetID = cur_sector->GetSpritesheetID(&se.cur_sheet);
-        assert(spritesheetID != -1);
+        xg::Guid spritesheetID = cur_sector->GetSpritesheetID(&se.cur_sheet);
+        assert(spritesheetID.isValid());
         se.cur_tile = Tile(SDL_Rect{grid_pos.x, grid_pos.y,
                 se.cur_sheet.tile_size.x,se. cur_sheet.tile_size.y}, spritesheetID);
     }
@@ -629,8 +635,8 @@ void Editor::RenderTileset() {
 
             // highlight tile if selected
             Vec2 pos = se.cur_tile.GetGridPos();
-            int id = se.cur_tile.GetSpritesheetID();
-            if (id != -1 && pos.x == j && pos.y == i) {
+            xg::Guid id = se.cur_tile.GetSpritesheetID();
+            if (id.isValid() && pos.x == j && pos.y == i) {
                 SDL_SetRenderDrawColor(renderer, select_color.r, select_color.g, select_color.b, 255);
                 SDL_RenderDrawRect(renderer, &dst_rect);
             }
