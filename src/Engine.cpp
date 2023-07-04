@@ -106,14 +106,14 @@ void Engine::Update() {
         if (game == nullptr && sector != nullptr) {
             game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD, sector);
             run_editor = false;
-        }
-
-        if (game != nullptr) {
+        } else if (game != nullptr) {
             ImGui::Begin("Game");
             SDL_SetRenderTarget(renderer, game_buffer);
             ImGui::Image((void*)game_buffer, ImVec2(WIN_WIDTH, WIN_HEIGHT));
             ImGui::End();
             game->Run(deltatime);
+        } else {
+            run_game = false;
         }
     } else {
         run_editor = true;

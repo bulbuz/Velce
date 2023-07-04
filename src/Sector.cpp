@@ -29,7 +29,7 @@ void Sector::PrintID() {
 }
 
 void Sector::RemoveTile(Vec2 grid_pos) {
-    tiles.erase(std::make_pair(grid_pos.x, grid_pos.y));
+    tiles.erase({grid_pos.x, grid_pos.y});
 }
 
 void Sector::SetTile(Tile tile, Vec2 grid_pos) {

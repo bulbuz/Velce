@@ -4,9 +4,6 @@
 #include "crossguid/guid.hpp"
 #include "imgui.h"
 
-#include <SDL_rect.h>
-#include <SDL_render.h>
-
 #include <algorithm>
 #include <fstream>
 #include <iterator>
@@ -37,16 +34,18 @@ Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) :
     sector_color = Color(76, 175, 80);
 
     this->CWD = CWD;
+    se.layers.push_back("Default");
 
     se.tileset_buffer = NULL;
 }
 
 void Editor::Run() {
-
     if (ImGui::BeginMenuBar()) {
         if (ImGui::BeginMenu("File"))  {
             if (ImGui::MenuItem("Save")) {
                 // TODO save
+                SectorSerializer serializer(*cur_sector);
+                serializer.Serialize("../res/data/example.sect");
             }
             if (ImGui::MenuItem("Load")) {
                 // TODO load 
@@ -122,6 +121,8 @@ Sector* Editor::ClickedOnSector() {
 void Editor::WorldEditor() {
     // imgui stuff
     // --------------
+    
+    ImGui::ShowDemoWindow();
 
     // mode buttons
     if (ImGui::Button("Move")) {
@@ -175,6 +176,7 @@ void Editor::WorldEditor() {
             for (auto it = we.sectors.begin(); it != we.sectors.end(); it++) {
                 if (*it == cur_sector) {
                     cur_sector = nullptr;
+                    delete *it;
                     we.sectors.erase(it);
                     break;
                 }
@@ -199,7 +201,6 @@ void Editor::WorldEditor() {
     // OnClick behaviors code
     if (ImGui::IsWindowFocused() && mouse.holding_left_click && 
             InRange(mouse.rel_pos.x, 0, WIN_WIDTH) && InRange(mouse.rel_pos.y, 0, WIN_HEIGHT)) {
-
 
         switch (we.mode) {
         case Mode::MOVE:
@@ -245,7 +246,6 @@ void Editor::WorldEditor() {
                     }
                 }
             }
-
             break;
         }
     }
@@ -258,7 +258,6 @@ void Editor::WorldEditor() {
                     box.y >= 0 && box.y + box.h <= we.WORLD_HEIGHT) {
                     
                     // CREATE THE ACTUAL SECTOR
-
                     we.sectors.push_back(new Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
                     we.sectors.back()->SetRect(box);
                 }
@@ -294,6 +293,10 @@ void Editor::SaveWorld() {
 }
 
 void Editor::RenderWorldEditor() {
+    if (ImGui::BeginPopupModal("Sector title")) {
+        ImGui::Button("Test");
+        ImGui::EndPopup();
+    }
     // render
     // ---------
     SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
@@ -466,9 +469,6 @@ void Editor::SectorEditor() {
 
     // top bar buttons (different modes)
     { 
-        if (ImGui::Button("Play")) {
-
-        }
         if (ImGui::Button("Move")) {
             se.mode = Mode::MOVE;
         }
@@ -479,13 +479,6 @@ void Editor::SectorEditor() {
         ImGui::SameLine();
         if (ImGui::Button("Erase")) {
             se.mode = Mode::DELETE;
-        }
-        ImGui::SameLine();
-        if (ImGui::Button("Save sector")) {
-
-            // incomplete
-            SectorSerializer serializer(*cur_sector);
-            serializer.Serialize("../res/data/example.sect");
         }
         ImGui::SameLine();
         if (ImGui::Button("Exit")) {
@@ -499,10 +492,35 @@ void Editor::SectorEditor() {
         if (ImGui::Button("Remove gate")) {
             se.mode = Mode::REMOVE_GATE;
         }
-        ImGui::SameLine();
+        // add to menubar?
         if (ImGui::Button("Add tileset")) {
             se.show_tile_settings = true;
         }
+
+        ImGui::Begin("Layers");
+        if (ImGui::Button("Add")) {
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Delete")) {
+        }
+        static char buf[64] = ""; 
+        ImGui::InputText("Layer name", buf, 64);
+        ImGui::Button("Up"); ImGui::SameLine();
+        ImGui::Button("Down");
+        if (ImGui::BeginListBox("Layers")) {
+            static int cur_idx = 0;
+            for (size_t i = 0; i < se.layers.size(); i++) {
+                const bool is_selected = cur_idx == i;
+                if (ImGui::Selectable(se.layers[i].c_str(), is_selected))
+                    cur_idx = i;
+
+                if (is_selected) {
+                    ImGui::SetItemDefaultFocus();
+                }
+            }
+            ImGui::EndListBox();
+        }
+        ImGui::End();
     }
 
     std::string tbx_mode = "Move";
