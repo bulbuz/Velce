@@ -28,6 +28,7 @@ SectorSerializer::SectorSerializer(const Sector& sector)
 }
 
 void SectorSerializer::Serialize(const std::string& path) {
+    /*
     YAML::Emitter out;
     out << YAML::BeginMap; // Sector
     out << YAML::Key << "Sector" << YAML::Value << sector.ID;
@@ -86,6 +87,7 @@ void SectorSerializer::Serialize(const std::string& path) {
     fout << out.c_str();
     Logger::LOG(Logger::MODE::INFO, "Saved sector!");
     fout.close();
+    */
 }
 
 void SectorSerializer::Deserialize(const std::string& path) {

@@ -10,6 +10,7 @@ using namespace Velce;
 
 Sector::Sector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size), ID(xg::newGuid()) {
     Logger::LOG(Logger::MODE::INFO, "sector created!");
+    layers.push_back("Default");
 }
 
 Sector::~Sector() {
@@ -28,12 +29,12 @@ void Sector::PrintID() {
     ImGui::End();
 }
 
-void Sector::RemoveTile(Vec2 grid_pos) {
-    tiles.erase({grid_pos.x, grid_pos.y});
+void Sector::RemoveTile(std::string layer, Vec2 grid_pos) {
+    tiles[layer].erase({grid_pos.x, grid_pos.y});
 }
 
-void Sector::SetTile(Tile tile, Vec2 grid_pos) {
-    tiles[{grid_pos.x, grid_pos.y}] = tile;
+void Sector::SetTile(std::string layer, Tile tile, Vec2 grid_pos) {
+    tiles[layer][{grid_pos.x, grid_pos.y}] = tile;
 }
 
 void Sector::AddSpritesheet(Spritesheet sheet) {
@@ -75,18 +76,29 @@ void Sector::SetRect(SDL_Rect rect) {
 }
 
 void Sector::RenderGrid(Vec2 scroll, double zoom, double TILE_SIZE) {
-    for (auto& [sector_pos, tile] : tiles) {
-        xg::Guid id = tile.GetSpritesheetID();
-        if (id.isValid()) {
-            Vec2 pos = tile.GetGridPos();
-            SDL_Rect src_rect{pos.x * spritesheets[id].tile_size.x, 
-                pos.y * spritesheets[id].tile_size.y, 
-                spritesheets[id].tile_size.x, spritesheets[id].tile_size.y};
 
-            SDL_Rect r{sector_pos.first, sector_pos.second, 1, 1};
-            SDL_FRect dst_rect = transform_rect(r, scroll, zoom, TILE_SIZE);
-            SDL_RenderCopyF(renderer, spritesheets[id].texture, &src_rect, &dst_rect);
+    int cnt = 1;
+    for (auto it = layers.begin(); it != layers.end(); it++) {
+        for (auto& [sector_pos, tile] : tiles[*it]) {
+            xg::Guid id = tile.GetSpritesheetID();
+            if (id.isValid()) {
+                Vec2 pos = tile.GetGridPos();
+                SDL_Rect src_rect{pos.x * spritesheets[id].tile_size.x, 
+                    pos.y * spritesheets[id].tile_size.y, 
+                    spritesheets[id].tile_size.x, spritesheets[id].tile_size.y};
+
+                SDL_Rect r{sector_pos.first, sector_pos.second, 1, 1};
+                SDL_FRect dst_rect = transform_rect(r, scroll, zoom, TILE_SIZE);
+
+                SDL_SetTextureBlendMode(spritesheets[id].texture, SDL_BLENDMODE_BLEND);
+                SDL_SetTextureAlphaMod(spritesheets[id].texture, 255 / cnt);
+                SDL_RenderCopyF(renderer, spritesheets[id].texture, &src_rect, &dst_rect);
+
+                // Reset blend
+                SDL_SetTextureBlendMode(spritesheets[id].texture, SDL_BLENDMODE_NONE);
+            }
         }
+        cnt++;
     }
 }
 
@@ -96,4 +108,12 @@ void Sector::AddGate(Gate gate) {
 
 std::list<Gate>* Sector::GetGates() {
     return &gates;
+}
+
+std::vector<std::string>& Sector::GetLayers() {
+    return layers;
+}
+
+void Sector::SetLayers(std::vector<std::string> layers) {
+    this->layers = layers;
 }

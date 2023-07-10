@@ -5,6 +5,7 @@
 #include "imgui.h"
 
 #include <algorithm>
+#include <array>
 #include <fstream>
 #include <iterator>
 
@@ -34,7 +35,6 @@ Editor::Editor(SDL_Renderer* renderer, int w, int h, std::string* CWD) :
     sector_color = Color(76, 175, 80);
 
     this->CWD = CWD;
-    se.layers.push_back("Default");
 
     se.tileset_buffer = NULL;
 }
@@ -459,6 +459,7 @@ void Editor::AddTileset() {
 
 void Editor::SectorEditor() {
     // clear screen
+
     SDL_SetRenderDrawColor(renderer, background_color.r, background_color.g, background_color.b, 255);
     SDL_RenderClear(renderer);
 
@@ -498,21 +499,36 @@ void Editor::SectorEditor() {
         }
 
         ImGui::Begin("Layers");
+        // BUFFER OVERFLOW!!!!!!!!
+        static char buf[64] = ""; 
+        std::vector<std::string> layers = cur_sector->GetLayers();
         if (ImGui::Button("Add")) {
+            layers.push_back(buf);
+            memset(buf, 0, 64);
         }
         ImGui::SameLine();
-        if (ImGui::Button("Delete")) {
+        if (ImGui::Button("Delete") && se.layer_idx < layers.size() && se.layer_idx >= 0) {
+            layers.erase(layers.begin() + se.layer_idx);
         }
-        static char buf[64] = ""; 
         ImGui::InputText("Layer name", buf, 64);
-        ImGui::Button("Up"); ImGui::SameLine();
-        ImGui::Button("Down");
+        if (ImGui::Button("Up")) {
+            if (se.layer_idx > 0) {
+                std::swap(layers[se.layer_idx], layers[se.layer_idx - 1]);
+                se.layer_idx--;
+            }
+        } ImGui::SameLine();
+        if (ImGui::Button("Down")) {
+            if (se.layer_idx < layers.size() - 1) {
+                std::swap(layers[se.layer_idx], layers[se.layer_idx + 1]);
+                se.layer_idx++;
+            }
+        }
+        cur_sector->SetLayers(layers);
         if (ImGui::BeginListBox("Layers")) {
-            static int cur_idx = 0;
-            for (size_t i = 0; i < se.layers.size(); i++) {
-                const bool is_selected = cur_idx == i;
-                if (ImGui::Selectable(se.layers[i].c_str(), is_selected))
-                    cur_idx = i;
+            for (size_t i = 0; i < layers.size(); i++) {
+                const bool is_selected = se.layer_idx == i;
+                if (ImGui::Selectable(layers[i].c_str(), is_selected))
+                    se.layer_idx = i;
 
                 if (is_selected) {
                     ImGui::SetItemDefaultFocus();
@@ -554,10 +570,10 @@ void Editor::SectorEditor() {
                 InRangeEx(mouse.grid_pos.y, 0, cur_sector->GetSize().y)) {
             if (se.mode == Mode::CREATE) {
                 if (se.cur_tile.GetSpritesheetID().isValid()) {
-                    cur_sector->SetTile(se.cur_tile, mouse.grid_pos);
+                    cur_sector->SetTile(cur_sector->GetLayers()[se.layer_idx], se.cur_tile, mouse.grid_pos);
                 }
             } else if (se.mode == Mode::DELETE) {
-                cur_sector->RemoveTile(mouse.grid_pos);
+                cur_sector->RemoveTile(cur_sector->GetLayers()[se.layer_idx], mouse.grid_pos);
             }
         }
 
@@ -674,7 +690,7 @@ void Editor::RenderTileset() {
                 SDL_SetRenderDrawColor(renderer, select_color.r, select_color.g, select_color.b, 255);
                 SDL_RenderDrawRect(renderer, &dst_rect);
             }
-        }
+        } 
     }
 }
 

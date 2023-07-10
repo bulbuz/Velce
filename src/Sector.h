@@ -8,6 +8,7 @@
 #include <iostream>
 #include <list>
 #include <map>
+#include <string>
 #include <unordered_map>
 #include <vector>
 
@@ -26,8 +27,8 @@ namespace Velce {
         Sector(SDL_Renderer* renderer, Vec2 size);
         ~Sector();
 
-        void RemoveTile(Vec2 grid_pos);
-        void SetTile(Tile tile, Vec2 grid_pos);
+        void RemoveTile(std::string layer, Vec2 grid_pos);
+        void SetTile(std::string layer, Tile tile, Vec2 grid_pos);
         void AddSpritesheet(Spritesheet sheet);
         xg::Guid GetSpritesheetID(Spritesheet* sheet);
         Vec2 GetSize();
@@ -46,6 +47,9 @@ namespace Velce {
         void PrintGrid();
         void PrintID();
 
+        std::vector<std::string>& GetLayers();
+        void SetLayers(std::vector<std::string> layers);
+
         // give the serializer access to all members
         friend class SectorSerializer;
 
@@ -54,8 +58,9 @@ namespace Velce {
         Vec2 size;
         
         // a map storing all the tiles and their sector positions
-        std::map<std::pair<int, int>, Tile> tiles;
-        // std::vector<Spritesheet> spritesheets;
+        std::vector<std::string> layers;
+        std::map<std::string, std::map<std::pair<int, int>, Tile>> tiles;
+        // std::map<std::pair<int, int>, Tile> tiles;
         std::map<xg::Guid, Spritesheet> spritesheets;
 
         std::list<Gate> gates;

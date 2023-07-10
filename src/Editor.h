@@ -154,7 +154,7 @@ private:
         double zoom;
         char name[15] = "";
         Tile cur_tile;
-        std::vector<std::string> layers;
+        int layer_idx = 0;
     };
 
     We we;
