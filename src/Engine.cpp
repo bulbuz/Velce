@@ -102,9 +102,9 @@ void Engine::Layout() {
 void Engine::Update() {
     Layout();
     if (run_game) {
-        Sector* sector = editor->GetSector();
+        UISector* sector = editor->GetSector();
         if (game == nullptr && sector != nullptr) {
-            game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD, sector);
+            game = new Game(renderer, WIN_WIDTH, WIN_HEIGHT, CWD);
             run_editor = false;
         } else if (game != nullptr) {
             ImGui::Begin("Game");

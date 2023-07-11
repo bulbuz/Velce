@@ -76,7 +76,7 @@ void Editor::Run() {
     }
 }
 
-Sector* Editor::GetSector() {
+UISector* Editor::GetSector() {
     return cur_sector;
 }
 
@@ -91,7 +91,7 @@ void Editor::Input() {
         if (io.MouseDown[0] && ImGui::IsWindowHovered()) {
             // don't select another sector while moving the selected sector
             if (we.mode == Mode::SELECT && we.grabbed_delta == Vec2(-1, -1)) {
-                Sector* res = ClickedOnSector();
+                UISector* res = ClickedOnSector();
                 if (res != nullptr)
                     cur_sector = res;
             }
@@ -105,7 +105,7 @@ void Editor::Input() {
     zoomed = io.MouseWheel;
 }
 
-Sector* Editor::ClickedOnSector() {
+UISector* Editor::ClickedOnSector() {
 
     SDL_Point p = { mouse.grid_pos.x, mouse.grid_pos.y };
 
@@ -122,8 +122,6 @@ void Editor::WorldEditor() {
     // imgui stuff
     // --------------
     
-    ImGui::ShowDemoWindow();
-
     // mode buttons
     if (ImGui::Button("Move")) {
         we.mode = Mode::MOVE;
@@ -258,7 +256,7 @@ void Editor::WorldEditor() {
                     box.y >= 0 && box.y + box.h <= we.WORLD_HEIGHT) {
                     
                     // CREATE THE ACTUAL SECTOR
-                    we.sectors.push_back(new Sector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
+                    we.sectors.push_back(new UISector(renderer, Vec2(box.w * blocks_per_tile, box.h * blocks_per_tile)));
                     we.sectors.back()->SetRect(box);
                 }
             mouse.OnRelease();
@@ -313,6 +311,7 @@ void Editor::RenderWorldEditor() {
         SDL_FRect selection_box_render{ x, y, w, h};
         SDL_RenderFillRectF(renderer, &selection_box_render);
     }
+
 
     RenderGrid(we.WORLD_WIDTH, we.WORLD_HEIGHT);
 
@@ -613,7 +612,7 @@ void Editor::SectorEditor() {
     RenderGrid(cur_sector->GetSize().x, cur_sector->GetSize().y);
 
     // render drawn tiles
-    cur_sector->RenderGrid(se.scroll, se.zoom, TILE_SIZE);
+    cur_sector->RenderGrid(se.scroll, se.zoom, TILE_SIZE, cur_sector->GetLayers()[se.layer_idx]);
     
     {   // draw the selection box 
         SDL_Rect box = mouse.GetSelection();

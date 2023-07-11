@@ -1,89 +1,230 @@
-Sector: 61c570db-ecfd-4895-966b-3a48fdb90c89
-Size: [32, 16]
-Rect: [2, 3, 8, 4]
+Sector: a38b8a70-d61d-4123-911b-1ea938c1efff
+Size: [20, 12]
+Rect: [1, 2, 5, 3]
+Layers:
+  - Default
+  - slkdfj
+  - nsd,f
 Tiles:
+  - Position: [5, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [5, 6]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [5, 7]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [5, 8]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [6, 4]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [6, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [6, 9]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [6, 10]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [7, 4]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [7, 10]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [8, 3]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [8, 10]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 3]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 4]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 11]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [10, 4]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [10, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [10, 11]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 6]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 7]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 11]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [12, 7]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [13, 6]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [13, 7]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [14, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [14, 6]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [15, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [16, 5]
+    Clip: [2, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [15, 9]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [16, 8]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [16, 9]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [17, 6]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [17, 7]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [17, 8]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [18, 5]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [18, 6]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
   - Position: [19, 5]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
   - Position: [19, 6]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [19, 7]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [19, 8]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [19, 9]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [19, 10]
+    Clip: [3, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [2, 8]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [20, 5]
-    Clip: [4, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [20, 9]
-    Clip: [6, 4, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [20, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [2, 9]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [21, 5]
-    Clip: [4, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [21, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [2, 10]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [22, 5]
-    Clip: [4, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [22, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [3, 4]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [23, 5]
-    Clip: [4, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [23, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [3, 5]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [24, 5]
-    Clip: [4, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [24, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [3, 6]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 5]
-    Clip: [1, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 6]
-    Clip: [1, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 7]
-    Clip: [1, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 8]
-    Clip: [1, 1, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 9]
-    Clip: [1, 0, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
-  - Position: [25, 10]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [3, 7]
     Clip: [4, 2, 16, 16]
-    SpritesheetID: c0425112-88ba-46b9-9030-df51311a228e
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [3, 8]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [4, 2]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [4, 3]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [4, 4]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [4, 5]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [5, 2]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [6, 1]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [7, 2]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [8, 2]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 2]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 3]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 8]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [9, 9]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [10, 3]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [10, 9]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 3]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 4]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [11, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [12, 4]
+    Clip: [4, 2, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [12, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [13, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [14, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [15, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [16, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
+  - Position: [17, 10]
+    Clip: [2, 3, 16, 16]
+    SpritesheetID: a4213f8e-ea39-46b7-85d2-6666f3492261
 Spritesheets:
-  - GUID: c0425112-88ba-46b9-9030-df51311a228e
+  - GUID: a4213f8e-ea39-46b7-85d2-6666f3492261
     Size: [128, 96]
     Tile size: [16, 16]
     Padding: [0, 0]
     Margin: [0, 0]
-    Path: C:\Users\Adrian\Desktop\Velce\build/../res/assets/art/Tileset_Pink.png
+    Path: /home/bulbus/dev/Velce/build/../res/assets/art/Tileset_Pink.png
 Gates:
-  - Gate: 653dccc6-c99b-4b97-bbc2-ecb3a9022160
-    Sector rect: true
-    Rect: [31, 5, 1, 3]
-    Endpoints: [5302670e-3c13-4bc8-88b6-099319d1db6d]
-  - Gate: 97c45617-39cf-4fea-b07b-bc0ab81997f5
-    Sector rect: true
-    Rect: [0, 5, 1, 2]
-    Endpoints: []
+  - Gate: 2b056592-c891-40d3-8fc0-fe1ef00f091d
+    Sector rect: [1, 2, 5, 3]
+    Rect: [19, 2, 1, 2]
+    Endpoints: [e8373781-e2d7-4bdb-b992-388258c43522]

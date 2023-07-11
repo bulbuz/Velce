@@ -2,21 +2,21 @@
 
 #include <yaml-cpp/yaml.h>
 
-#include "Sector.h"
+#include "UISector.h"
 
 #include <string>
 
 namespace Velce {    
-    class Sector;
+    class UISector;
     
     class SectorSerializer {
     public:
-        SectorSerializer(const Sector& sector);
+        SectorSerializer(const UISector& sector);
 
         void Serialize(const std::string& path);
         void Deserialize(const std::string& path);
 
     private:
-        const Sector& sector;
+        const UISector& sector;
     };
 }

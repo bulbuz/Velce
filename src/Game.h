@@ -6,7 +6,7 @@
 #include <string>
 
 #include "Player.h"
-#include "Sector.h"
+//#include "Sector.h"
 
 namespace Velce {
 
@@ -14,12 +14,12 @@ namespace Velce {
 
     public:
 
-        Game(SDL_Renderer* renderer, int w, int h, std::string CWD, Sector* sector);
+        Game(SDL_Renderer* renderer, int w, int h, std::string CWD);
         void Run(double dt);
 
     private:
 
-        Sector* sector;
+        // UISector* sector;
         SDL_Renderer* renderer;
 
         // display dimension

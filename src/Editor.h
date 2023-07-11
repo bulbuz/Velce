@@ -14,7 +14,7 @@
 
 #include "Debug.h"
 #include "Gate.h"
-#include "Sector.h"
+#include "UISector.h"
 #include "Utils.h"
 
 using namespace Velce;
@@ -87,7 +87,7 @@ public:
     void WorldEditor();
     void SectorEditor();
     void Input();
-    Sector* GetSector(); // Get playtest sector
+    UISector* GetSector(); // Get playtest sector
 
 private:
     enum class Context { WORLD_EDITOR, SECTOR_EDITOR, NONE};
@@ -116,7 +116,7 @@ private:
 
     Context context;
 
-    Sector* cur_sector = nullptr;
+    UISector* cur_sector = nullptr;
 
     Mouse mouse;
 
@@ -129,7 +129,7 @@ private:
         int WORLD_HEIGHT;
 
         Vec2 scroll;
-        std::list<Sector*> sectors;
+        std::list<UISector*> sectors;
 
         double zoom;
 
@@ -140,7 +140,7 @@ private:
         // testing vars
         bool unselect = false;
         Gate* selected_gate = nullptr;
-        Sector* gate_sector = nullptr;
+        UISector* gate_sector = nullptr;
     };
 
     // Sector editor struct
@@ -169,6 +169,6 @@ private:
     void TilesetWindow();
     void SaveWorld();
     void ResetSectorEditor();
-    Sector* ClickedOnSector();
+    UISector* ClickedOnSector();
     SDL_FRect GetWorldGateRect(Gate* gate, SDL_Rect* sector_rect);
 };

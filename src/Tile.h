@@ -2,7 +2,7 @@
 
 #include <SDL.h>
 
-#include "Sector.h"
+#include "UISector.h"
 #include "SectorSerializer.h"
 #include "Utils.h"
 #include "crossguid/guid.hpp"

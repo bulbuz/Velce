@@ -23,12 +23,11 @@ YAML::Emitter& operator << (YAML::Emitter& out, const std::pair<int, int> pair) 
     return out;
 }
 
-SectorSerializer::SectorSerializer(const Sector& sector) 
+SectorSerializer::SectorSerializer(const UISector& sector) 
     : sector(sector) {
 }
 
 void SectorSerializer::Serialize(const std::string& path) {
-    /*
     YAML::Emitter out;
     out << YAML::BeginMap; // Sector
     out << YAML::Key << "Sector" << YAML::Value << sector.ID;
@@ -36,14 +35,22 @@ void SectorSerializer::Serialize(const std::string& path) {
     out << YAML::Key << "Rect" << YAML::Value << sector.rect;
 
     {
+        out << YAML::Key << "Layers";
+        out << YAML::Value << sector.layers;
+    }
+
+    {
         out << YAML::Key << "Tiles"; 
         out << YAML::Value << YAML::BeginSeq; // Tiles
-        for (const auto& [pos, tile] : sector.tiles) {
-            out << YAML::BeginMap;
-            out << YAML::Key << "Position" << YAML::Value << pos;
-            out << YAML::Key << "Clip" << YAML::Value << tile.clip;
-            out << YAML::Key << "SpritesheetID" << YAML::Value << tile.spritesheetID;
-            out << YAML::EndMap;
+        for (const auto& [layer, tiles] : sector.tiles) {
+            for (const auto& [pos, tile] : tiles) {
+                out << YAML::BeginMap;
+                out << YAML::Key << "Position" << YAML::Value << pos;
+                out << YAML::Key << "Clip" << YAML::Value << tile.clip;
+                out << YAML::Key << "SpritesheetID" << YAML::Value << tile.spritesheetID;
+                out << YAML::Key << "Layer" << YAML::Value << layer;
+                out << YAML::EndMap;
+            }
         }
         out << YAML::EndSeq; // Tiles
     }
@@ -87,7 +94,6 @@ void SectorSerializer::Serialize(const std::string& path) {
     fout << out.c_str();
     Logger::LOG(Logger::MODE::INFO, "Saved sector!");
     fout.close();
-    */
 }
 
 void SectorSerializer::Deserialize(const std::string& path) {
