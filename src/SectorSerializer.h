@@ -3,12 +3,12 @@
 #include <yaml-cpp/yaml.h>
 
 #include "UISector.h"
-
+#include "Camera.h"
 #include <string>
 
 namespace Velce {    
     class UISector;
-    
+
     class SectorSerializer {
     public:
         SectorSerializer(const UISector& sector);
@@ -20,3 +20,4 @@ namespace Velce {
         const UISector& sector;
     };
 }
+

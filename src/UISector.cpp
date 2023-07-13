@@ -9,7 +9,9 @@
 
 using namespace Velce;
 
-UISector::UISector(SDL_Renderer* renderer, Vec2 size) : renderer(renderer), size(size), ID(xg::newGuid()) {
+UISector::UISector(SDL_Renderer* renderer, Vec2 size) : 
+renderer(renderer), size(size), ID(xg::newGuid()), 
+camera(Vec2(0, 0), Vec2(12, 8)) /* temporary camera size */ {
     Logger::LOG(Logger::MODE::INFO, "sector created!");
     layers.push_back("Default");
 }
@@ -20,6 +22,10 @@ UISector::~UISector() {
     for (auto it = gates.begin(); it != gates.end(); it++) {
         DestroyGate(it--);
     }
+}
+
+SDL_Rect UISector::GetCameraSize() {
+    return SDL_Rect{camera.position.x, camera.position.y, camera.size.x, camera.size.y};
 }
 
 void UISector::PrintID() {

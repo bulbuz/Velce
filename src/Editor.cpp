@@ -4,6 +4,7 @@
 #include "crossguid/guid.hpp"
 #include "imgui.h"
 
+#include <SDL_render.h>
 #include <algorithm>
 #include <array>
 #include <fstream>
@@ -410,7 +411,7 @@ void Editor::RenderGrid(int WIDTH, int HEIGHT) {
                 float w = TILE_SIZE * zoom * blocks_per_tile;
                 float h = TILE_SIZE * zoom * blocks_per_tile;
                 SDL_FRect tile{ x, y, w, h};
-                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+                SDL_SetRenderDrawColor(renderer, 10, 10, 10, 255);
                 SDL_RenderDrawRectF(renderer, &tile);
             }
         }
@@ -635,8 +636,10 @@ void Editor::SectorEditor() {
             SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
             SDL_RenderDrawRectF(renderer, &r);
         }
-
     }
+    SDL_FRect camera_rect = transform_rect(cur_sector->GetCameraSize(), se.scroll, se.zoom, TILE_SIZE);
+    SDL_SetRenderDrawColor(renderer, 255, 128, 30, 255);
+    SDL_RenderDrawRectF(renderer, &camera_rect);
 
     // render tileset window if a tileset is available
     if (se.cur_sheet.texture != NULL) {

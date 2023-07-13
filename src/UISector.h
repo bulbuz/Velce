@@ -11,6 +11,7 @@
 #include <string>
 #include <vector>
 
+#include "Camera.h"
 #include "Gate.h"
 #include "Tile.h"
 #include "Utils.h"
@@ -31,6 +32,8 @@ namespace Velce {
         void AddSpritesheet(Spritesheet sheet);
         xg::Guid GetSpritesheetID(Spritesheet* sheet);
         Vec2 GetSize();
+
+        SDL_Rect GetCameraSize();
 
         void AddGate(Gate gate);
         std::list<Gate>* GetGates();
@@ -67,6 +70,8 @@ namespace Velce {
         SDL_Rect rect;
 
         xg::Guid ID;
+
+        Camera camera;
 
         std::string title;
     };
