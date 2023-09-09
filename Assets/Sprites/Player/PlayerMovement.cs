@@ -14,17 +14,31 @@ public class PlayerMovement : MonoBehaviour
     public float fallMultiplier;
     public float lowJumpMultiplier;
     public bool isJumping;
+
+    //Vilgots animation-variables :)
+    private Animator animator;
+    private bool isRunning = false;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        move = Input.GetAxis("Horizontal");
+        move = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
+        if (move != 0 )
+        {
+            isRunning = true;
+        }
+        else 
+        {
+            isRunning = false;
+        }
 
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
@@ -44,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+        UpdateAnimations();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -68,5 +84,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    private void UpdateAnimations()
+    {
+        animator.SetBool("isRunning", isRunning);
     }
 }
