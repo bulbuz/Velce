@@ -89,5 +89,6 @@ public class PlayerMovement : MonoBehaviour
     private void UpdateAnimations()
     {
         animator.SetBool("isRunning", isRunning);
+        animator.SetBool("isJumping", isJumping);
     }
 }
