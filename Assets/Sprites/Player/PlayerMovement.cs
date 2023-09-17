@@ -5,15 +5,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Movement
     public float speed;
-    private float move;
-    private Rigidbody2D rb;
-    private bool facingRight = true; 
+    private float horizontal; // value between -1 and 1
+    public float jumpingPower;
 
-    public float jump;
-    public float fallMultiplier;
-    public float lowJumpMultiplier;
-    public bool isJumping;
+    private bool facingRight = true;
+
+    private Rigidbody2D rb;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+    
 
     //Vilgots animation-variables :)
     private Animator animator;
@@ -29,29 +31,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        move = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(move * speed, rb.velocity.y);
-        if (move != 0 )
-        {
-            isRunning = true;
-        }
-        else 
-        {
-            isRunning = false;
-        }
+        horizontal = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
-        {
-            rb.AddForce(new Vector2(rb.velocity.x, jump));
-        }
+        isRunning = (horizontal != 0);
 
-        if (rb.velocity.y < 0) 
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) 
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            if (IsGrounded())
+            {
+                rb.AddForce(new Vector2(rb.velocity.x, jumpingPower));
+            } else if (rb.velocity.y > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
         }
 
         if ((rb.velocity.x < 0 && facingRight) || (rb.velocity.x > 0 && !facingRight)) 
@@ -62,20 +55,9 @@ public class PlayerMovement : MonoBehaviour
         UpdateAnimations();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private bool IsGrounded()
     {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            isJumping = false;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            isJumping = true;
-        }
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private void Flip()
