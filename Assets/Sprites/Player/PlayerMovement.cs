@@ -15,17 +15,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    
-
-    //Vilgots animation-variables :)
-    private Animator animator;
-    private bool isRunning = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
-        isRunning = (horizontal != 0);
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -51,8 +43,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
-
-        UpdateAnimations();
     }
 
     private bool IsGrounded()
@@ -66,10 +56,5 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
-    }
-
-    private void UpdateAnimations()
-    {
-        animator.SetBool("isRunning", isRunning);
     }
 }
