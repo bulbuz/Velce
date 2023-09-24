@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal; // value between -1 and 1
     public float jumpingPower;
 
+    public int health = 3;
+
     private bool facingRight = true;
 
     private Rigidbody2D rb;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Get raw input and set horizontal velocity
         horizontal = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
@@ -42,6 +45,15 @@ public class PlayerMovement : MonoBehaviour
         if ((rb.velocity.x < 0 && facingRight) || (rb.velocity.x > 0 && !facingRight)) 
         {
             Flip();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check for collision with enemy
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health--;
         }
     }
 
