@@ -3760,8 +3760,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f77e9958b1adc74b9df66c7e0599231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 4.12
   jumpingPower: 300
+  acceleration: 60.4
+  deceleration: 81.7
+  velPower: 0.92
   groundCheck: {fileID: 1031940016}
   groundLayer:
     serializedVersion: 2

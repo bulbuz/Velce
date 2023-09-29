@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool facingRight = true;
 
+    public float acceleration;
+    public float deceleration;
+    public float velPower;
+
     private Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask groundLayer;
@@ -27,7 +31,12 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get raw input and set horizontal velocity
         horizontal = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        float targetSpeed = horizontal * speed;
+        float deltaSpeed = targetSpeed - rb.velocity.x;
+        float curAcc = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
+        float movement = Mathf.Pow(Mathf.Abs(deltaSpeed) * curAcc, velPower) * Mathf.Sign(deltaSpeed);
+        rb.AddForce(movement * Vector2.right);
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -37,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if ((rb.velocity.x < 0 && facingRight) || (rb.velocity.x > 0 && !facingRight)) 
+        if (horizontal != 0 && (horizontal > 0 != facingRight))
         {
             Flip();
         }
