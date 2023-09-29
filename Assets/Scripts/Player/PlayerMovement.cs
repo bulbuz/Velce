@@ -10,8 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal; // value between -1 and 1
     public float jumpingPower;
 
-    public int health = 3;
-
     private bool facingRight = true;
 
     private Rigidbody2D rb;
@@ -36,9 +34,6 @@ public class PlayerMovement : MonoBehaviour
             if (IsGrounded())
             {
                 rb.AddForce(new Vector2(rb.velocity.x, jumpingPower));
-            } else if (rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
         }
 
@@ -53,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         // Check for collision with enemy
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            health--;
+
         }
     }
 

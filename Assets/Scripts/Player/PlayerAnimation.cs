@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+struct State
+{
+    public bool running { get; set; }
+    public bool jumping { get; set; }
+    public bool falling { get; set; }
+}
 
 public class PlayerAnimation : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb;
 
-    bool isRunning = false;
-    bool isJumping = false;
-    bool isFalling = false;
-
     float dX, dY = 0;
     float prevX, prevY;
+
+    State state;
 
     private void Start()
     {
@@ -31,12 +35,12 @@ public class PlayerAnimation : MonoBehaviour
         prevX = rb.position.x;
         prevY = rb.position.y;
 
-        isRunning = dX > 0.001f || dX < -0.001f;
-        isJumping = dY > 0.001f;
-        isFalling = dY < -0.001f;
+        state.running = dX > 0.001f || dX < -0.001f;
+        state.jumping = dY > 0.001f;
+        state.falling = dY < -0.001f;
 
-        anim.SetBool("isRunning", isRunning);
-        anim.SetBool("isJumping", isJumping);
-        anim.SetBool("isFalling", isFalling);
+        anim.SetBool("isRunning", state.running);
+        anim.SetBool("isJumping", state.jumping);
+        anim.SetBool("isFalling", state.falling);
     }
 }
