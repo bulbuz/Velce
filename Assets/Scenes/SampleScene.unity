@@ -3391,6 +3391,7 @@ GameObject:
   - component: {fileID: 635499593}
   - component: {fileID: 635499592}
   - component: {fileID: 635499594}
+  - component: {fileID: 635499597}
   m_Layer: 0
   m_Name: Tardigrade
   m_TagString: Enemy
@@ -3555,6 +3556,27 @@ Transform:
   - {fileID: 823126678}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &635499597
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635499591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &823126677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,7 +3783,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.12
-  jumpingPower: 300
+  jumpingPower: 4
+  incrementalJump: 0.5
+  holdingJump: 0
   acceleration: 60.4
   deceleration: 81.7
   velPower: 0.92

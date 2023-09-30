@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private float horizontal; // value between -1 and 1
     public float jumpingPower;
-
+    public float incrementalJump;
     private bool facingRight = true;
 
     public float acceleration;
@@ -42,8 +42,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (IsGrounded())
             {
-                rb.AddForce(new Vector2(rb.velocity.x, jumpingPower));
+                rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
             }
+        }
+       
+        if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            rb.AddForce(Vector2.down * rb.velocity.y * (1 - incrementalJump), ForceMode2D.Impulse);
         }
 
         if (horizontal != 0 && (horizontal > 0 != facingRight))
