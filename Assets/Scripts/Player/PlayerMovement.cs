@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         float targetSpeed = horizontal * speed;
         float deltaSpeed = targetSpeed - rb.velocity.x;
+        Debug.Log(deltaSpeed);
         float curAcc = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
         float movement = Mathf.Pow(Mathf.Abs(deltaSpeed) * curAcc, velPower) * Mathf.Sign(deltaSpeed);
         rb.AddForce(movement * Vector2.right);
