@@ -11,7 +11,6 @@ public class TardigradeMovement : MonoBehaviour
     public Transform wallCheck;
     public LayerMask wallLayer;
 
-
     // Start is called before the first frame update
     void Start()
     {

@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
         float targetSpeed = horizontal * speed;
         float deltaSpeed = targetSpeed - rb.velocity.x;
-        Debug.Log(deltaSpeed);
         float curAcc = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
         float movement = Mathf.Pow(Mathf.Abs(deltaSpeed) * curAcc, velPower) * Mathf.Sign(deltaSpeed);
         rb.AddForce(movement * Vector2.right);
@@ -55,15 +54,6 @@ public class PlayerMovement : MonoBehaviour
         if (horizontal != 0 && (horizontal > 0 != facingRight))
         {
             Flip();
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Check for collision with enemy
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-
         }
     }
 
