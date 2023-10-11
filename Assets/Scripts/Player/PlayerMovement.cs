@@ -20,10 +20,13 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
 
+    private PlayerAnimation anim;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get raw input and set horizontal velocity
         horizontal = Input.GetAxisRaw("Horizontal");
+        anim.moveState.IsRunning = horizontal != 0;
 
         float targetSpeed = horizontal * speed;
         float deltaSpeed = targetSpeed - rb.velocity.x;
@@ -43,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
             if (IsGrounded())
             {
                 rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
+                anim.moveState.IsJumping = true;
             }
         }
        

@@ -9,12 +9,14 @@ public class Combat : MonoBehaviour
     public float attackRadius = 0.5f;
     public LayerMask enemyLayer;
 
+    private PlayerAnimation anim;
+
     public int attackDamage;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Combat : MonoBehaviour
 
     void Attack()
     {
+        anim.attackState.PunchingTime = .4f; //runs attack animation for .4s
         Collider2D[] damagedEnemies = Physics2D.OverlapCircleAll(attackBox.position, attackRadius, enemyLayer);
 
         foreach (Collider2D enemy in damagedEnemies)

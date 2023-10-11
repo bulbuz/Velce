@@ -1,46 +1,109 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.Mathematics;
+using UnityEditor.UI;
 using UnityEngine;
-struct State
+
+public class MovementState
 {
-    public bool running { get; set; }
-    public bool jumping { get; set; }
-    public bool falling { get; set; }
+    public bool IsRunning {  get; set; }
+    public bool IsJumping { get; set; }
+    public bool IsFalling { get; set; }
+
+    public void UpdateState(Rigidbody2D rb)
+    {
+        if (rb.velocity.y < -0.01f)
+        {
+            IsJumping = false;
+            IsFalling = true;
+        }
+        else
+        {
+            IsFalling = false;
+        }
+    }
+    public AnimationState GetAnimState()
+    {
+        if (IsFalling)
+        {
+            return AnimationState.falling;
+        }
+        else if (IsJumping)
+        {
+            return AnimationState.jumping;
+        }
+        else if (IsRunning)
+        {
+            return AnimationState.running;
+        }
+        return AnimationState.idle;
+    }
+}
+
+public class AttackState
+{
+    public float PunchingTime { get; set; }
+
+    public void UpdateState()
+    {
+        PunchingTime -= Time.deltaTime;
+    }
+    public AnimationState GetAttackAnim()
+    {
+        if (PunchingTime > 0)
+        {
+            return AnimationState.punching;
+        }
+        return AnimationState.none;
+    }
+}
+
+public enum AnimationState
+{
+    none,
+    idle,
+    running,
+    jumping,
+    falling,
+    punching,
 }
 
 public class PlayerAnimation : MonoBehaviour
 {
-    Animator anim;
-    Rigidbody2D rb;
+    private Animator anim;
+    private Rigidbody2D rb;
+    
+    public MovementState moveState = new();
+    public AttackState attackState = new();
+    private AnimationState animState = new();
 
-    float dX, dY = 0;
-    float prevX, prevY;
-
-    State state;
-
+    private float motionTime = 0f;
     private void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-
-        prevX = rb.position.x;
-        prevY = rb.position.y;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        dX = rb.position.x - prevX;
-        dY = rb.position.y - prevY;
+        AnimationState prevAnimState = animState;
+        motionTime += Time.deltaTime;
 
-        prevX = rb.position.x;
-        prevY = rb.position.y;
+        moveState.UpdateState(rb);
+        attackState.UpdateState();
 
-        state.running = dX > 0.001f || dX < -0.001f;
-        state.jumping = dY > 0.001f;
-        state.falling = dY < -0.001f;
+        animState = attackState.GetAttackAnim();
+        if (animState == AnimationState.none)
+        {
+            animState = moveState.GetAnimState();
+        }
 
-        anim.SetBool("isRunning", state.running);
-        anim.SetBool("isJumping", state.jumping);
-        anim.SetBool("isFalling", state.falling);
+        if (animState != prevAnimState)
+        {
+            anim.SetInteger("state", (int)animState);
+            motionTime = 0f;
+        }
+        anim.SetFloat("motionTime", motionTime);
     }
 }
