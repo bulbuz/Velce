@@ -22,11 +22,19 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerAnimation anim;
 
+    //variables for handling shaders
+    [SerializeField]
+    private Material baseMaterial;
+    [SerializeField]
+    private Material dmgMaterial;
+    SpriteRenderer rend;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<PlayerAnimation>();
+        rend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -59,6 +67,19 @@ public class PlayerMovement : MonoBehaviour
         if (horizontal != 0 && (horizontal > 0 != facingRight))
         {
             Flip();
+        }
+    }
+
+    //did this for debuging and testing only, feel free to delete this code:
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            rend.material = dmgMaterial;
+        }
+        else
+        {
+            rend.material = baseMaterial;
         }
     }
 
