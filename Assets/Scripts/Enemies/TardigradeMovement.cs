@@ -5,7 +5,7 @@ using UnityEngine;
 public class TardigradeMovement : MonoBehaviour
 {
     public float speed;
-    private bool facingRight = false;
+    public bool facingRight = true;
 
     private Rigidbody2D rb;
     public Transform wallCheck;
@@ -14,12 +14,18 @@ public class TardigradeMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (!facingRight)
+        {
+            Flip();
+            speed *= -1;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         bool hurt = GetComponent<HealthUpdate>().IsHurt();
+
         if (!hurt)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);

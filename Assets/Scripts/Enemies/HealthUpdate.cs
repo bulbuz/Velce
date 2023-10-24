@@ -7,8 +7,8 @@ public class HealthUpdate : MonoBehaviour
     public int maxHealth;
     int curHealth;
     bool isHurt = false;
-    public float hurtDuration;
-    float hurtTimer = 0;
+    public float freezeDuration;
+    float freezeTimer = 0;
 
     //materials
     [SerializeField]
@@ -50,13 +50,13 @@ public class HealthUpdate : MonoBehaviour
             }
         }
         rend.material.SetFloat("_AnimDur", animDur);
-        Debug.Log(rend.material.GetFloat("_AnimDur"));
+        //Debug.Log(rend.material.GetFloat("_AnimDur"));
         if (isHurt)
         {
-            hurtTimer += Time.deltaTime;
-            if (hurtTimer >= hurtDuration) {
+            freezeTimer += Time.deltaTime;
+            if (freezeTimer >= freezeDuration) {
                 isHurt = false;
-                hurtTimer = 0;
+                freezeTimer = 0;
             }
         }
     }

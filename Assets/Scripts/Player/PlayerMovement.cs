@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal; // value between -1 and 1
     public float jumpingPower;
     public float incrementalJump;
-    private bool facingRight = true;
+    public bool facingRight = true;
 
     public float acceleration;
     public float deceleration;

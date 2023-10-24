@@ -51,6 +51,18 @@ public class Combat : MonoBehaviour
         foreach (Collider2D enemy in damagedEnemies)
         {
             enemy.GetComponent<HealthUpdate>().TakeDamage(attackDamage);
+
+            bool facingRight = gameObject.GetComponent<PlayerMovement>().facingRight;
+            if (facingRight)
+                tardigradeKnockback.x = Mathf.Abs(tardigradeKnockback.x);
+            else
+                tardigradeKnockback.x = Mathf.Abs(tardigradeKnockback.x) * -1;
+            if (tardigradeKnockback.x < 0 == facingRight)
+            {
+                tardigradeKnockback.x *= -1;
+            }
+            Debug.Log(tardigradeKnockback.x);
+
             enemy.GetComponent<Rigidbody2D>().AddForce(tardigradeKnockback);
             Debug.Log(enemy.name);
         }
