@@ -10,8 +10,9 @@ public class Combat : MonoBehaviour
     public LayerMask enemyLayer;
 
     private PlayerAnimation anim;
-
     public int attackDamage;
+
+    public Vector2 tardigradeKnockback;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,24 @@ public class Combat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Attack if not in hurt
         if (Input.GetKeyDown(KeyCode.J))
             Attack();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == enemyLayer)
+        {
+            Debug.Log("helu");
+            //Hurt(collision.gameObject);
+        }
+    }
+
+    private void Hurt(GameObject enemy)
+    {
+        int enemyAttackDamage = enemy.GetComponent<EnemyAttack>().attackDamage;
+        gameObject.GetComponent<HealthUpdate>().TakeDamage(enemyAttackDamage);
     }
 
     void Attack()
@@ -34,6 +51,7 @@ public class Combat : MonoBehaviour
         foreach (Collider2D enemy in damagedEnemies)
         {
             enemy.GetComponent<HealthUpdate>().TakeDamage(attackDamage);
+            enemy.GetComponent<Rigidbody2D>().AddForce(tardigradeKnockback);
             Debug.Log(enemy.name);
         }
     }

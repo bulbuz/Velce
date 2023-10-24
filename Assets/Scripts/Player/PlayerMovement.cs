@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Movement
+    // Movement vars
+    // ------------------------
     public float speed;
     private float horizontal; // value between -1 and 1
     public float jumpingPower;
@@ -14,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float acceleration;
     public float deceleration;
-    public float velPower;
+    public float velPower; // how quickly it de/accelerates
+    // ------------------------
 
     private Rigidbody2D rb;
     public Transform groundCheck;
@@ -34,14 +36,20 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get raw input and set horizontal velocity
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        // Set animation state for movement
         anim.moveState.IsRunning = horizontal != 0;
 
+        // Calculate movement variables
         float targetSpeed = horizontal * speed;
         float deltaSpeed = targetSpeed - rb.velocity.x;
         float curAcc = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
         float movement = Mathf.Pow(Mathf.Abs(deltaSpeed) * curAcc, velPower) * Mathf.Sign(deltaSpeed);
+
+        // Add movement force
         rb.AddForce(movement * Vector2.right);
 
+        // Jump if grounded
         if (Input.GetButtonDown("Jump"))
         {
             if (IsGrounded())
@@ -51,15 +59,15 @@ public class PlayerMovement : MonoBehaviour
             }
         }
        
+        // release jump key to fall earlier
         if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.AddForce(Vector2.down * rb.velocity.y * (1 - incrementalJump), ForceMode2D.Impulse);
         }
 
+        // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))
-        {
             Flip();
-        }
     }
 
     private bool IsGrounded()

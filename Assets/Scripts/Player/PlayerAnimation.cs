@@ -4,13 +4,21 @@ using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using UnityEditor.UI;
 using UnityEngine;
-
+public enum AnimationState
+{
+    None,
+    Idle,
+    Running,
+    Jumping,
+    Falling,
+    Punching,
+}
 public class MovementState
 {
     public bool IsRunning {  get; set; }
     public bool IsJumping { get; set; }
     public bool IsFalling { get; set; }
-
+    AnimationState curState;
     public void UpdateState(Rigidbody2D rb)
     {
         if (rb.velocity.y < -0.01f)
@@ -27,17 +35,17 @@ public class MovementState
     {
         if (IsFalling)
         {
-            return AnimationState.falling;
+            return AnimationState.Falling;
         }
         else if (IsJumping)
         {
-            return AnimationState.jumping;
+            return AnimationState.Jumping;
         }
         else if (IsRunning)
         {
-            return AnimationState.running;
+            return AnimationState.Running;
         }
-        return AnimationState.idle;
+        return AnimationState.Idle;
     }
 }
 
@@ -53,21 +61,12 @@ public class AttackState
     {
         if (PunchingTime > 0)
         {
-            return AnimationState.punching;
+            return AnimationState.Punching;
         }
-        return AnimationState.none;
+        return AnimationState.None;
     }
 }
 
-public enum AnimationState
-{
-    none,
-    idle,
-    running,
-    jumping,
-    falling,
-    punching,
-}
 
 public class PlayerAnimation : MonoBehaviour
 {
@@ -94,7 +93,7 @@ public class PlayerAnimation : MonoBehaviour
         attackState.UpdateState();
 
         animState = attackState.GetAttackAnim();
-        if (animState == AnimationState.none)
+        if (animState == AnimationState.None)
         {
             animState = moveState.GetAnimState();
         }
