@@ -10,15 +10,47 @@ public class HealthUpdate : MonoBehaviour
     public float hurtDuration;
     float hurtTimer = 0;
 
+    //materials
+    [SerializeField]
+    Material defaultMat;
+    [SerializeField]
+    Material dmgMat;
+    [SerializeField]
+    Material deathMat;
+
+    //variables for handling shaders
+    SpriteRenderer rend;
+    float dmgTime = 0f;
+    bool dead = false;
+    float animDur = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<SpriteRenderer>();
         curHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        dmgTime -= Time.deltaTime;
+        animDur += Time.deltaTime;
+
+        if (dmgTime > 0f)
+        {
+            rend.material = dead ? deathMat : dmgMat;
+        }
+        else
+        {
+            rend.material = defaultMat;
+            if (dead)
+            {
+                Destroy(gameObject);
+            }
+        }
+        rend.material.SetFloat("_AnimDur", animDur);
+        Debug.Log(rend.material.GetFloat("_AnimDur"));
         if (isHurt)
         {
             hurtTimer += Time.deltaTime;
@@ -35,16 +67,22 @@ public class HealthUpdate : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        isHurt = true;
-        curHealth -= damage;
-        if (curHealth <= 0)
+        if (!dead)
         {
-            Die();
+            curHealth -= damage;
+            dmgTime = 1f;
+            isHurt = true;
+            if (curHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 
     void Die()
     {
-        Object.Destroy(gameObject);
+        dead = true;
+        dmgTime = 1f;
+        animDur = 0f;
     }
 }
