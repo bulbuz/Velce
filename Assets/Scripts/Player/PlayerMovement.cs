@@ -12,6 +12,13 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower;
     public float incrementalJump;
     public bool facingRight = true;
+    public float minJumpCutoffVel = 50;
+
+    public float coyoteTime = 0.2f;
+    private float coyoteCounter = 0;
+
+    public float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter = 0;
 
     public float acceleration;
     public float deceleration;
@@ -57,20 +64,30 @@ public class PlayerMovement : MonoBehaviour
         // Add movement force
         rb.AddForce(movement * Vector2.right);
 
-        // Jump if grounded
+        if (IsGrounded())
+            coyoteCounter = coyoteTime;
+        else
+            coyoteCounter -= Time.deltaTime;
+
         if (Input.GetButtonDown("Jump"))
+            jumpBufferCounter = jumpBufferTime;
+        else
+            jumpBufferCounter -= Time.deltaTime;
+
+        // jump buffer and coyote time for better jump yee
+        if (coyoteCounter > 0f && jumpBufferCounter > 0f)
         {
-            if (IsGrounded())
-            {
-                rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
-                anim.moveState.IsJumping = true;
-            }
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            anim.moveState.IsJumping = true;
+            jumpBufferCounter = 0;
         }
        
         // release jump key to fall earlier
-        if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        if (rb.velocity.y > 0f && Input.GetButtonUp("Jump"))
         {
-            rb.AddForce(Vector2.down * rb.velocity.y * (1 - incrementalJump), ForceMode2D.Impulse);
+            Debug.Log("Decreasing jump vel");
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * (1 - incrementalJump));
+            coyoteCounter = 0f;
         }
 
         // Flip if necessary
