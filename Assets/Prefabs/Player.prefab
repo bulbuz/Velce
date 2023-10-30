@@ -211,6 +211,9 @@ MonoBehaviour:
   jumpingPower: 9
   incrementalJump: 0
   facingRight: 1
+  minJumpCutoffVel: 50
+  coyoteTime: 0.2
+  jumpBufferTime: 0.2
   acceleration: 5
   deceleration: 10
   velPower: 1
@@ -272,7 +275,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackDamage: 20
-  tardigradeKnockback: {x: 0, y: 0}
+  enemyKnockback: {x: 0, y: 0}
 --- !u!1 &9090619028311330583
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class Combat : MonoBehaviour
     private PlayerAnimation anim;
     public int attackDamage;
 
-    public Vector2 tardigradeKnockback;
+    public Vector2 enemyKnockback;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +33,8 @@ public class Combat : MonoBehaviour
     {
         if (collision.gameObject.layer == enemyLayer)
         {
-            Debug.Log("helu");
-            //Hurt(collision.gameObject);
+            int damage = collision.gameObject.GetComponent<EnemyAttack>().attackDamage;
+            GetComponent<HealthUpdate>().TakeDamage(damage);
         }
     }
 
@@ -54,17 +55,16 @@ public class Combat : MonoBehaviour
 
             bool facingRight = gameObject.GetComponent<PlayerMovement>().facingRight;
             if (facingRight)
-                tardigradeKnockback.x = Mathf.Abs(tardigradeKnockback.x);
+                enemyKnockback.x = Mathf.Abs(enemyKnockback.x);
             else
-                tardigradeKnockback.x = Mathf.Abs(tardigradeKnockback.x) * -1;
-            if (tardigradeKnockback.x < 0 == facingRight)
+                enemyKnockback.x = Mathf.Abs(enemyKnockback.x) * -1;
+            if (enemyKnockback.x < 0 == facingRight)
             {
-                tardigradeKnockback.x *= -1;
+                enemyKnockback.x *= -1;
             }
-            Debug.Log(tardigradeKnockback.x);
+            Debug.Log(enemyKnockback.x);
 
-            enemy.GetComponent<Rigidbody2D>().AddForce(tardigradeKnockback);
-            Debug.Log(enemy.name);
+            enemy.GetComponent<Rigidbody2D>().AddForce(enemyKnockback);
         }
     }
 }
