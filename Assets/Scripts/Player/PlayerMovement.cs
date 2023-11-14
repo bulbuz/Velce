@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    PlayerState state;
+
     // Movement vars
     // ------------------------
     public float speed;
@@ -44,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<PlayerAnimation>();
         rend = GetComponent<SpriteRenderer>();
+        state = GetComponent<PlayerState>();
     }
 
     // Update is called once per frame
@@ -63,6 +67,19 @@ public class PlayerMovement : MonoBehaviour
 
         // Add movement force
         rb.AddForce(movement * Vector2.right);
+        if (horizontal != 0)
+        {
+            if (facingRight)
+                state.SetState(PlayerState.State.RIGHT, true);
+            else
+                state.SetState(PlayerState.State.LEFT, true);
+        } 
+        else
+        {
+            state.SetState(PlayerState.State.RIGHT, false);
+            state.SetState(PlayerState.State.LEFT, false);
+        }
+        state.SetState(PlayerState.State.IDLE, !state.GetState(PlayerState.State.LEFT | PlayerState.State.RIGHT));
 
         if (IsGrounded())
             coyoteCounter = coyoteTime;
@@ -80,19 +97,24 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             anim.moveState.IsJumping = true;
             jumpBufferCounter = 0;
+
+            state.SetState(PlayerState.State.JUMP, true);
         }
        
         // release jump key to fall earlier
         if (rb.velocity.y > 0f && Input.GetButtonUp("Jump"))
         {
-            Debug.Log("Decreasing jump vel");
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * (1 - incrementalJump));
             coyoteCounter = 0f;
+            state.SetState(PlayerState.State.JUMP, false);
+            state.SetState(PlayerState.State.FALL, true);
         }
 
         // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))
             Flip();
+
+        state.PrintState();
     }
 
     //did this for debuging and testing only, feel free to delete this code:

@@ -34,23 +34,6 @@ public class HealthUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dmgTime -= Time.deltaTime;
-        animDur += Time.deltaTime;
-
-        if (dmgTime > 0f)
-        {
-            rend.material = dead ? deathMat : dmgMat;
-        }
-        else
-        {
-            rend.material = defaultMat;
-            if (dead)
-            {
-                Destroy(gameObject);
-            }
-        }
-        rend.material.SetFloat("_AnimDur", animDur);
-        //Debug.Log(rend.material.GetFloat("_AnimDur"));
         if (isHurt)
         {
             freezeTimer += Time.deltaTime;
@@ -58,6 +41,23 @@ public class HealthUpdate : MonoBehaviour
                 isHurt = false;
                 freezeTimer = 0;
             }
+            dmgTime -= Time.deltaTime;
+            animDur += Time.deltaTime;
+
+            if (dmgTime > 0f)
+            {
+                rend.material = dead ? deathMat : dmgMat;
+            }
+            else
+            {
+                rend.material = defaultMat;
+                if (dead)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            rend.material.SetFloat("_AnimDur", animDur);
+            //Debug.Log(rend.material.GetFloat("_AnimDur"));
         }
     }
     public bool IsHurt()
