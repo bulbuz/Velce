@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 04ffaad25e92bb843ba0533551c46651, type: 3}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4313074594097013172}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b8558e9228b78b24ab8e9ac43d2d2de3, type: 2}
+  m_Material: {fileID: 6200000, guid: fd21e491854442e4abfd82e6038b257b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   freezeDuration: 0.2
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   dmgMat: {fileID: -876546973899608171, guid: 20e11d82dd8ec074d847cba7e0e90437, type: 3}
-  deathMat: {fileID: -876546973899608171, guid: 04ffaad25e92bb843ba0533551c46651, type: 3}
+  deathMat: {fileID: 2100000, guid: b8eac5e688fa8a442a0690e2803a5b77, type: 2}
 --- !u!1 &9140996652632226579
 GameObject:
   m_ObjectHideFlags: 0

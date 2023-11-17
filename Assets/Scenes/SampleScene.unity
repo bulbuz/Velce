@@ -16012,6 +16012,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939907526780890826, guid: bb38a6e5903d488408d76f6b16c5cf2b, type: 3}
+      propertyPath: deathMat
+      value: 
+      objectReference: {fileID: 2100000, guid: b8eac5e688fa8a442a0690e2803a5b77, type: 2}
+    - target: {fileID: 1939907526780890826, guid: bb38a6e5903d488408d76f6b16c5cf2b, type: 3}
       propertyPath: freezeDuration
       value: 0.3
       objectReference: {fileID: 0}
