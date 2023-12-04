@@ -46,7 +46,7 @@ public class Combat : MonoBehaviour
 
     void Attack()
     {
-        anim.attackState.PunchingTime = .4f; //runs attack animation for .4s
+        //anim.attackState.PunchingTime = .4f; //runs attack animation for .4s
         Collider2D[] damagedEnemies = Physics2D.OverlapCircleAll(attackBox.position, attackRadius, enemyLayer);
 
         foreach (Collider2D enemy in damagedEnemies)

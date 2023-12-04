@@ -15742,18 +15742,6 @@ MonoBehaviour:
   defaultMat: {fileID: 0}
   dmgMat: {fileID: 0}
   deathMat: {fileID: 0}
---- !u!114 &2143389704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143389694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e243feb70b829164580c53609eb4e05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &102706464859255834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15794,6 +15782,14 @@ PrefabInstance:
       propertyPath: tardigradeKnockback.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 748202959462440771, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3613562540894219885, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: fd21e491854442e4abfd82e6038b257b, type: 2}
     - target: {fileID: 3613562540894219885, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 4
@@ -15873,9 +15869,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3829554867675363049, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2143389703}
-    - targetCorrespondingSourceObject: {fileID: 3829554867675363049, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143389704}
   m_SourcePrefab: {fileID: 100100000, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
 --- !u!1001 &1755117626159476673
 PrefabInstance:

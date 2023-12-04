@@ -57,9 +57,6 @@ public class PlayerMovement : MonoBehaviour
         // Get raw input and set horizontal velocity
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        // Set animation state for movement
-        anim.moveState.IsRunning = horizontal != 0;
-
         // Calculate movement variables
         float targetSpeed = horizontal * speed;
         float deltaSpeed = targetSpeed - rb.velocity.x;
@@ -77,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             else 
                 Ps.SetState(State.LEFT, true);
         }
+        Ps.SetState(State.RUNNING, Ps.GetState(State.RIGHT | State.LEFT));
 
         if (IsGrounded())
             coyoteCounter = coyoteTime;
@@ -93,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
         if (coyoteCounter > 0f && jumpBufferCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            anim.moveState.IsJumping = true;
             jumpBufferCounter = 0;
             Ps.SetState(State.JUMP, true);
         }
@@ -110,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))
             Flip();
-        Ps.SetState(State.IDLE, !Ps.GetState(State.LEFT | State.RIGHT | State.JUMP | State.FALL | State.ATTACK | State.HURT));
+        Ps.SetState(State.IDLE, !Ps.GetState(State.JUMP | State.FALL | State.ATTACK | State.HURT | State.RUNNING));
     }
 
     //did this for debuging and testing only, feel free to delete this code:
