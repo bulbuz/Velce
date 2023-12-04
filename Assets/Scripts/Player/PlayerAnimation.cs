@@ -14,7 +14,7 @@ public enum AnimationState
 }
 public class MovementState
 {
-    public bool IsRunning {  get; set; }
+    public bool IsRunning { get; set; }
     public bool IsJumping { get; set; }
     public bool IsFalling { get; set; }
     AnimationState curState;
@@ -71,20 +71,24 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
-    
+
     public MovementState moveState = new();
     public AttackState attackState = new();
     private AnimationState animState = new();
+
+    private PlayerState.State prevState;
 
     private float motionTime = 0f;
     private void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        prevState = PlayerState.GetCopy();
     }
 
     private void Update()
     {
+        PlayerState.PrintState();
         AnimationState prevAnimState = animState;
         motionTime += Time.deltaTime;
 
@@ -103,5 +107,7 @@ public class PlayerAnimation : MonoBehaviour
             motionTime = 0f;
         }
         anim.SetFloat("motionTime", motionTime);
+
+        prevState = PlayerState.GetCopy();
     }
 }

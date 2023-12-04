@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+// abbreviations for the stupid but descriptive names -_-
+using Ps = PlayerState;
+using State = PlayerState.State;
+
 public class PlayerMovement : MonoBehaviour
 {
-
-    PlayerState state;
-
     // Movement vars
     // ------------------------
     public float speed;
@@ -47,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<PlayerAnimation>();
         rend = GetComponent<SpriteRenderer>();
-        state = GetComponent<PlayerState>();
     }
 
     // Update is called once per frame
@@ -67,19 +68,15 @@ public class PlayerMovement : MonoBehaviour
 
         // Add movement force
         rb.AddForce(movement * Vector2.right);
+
+        Ps.SetState(State.LEFT | State.RIGHT, false);
         if (horizontal != 0)
         {
             if (facingRight)
-                state.SetState(PlayerState.State.RIGHT, true);
-            else
-                state.SetState(PlayerState.State.LEFT, true);
-        } 
-        else
-        {
-            state.SetState(PlayerState.State.RIGHT, false);
-            state.SetState(PlayerState.State.LEFT, false);
+                Ps.SetState(State.RIGHT, true);
+            else 
+                Ps.SetState(State.LEFT, true);
         }
-        state.SetState(PlayerState.State.IDLE, !state.GetState(PlayerState.State.LEFT | PlayerState.State.RIGHT));
 
         if (IsGrounded())
             coyoteCounter = coyoteTime;
@@ -91,30 +88,29 @@ public class PlayerMovement : MonoBehaviour
         else
             jumpBufferCounter -= Time.deltaTime;
 
+        Ps.SetState(State.JUMP | State.FALL, false);
         // jump buffer and coyote time for better jump yee
         if (coyoteCounter > 0f && jumpBufferCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             anim.moveState.IsJumping = true;
             jumpBufferCounter = 0;
-
-            state.SetState(PlayerState.State.JUMP, true);
+            Ps.SetState(State.JUMP, true);
         }
-       
+
         // release jump key to fall earlier
         if (rb.velocity.y > 0f && Input.GetButtonUp("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * (1 - incrementalJump));
             coyoteCounter = 0f;
-            state.SetState(PlayerState.State.JUMP, false);
-            state.SetState(PlayerState.State.FALL, true);
         }
+        if (rb.velocity.y < -0.01f)
+            Ps.SetState(State.FALL, true);
 
         // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))
             Flip();
-
-        state.PrintState();
+        Ps.SetState(State.IDLE, !Ps.GetState(State.LEFT | State.RIGHT | State.JUMP | State.FALL | State.ATTACK | State.HURT));
     }
 
     //did this for debuging and testing only, feel free to delete this code:
