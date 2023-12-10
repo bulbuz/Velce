@@ -98196,18 +98196,6 @@ MonoBehaviour:
   defaultMat: {fileID: 0}
   dmgMat: {fileID: 0}
   deathMat: {fileID: 0}
---- !u!114 &2143389704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143389694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e243feb70b829164580c53609eb4e05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2143389712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6428071404637652346, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
@@ -98335,9 +98323,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3829554867675363049, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2143389703}
-    - targetCorrespondingSourceObject: {fileID: 3829554867675363049, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143389704}
   m_SourcePrefab: {fileID: 100100000, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
 --- !u!1001 &3425863902346948433
 PrefabInstance:

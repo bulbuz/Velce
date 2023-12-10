@@ -14,9 +14,11 @@ public class PlayerAnimation : MonoBehaviour
     private Animator anim;
     private State prevState = State.IDLE;
     private float motionTime = 0f;
+    private float attackDuration;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        attackDuration = GetComponent<Combat>().attackDuration;
     }
 
     private void Update()
@@ -29,6 +31,16 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetInteger("state", (int)stateIdx);
             motionTime = 0f;
         }
+
+        if (curState == State.ATTACK)
+        {
+            if (motionTime >= attackDuration)
+            {
+                Ps.SetState(State.ATTACK, false);
+                motionTime = 0f;
+            }
+        }
+
         motionTime += Time.deltaTime;
         anim.SetFloat("motionTime", motionTime);
         prevState = curState;

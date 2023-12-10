@@ -114,19 +114,6 @@ public class PlayerMovement : MonoBehaviour
         Ps.SetState(State.IDLE, !Ps.GetState(State.JUMP | State.FALL | State.ATTACK | State.HURT | State.RUNNING));
     }
 
-    //did this for debuging and testing only, feel free to delete this code:
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            rend.material = dmgMaterial;
-        }
-        else
-        {
-            rend.material = baseMaterial;
-        }
-    }
-
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);

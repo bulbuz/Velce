@@ -9,8 +9,7 @@ public class Combat : MonoBehaviour
     public Transform attackBox;
     public float attackRadius = 0.5f;
     public LayerMask enemyLayer;
-
-    private PlayerAnimation anim;
+    public float attackDuration = 0.4f;
     public int attackDamage;
 
     public Vector2 enemyKnockback;
@@ -18,7 +17,6 @@ public class Combat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -46,13 +44,18 @@ public class Combat : MonoBehaviour
 
     void Attack()
     {
-        //anim.attackState.PunchingTime = .4f; //runs attack animation for .4s
+        PlayerState.SetState(PlayerState.State.ATTACK, true);
+
+        // get enemies the player has hit
         Collider2D[] damagedEnemies = Physics2D.OverlapCircleAll(attackBox.position, attackRadius, enemyLayer);
 
         foreach (Collider2D enemy in damagedEnemies)
         {
+            // take damage
             enemy.GetComponent<HealthUpdate>().TakeDamage(attackDamage);
 
+
+            // calculate direction of knockback
             bool facingRight = gameObject.GetComponent<PlayerMovement>().facingRight;
             if (facingRight)
                 enemyKnockback.x = Mathf.Abs(enemyKnockback.x);
@@ -62,7 +65,6 @@ public class Combat : MonoBehaviour
             {
                 enemyKnockback.x *= -1;
             }
-            Debug.Log(enemyKnockback.x);
 
             enemy.GetComponent<Rigidbody2D>().AddForce(enemyKnockback);
         }

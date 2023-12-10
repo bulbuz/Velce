@@ -57,7 +57,6 @@ public class HealthUpdate : MonoBehaviour
                 }
             }
             rend.material.SetFloat("_AnimDur", animDur);
-            //Debug.Log(rend.material.GetFloat("_AnimDur"));
         }
     }
     public bool IsHurt()
