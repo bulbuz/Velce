@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-
 // abbreviations for the stupid but descriptive names -_-
 using Ps = PlayerState;
 using State = PlayerState.State;
@@ -18,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public float incrementalJump;
     public bool facingRight = true;
     public float minJumpCutoffVel = 50;
+    private bool isJumping = false;
 
     public float coyoteTime = 0.2f;
     private float coyoteCounter = 0;
@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             jumpBufferCounter = 0;
-            Ps.SetState(State.JUMP, true);
+            isJumping = true;
         }
 
         // release jump key to fall earlier
@@ -102,7 +102,11 @@ public class PlayerMovement : MonoBehaviour
             coyoteCounter = 0f;
         }
         if (rb.velocity.y < -0.01f)
+        {
             Ps.SetState(State.FALL, true);
+            isJumping = false;
+        }
+        Ps.SetState(State.JUMP, isJumping);
 
         // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))

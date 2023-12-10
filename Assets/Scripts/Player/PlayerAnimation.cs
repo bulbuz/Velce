@@ -24,7 +24,6 @@ public class PlayerAnimation : MonoBehaviour
 
         int stateIdx = Ps.GetPrio();
         State curState = (State)(1 << stateIdx);
-        Debug.Log((State)(1 << stateIdx));
         if (curState != prevState)
         {
             anim.SetInteger("state", (int)stateIdx);
