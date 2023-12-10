@@ -29,7 +29,6 @@ public class PlayerAnimation : MonoBehaviour
             motionTime = 0f;
         }
     }
-
     private void Update()
     {
 
@@ -52,6 +51,5 @@ public class PlayerAnimation : MonoBehaviour
         motionTime += Time.deltaTime;
         anim.SetFloat("motionTime", motionTime);
         prevState = curState;
-
     }
 }

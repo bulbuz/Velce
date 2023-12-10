@@ -37,26 +37,11 @@ public class HealthUpdate : MonoBehaviour
         if (isHurt)
         {
             freezeTimer += Time.deltaTime;
-            if (freezeTimer >= freezeDuration) {
+            if (freezeTimer >= freezeDuration)
+            {
                 isHurt = false;
                 freezeTimer = 0;
             }
-            dmgTime -= Time.deltaTime;
-            animDur += Time.deltaTime;
-
-            if (dmgTime > 0f)
-            {
-                rend.material = dead ? deathMat : dmgMat;
-            }
-            else
-            {
-                rend.material = defaultMat;
-                if (dead)
-                {
-                    Destroy(gameObject);
-                }
-            }
-            rend.material.SetFloat("_AnimDur", animDur);
         }
     }
     public bool IsHurt()
@@ -83,5 +68,6 @@ public class HealthUpdate : MonoBehaviour
         dead = true;
         dmgTime = 1f;
         animDur = 0f;
+        Destroy(gameObject);
     }
 }

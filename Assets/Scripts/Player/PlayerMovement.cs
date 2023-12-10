@@ -117,19 +117,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        
         float offset = 0.1f;
-        RaycastHit2D ray = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + offset, groundLayer);
-        /*
-        Color color = Color.red;
-        if (ray.collider != null)
-        {
-            color = Color.green;
-
-        }
-        Debug.DrawRay(boxCollider.bounds.center, Vector2.down * (boxCollider.bounds.extents.y + offset), color);
-        */
-        return ray.collider != null;
+        
+        return Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + offset, groundLayer);
     }
 
     private void Flip()

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6638209678404361432}
   - component: {fileID: -663978612945530209}
   - component: {fileID: -7953509217688355164}
+  - component: {fileID: -4349602392438398059}
   m_Layer: 7
   m_Name: Klicker
   m_TagString: Untagged
@@ -198,3 +199,22 @@ MonoBehaviour:
   defaultMat: {fileID: 0}
   dmgMat: {fileID: 0}
   deathMat: {fileID: 0}
+--- !u!114 &-4349602392438398059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984412115012946164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb787821272e9f846ac0615769dbbd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.38
+  facingRight: 1
+  wallCheck: {fileID: 0}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheck: {fileID: 0}
