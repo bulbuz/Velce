@@ -21,24 +21,32 @@ public class PlayerAnimation : MonoBehaviour
         attackDuration = GetComponent<Combat>().attackDuration;
     }
 
+    private void PlayAttack()
+    {
+        if (motionTime >= attackDuration)
+        {
+            Ps.SetState(State.ATTACK, false);
+            motionTime = 0f;
+        }
+    }
+
     private void Update()
     {
 
         int stateIdx = Ps.GetPrio();
         State curState = (State)(1 << stateIdx);
+
+        // reset motionTime if state has changed
         if (curState != prevState)
         {
             anim.SetInteger("state", (int)stateIdx);
             motionTime = 0f;
         }
 
+        // handle attack animation
         if (curState == State.ATTACK)
         {
-            if (motionTime >= attackDuration)
-            {
-                Ps.SetState(State.ATTACK, false);
-                motionTime = 0f;
-            }
+            PlayAttack();
         }
 
         motionTime += Time.deltaTime;

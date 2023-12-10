@@ -33,8 +33,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask groundLayer;
-
-    private PlayerAnimation anim;
+    BoxCollider2D boxCollider;
+    public float castDistance = 0.5f;
 
     //variables for handling shaders
     [SerializeField]
@@ -47,8 +47,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<PlayerAnimation>();
         rend = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         float deltaSpeed = targetSpeed - rb.velocity.x;
         float curAcc = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
         float movement = Mathf.Pow(Mathf.Abs(deltaSpeed) * curAcc, velPower) * Mathf.Sign(deltaSpeed);
-
+        
         // Add movement force
         rb.AddForce(movement * Vector2.right);
 
@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         }
         Ps.SetState(State.RUNNING, Ps.GetState(State.RIGHT | State.LEFT));
 
+        Debug.Log(IsGrounded());
         if (IsGrounded())
             coyoteCounter = coyoteTime;
         else
@@ -116,7 +117,19 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        
+        float offset = 0.1f;
+        RaycastHit2D ray = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + offset, groundLayer);
+        /*
+        Color color = Color.red;
+        if (ray.collider != null)
+        {
+            color = Color.green;
+
+        }
+        Debug.DrawRay(boxCollider.bounds.center, Vector2.down * (boxCollider.bounds.extents.y + offset), color);
+        */
+        return ray.collider != null;
     }
 
     private void Flip()
