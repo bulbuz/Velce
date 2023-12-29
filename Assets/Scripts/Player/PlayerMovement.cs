@@ -76,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
         }
         Ps.SetState(State.RUNNING, Ps.GetState(State.RIGHT | State.LEFT));
 
-        Debug.Log(IsGrounded());
         if (IsGrounded())
             coyoteCounter = coyoteTime;
         else
