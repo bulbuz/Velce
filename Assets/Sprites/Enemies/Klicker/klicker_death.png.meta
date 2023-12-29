@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 23476fa7100511542ab9b81f0ebd7ab4
+guid: 0eaebf838c641754f930efb9f77991be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: klicker_running_0
+      name: klicker_death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c1be4696c9312b4c80dbcec94a50a3c
-      internalID: 1914015844
+      spriteID: 834f263e291c010429a91476c1fde68c
+      internalID: 119370764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_1
+      name: klicker_death_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6625351d8132b564a8024b493974f663
-      internalID: -591098569
+      spriteID: e66ea6ae3f0ad9447b329cc55b206c19
+      internalID: 1274269611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_2
+      name: klicker_death_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0025e47de77c87c49b8ccd20a1bc5033
-      internalID: -842348855
+      spriteID: b2c82cbbcabcdda448458a2fbec9b2c9
+      internalID: 1704828844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_3
+      name: klicker_death_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cce5abead635d4982a418f9f6c5db1
-      internalID: 482739305
+      spriteID: 67605a3f30999fb4fbdd5841d12e144a
+      internalID: 1034515123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_4
+      name: klicker_death_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16eb3250a3a3ed34585c9b58bd8476da
-      internalID: -935571635
+      spriteID: 9faea2960669b4b49906c4e762be0bf9
+      internalID: -1478502498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_5
+      name: klicker_death_5
       rect:
         serializedVersion: 2
         x: 320
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ececd4b1413b18479bc7a79b93c30a7
-      internalID: -1856041122
+      spriteID: 36747a450cc792f4c8e71f8e2ded93cd
+      internalID: 2063232249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_6
+      name: klicker_death_6
       rect:
         serializedVersion: 2
         x: 384
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78f3e96fea4aca3459cfd261bc2be815
-      internalID: 526804191
+      spriteID: 5521203fceacbd84e8783aa3f7c37518
+      internalID: 728520148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_7
+      name: klicker_death_7
       rect:
         serializedVersion: 2
         x: 448
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8695aec90f8f2bb42bd48a451cd02354
-      internalID: -1148367581
+      spriteID: c9c6c464bd652c344876038b53193651
+      internalID: 301484342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_8
+      name: klicker_death_8
       rect:
         serializedVersion: 2
         x: 512
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4af0fbef59636543aaffb8f17d5c371
-      internalID: -1418738510
+      spriteID: b0d8482fcd0360043ba14d1c069c1f8f
+      internalID: 1635863252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_9
+      name: klicker_death_9
       rect:
         serializedVersion: 2
         x: 576
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0960e6e38ac244409def8bc2cd5d9f2
-      internalID: 1477821243
+      spriteID: 8c5ad1a233885c6479b0cecf37fd1375
+      internalID: -869472805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_10
+      name: klicker_death_10
       rect:
         serializedVersion: 2
         x: 640
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a531a589ed4b6543afd6475691ed163
-      internalID: 1809008520
+      spriteID: fadca498af0d4b4428c81cea74c83e5c
+      internalID: -1235200548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: klicker_running_11
+      name: klicker_death_11
       rect:
         serializedVersion: 2
         x: 704
@@ -355,8 +355,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d878b71c956e4674fa5a548173c9f092
-      internalID: -1385353052
+      spriteID: 8162142439423114daa88f7be77ad1c3
+      internalID: 106932452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: klicker_death_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee46d3981eb12b449361b97dbe6b2d6
+      internalID: -1054093796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: klicker_death_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94406c95c0150c9429bc4155e72d2feb
+      internalID: 1429133429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: klicker_death_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffb256fb1716954e9d1a8070b0f90bb
+      internalID: 1172896128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: klicker_death_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53181a98f3f5190419381cc944c3f9f3
+      internalID: 1126622783
       vertices: []
       indices: 
       edges: []
@@ -372,18 +456,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      klicker_running_0: 1914015844
-      klicker_running_1: -591098569
-      klicker_running_10: 1809008520
-      klicker_running_11: -1385353052
-      klicker_running_2: -842348855
-      klicker_running_3: 482739305
-      klicker_running_4: -935571635
-      klicker_running_5: -1856041122
-      klicker_running_6: 526804191
-      klicker_running_7: -1148367581
-      klicker_running_8: -1418738510
-      klicker_running_9: 1477821243
+      klicker_death_0: 119370764
+      klicker_death_1: 1274269611
+      klicker_death_10: -1235200548
+      klicker_death_11: 106932452
+      klicker_death_12: -1054093796
+      klicker_death_13: 1429133429
+      klicker_death_14: 1172896128
+      klicker_death_15: 1126622783
+      klicker_death_2: 1704828844
+      klicker_death_3: 1034515123
+      klicker_death_4: -1478502498
+      klicker_death_5: 2063232249
+      klicker_death_6: 728520148
+      klicker_death_7: 301484342
+      klicker_death_8: 1635863252
+      klicker_death_9: -869472805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
