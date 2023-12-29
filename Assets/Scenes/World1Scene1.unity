@@ -98457,6 +98457,8 @@ MonoBehaviour:
   - {fileID: 1544058725}
   - {fileID: 675550258}
   - {fileID: 1331861843}
+  heart: {fileID: 0}
+  emptyHeart: {fileID: 0}
 --- !u!1001 &102706464859255834
 PrefabInstance:
   m_ObjectHideFlags: 0
