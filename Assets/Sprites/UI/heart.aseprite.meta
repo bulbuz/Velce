@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: heart_Frame_0
     originalName: 
-    pivot: {x: 0.4615385, y: 0}
+    pivot: {x: 0.4615385, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: heart_Frame_1
     originalName: 
-    pivot: {x: 0.53846157, y: 0}
+    pivot: {x: 0.53846157, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 28}
   - name: heart_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 100}
   - name: heart_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 4}
   - name: heart_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 28}
   - name: heart_Frame_5
     originalName: 
-    pivot: {x: 0.4615385, y: 0}
+    pivot: {x: 0.4615385, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 52}
   - name: heart_Frame_6
     originalName: 
-    pivot: {x: 0.53846157, y: 0}
+    pivot: {x: 0.53846157, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 76}
   - name: heart_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 52}
   - name: heart_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 76}
   - name: heart_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -321,7 +321,7 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 100}
   - name: heart_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -341,7 +341,7 @@ ScriptedImporter:
     uvTransform: {x: 45, y: 4}
   - name: heart_Frame_11
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -361,7 +361,7 @@ ScriptedImporter:
     uvTransform: {x: 45, y: 28}
   - name: heart_Frame_12
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -381,7 +381,7 @@ ScriptedImporter:
     uvTransform: {x: 45, y: 52}
   - name: heart_Frame_13
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -401,7 +401,7 @@ ScriptedImporter:
     uvTransform: {x: 45, y: 76}
   - name: heart_Frame_14
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -421,7 +421,7 @@ ScriptedImporter:
     uvTransform: {x: 45, y: 100}
   - name: heart_Frame_15
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -451,128 +451,128 @@ ScriptedImporter:
     - name: heart_Frame_0
       frameIndex: 0
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 13
         height: 16
       spriteId: 063557b9da8c228488f168d36b3e4c47
     - name: heart_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
-        y: 0
+        x: 9
+        y: 8
         width: 13
         height: 16
       spriteId: 4e3f71c378f2e39469542b1c0ee380f1
     - name: heart_Frame_2
       frameIndex: 2
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 62dfe7288ad905b49acdf9620724e2e3
     - name: heart_Frame_3
       frameIndex: 3
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 3202c484079fa58499825e69faf4c998
     - name: heart_Frame_4
       frameIndex: 4
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 6a57f5442580569458b9c9c78d53cfb0
     - name: heart_Frame_5
       frameIndex: 5
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 13
         height: 16
       spriteId: 9308da84b65baf54a8136a7a0b9fd229
     - name: heart_Frame_6
       frameIndex: 6
       cellRect:
-        x: 1
-        y: 0
+        x: 9
+        y: 8
         width: 13
         height: 16
       spriteId: 989e9c7b96bdf07479d00002934957e7
     - name: heart_Frame_7
       frameIndex: 7
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: a5230f6087daacb4eb86f77cbcd5fc6d
     - name: heart_Frame_8
       frameIndex: 8
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: b6e1fe5bdb682c04598fee6cc5428541
     - name: heart_Frame_9
       frameIndex: 9
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 2fee5fbd751702445b45b99f521e4ab4
     - name: heart_Frame_10
       frameIndex: 10
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: d53d96c77f83095458c2b68e803d8079
     - name: heart_Frame_11
       frameIndex: 11
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: afb188fe7f00ed24f939f6db71b71c9e
     - name: heart_Frame_12
       frameIndex: 12
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 483aeb6ec33739f4a927d68eb631e32b
     - name: heart_Frame_13
       frameIndex: 13
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 4d540c2a525c41c4eaeaa892d5b49b62
     - name: heart_Frame_14
       frameIndex: 14
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 2dc1c4e7cd0ef56459ba876b71660b1e
     - name: heart_Frame_15
       frameIndex: 15
       cellRect:
-        x: 2
-        y: 0
+        x: 10
+        y: 8
         width: 12
         height: 16
       spriteId: 8c6657f6b4522b3469c96ce87b62e67b
@@ -581,4 +581,4 @@ ScriptedImporter:
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 32, y: 32}

@@ -49,7 +49,7 @@ public static class PlayerState
                 return bin.Length - i - 1;
         }
 
-        // ERROR we should not've come to this!
+        // ERROR player must have a state!
         Debug.Assert(true, "player is stateless!!!");
         return -1;
     }
@@ -64,6 +64,7 @@ public static class PlayerState
     {
         Debug.Log(cur_state);
     }
+
     // Debug purposes
     public static void PrintStateBin()
     {

@@ -11,13 +11,6 @@ public class PlayerHealth : MonoBehaviour
     public int curHealth; 
     public GameObject[] hearts;
     
-    enum States
-    {
-        IDLE,
-        POP,
-        EMPTY,
-    }
-
     // Start is called before the first frame update
     void Start()
     {

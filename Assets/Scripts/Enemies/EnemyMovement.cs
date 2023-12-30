@@ -38,6 +38,8 @@ public class EnemyMovement : MonoBehaviour
         // turn around if hit wall or no more ground
         if (HitWall() || !GroundAhead())
         {
+            Debug.Log("Hit wall: " + HitWall());
+            Debug.Log("ground ahead: " + HitWall());
             Flip();
             speed *= -1;
         }
@@ -50,7 +52,7 @@ public class EnemyMovement : MonoBehaviour
         return Physics2D.Raycast(groundCheck.position, Vector2.down, boxCollider.bounds.extents.y + offset, wallLayer);
     }
 
-    // uses the built in overlap for collision against wall mask
+    // uses the built in overlap function for collision against wall mask
     bool HitWall()
     {
         return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
