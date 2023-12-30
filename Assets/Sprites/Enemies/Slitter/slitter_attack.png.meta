@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 174510a38f2cf514cae6c1d67007c6fd
+guid: 5cce0210c56401c42ae68209c9674936
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slitter_0
+      name: slitter_attack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c3f14e4c81f4ec4eb1e841e85d6d534
-      internalID: 1221138631
+      spriteID: bf75bd5e3fbba034380ed6c253814ed4
+      internalID: 2052182246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slitter_1
+      name: slitter_attack_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d450517700a0e934eb0dff4c16b84e2b
-      internalID: 1250032270
+      spriteID: 5b43ad106513f3c4a9bf58b7e1743d8b
+      internalID: -696837453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slitter_2
+      name: slitter_attack_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32b5addca6510544b8aa106bca3beaa3
-      internalID: 11205366
+      spriteID: 3856c027daaa1aa4daea51ec16967c1b
+      internalID: -1096894462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slitter_3
+      name: slitter_attack_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,8 +187,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf580f52faf8df498492e877d0a885c
-      internalID: -408937608
+      spriteID: a7d5581a7e968d24d93182e72ca04661
+      internalID: 1280358558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slitter_attack_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c239b6bd3ab9a24898a0abcae2b74f7
+      internalID: -2145317601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slitter_attack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150899e1bbf6c244ad8f584ff5e0ec8
+      internalID: -396822685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slitter_attack_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9395b4d29c7aa034b8f3e5826e3f9da0
+      internalID: 993365933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slitter_attack_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf5e69177464014092a54551380fdeb
+      internalID: 932930968
       vertices: []
       indices: 
       edges: []
@@ -204,10 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      slitter_0: 1221138631
-      slitter_1: 1250032270
-      slitter_2: 11205366
-      slitter_3: -408937608
+      slitter_attack_0: 2052182246
+      slitter_attack_1: -696837453
+      slitter_attack_2: -1096894462
+      slitter_attack_3: 1280358558
+      slitter_attack_4: -2145317601
+      slitter_attack_5: -396822685
+      slitter_attack_6: 993365933
+      slitter_attack_7: 932930968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
