@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class PatrolMovement : MonoBehaviour
 {
     public float speed;
     public bool facingRight = true;
@@ -27,19 +27,23 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool hurt = healthUpdate.IsHurt();
-        
-        // don't update and wait if hit
-        if (hurt)
-            return;
+
+    }
+
+    public void ManualUpdate()
+    {
+        if (healthUpdate.dead)
+        {
+            speed = 0;
+        }
 
         rb.velocity = new Vector2(speed, rb.velocity.y);
 
         // turn around if hit wall or no more ground
         if (HitWall() || !GroundAhead())
         {
-            Debug.Log("Hit wall: " + HitWall());
-            Debug.Log("ground ahead: " + HitWall());
+            //Debug.Log("Hit wall: " + HitWall());
+            //Debug.Log("ground ahead: " + HitWall());
             Flip();
             speed *= -1;
         }

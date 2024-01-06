@@ -3,21 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
-
 public static class PlayerState
 {
     // The list is ranked in which state is "prioritized" (higher value = higher priority)
     [Flags]
     public enum State
     {
-        IDLE    =   1 << 0,
-        LEFT    =   1 << 1,
-        RIGHT   =   1 << 2,
-        RUNNING =   1 << 3,
-        FALL    =   1 << 4,
-        JUMP    =   1 << 5,
-        HURT    =   1 << 6,
-        ATTACK  =   1 << 7,
+        IDLE = 1 << 0,
+        LEFT = 1 << 1,
+        RIGHT = 1 << 2,
+        RUNNING = 1 << 3,
+        FALL = 1 << 4,
+        JUMP = 1 << 5,
+        HURT = 1 << 6,
+        ATTACK = 1 << 7,
     }
     static State cur_state = State.IDLE;
 

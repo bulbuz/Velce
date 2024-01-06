@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float acceleration;
     public float deceleration;
-    public float velPower; // how quickly it de/accelerates
+    public float velPower; // sensitivity for (de)acceleration
     // ------------------------
 
     private Rigidbody2D rb;
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Material dmgMaterial;
     SpriteRenderer rend;
-
+   
     // Start is called before the first frame update
     void Start()
     {

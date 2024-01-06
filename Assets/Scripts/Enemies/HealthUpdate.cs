@@ -21,7 +21,7 @@ public class HealthUpdate : MonoBehaviour
     //variables for handling shaders
     SpriteRenderer rend;
     float dmgTime = 0f;
-    bool dead = false;
+    public bool dead = false;
     float animDur = 0f;
 
     // Start is called before the first frame update
@@ -51,6 +51,7 @@ public class HealthUpdate : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        // if not dead, remove health and set hurt to true
         if (!dead)
         {
             curHealth -= damage;
@@ -65,9 +66,10 @@ public class HealthUpdate : MonoBehaviour
 
     void Die()
     {
+        GetComponent<EnemyAI>().state = EnemyAI.EnemyState.Dead;
         dead = true;
         dmgTime = 1f;
         animDur = 0f;
-        Destroy(gameObject);
+        // Destroy(gameObject); don't remove if object got a "dead state"
     }
 }

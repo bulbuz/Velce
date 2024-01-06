@@ -31,7 +31,6 @@ public class PlayerAnimation : MonoBehaviour
     }
     private void Update()
     {
-
         int stateIdx = Ps.GetPrio();
         State curState = (State)(1 << stateIdx);
 
