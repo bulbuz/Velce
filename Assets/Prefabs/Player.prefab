@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 6845603294935490918}
   - component: {fileID: 2882041961166337707}
   - component: {fileID: 573449443920517170}
+  - component: {fileID: 2334502354578726207}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -209,10 +210,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpingPower: 9
-  incrementalJump: 0
+  incrementalJump: 0.64
   facingRight: 1
   minJumpCutoffVel: 50
-  coyoteTime: 0.2
+  coyoteTime: 0.15
   jumpBufferTime: 0.2
   acceleration: 5
   deceleration: 10
@@ -221,6 +222,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  castDistance: 0.5
   baseMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   dmgMaterial: {fileID: 2100000, guid: e8372d667c1165d4b82a0b9dc840ef45, type: 2}
 --- !u!95 &6845603294935490918
@@ -274,8 +276,28 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackDuration: 2
   attackDamage: 20
-  enemyKnockback: {x: 0, y: 0}
+  enemyKnockback: {x: 150, y: 100}
+--- !u!114 &2334502354578726207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3829554867675363049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205d6650c7f53e54f8bea4541692db6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 2235333161916618731, guid: c610130d6ac40da469f7af4ebaea1337, type: 3}
+  maxHealth: 3
+  curHealth: 3
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &9090619028311330583
 GameObject:
   m_ObjectHideFlags: 0

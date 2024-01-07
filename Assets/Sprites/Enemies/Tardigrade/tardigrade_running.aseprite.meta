@@ -126,8 +126,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 27
+      x: 84
+      y: 4
       width: 32
       height: 14
     spriteID: 46f8dee863a7a3e4aba7ebc330a7b7ae
@@ -138,7 +138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 27}
+    uvTransform: {x: 84, y: 4}
   - name: tardigrade_running_Frame_1
     originalName: 
     pivot: {x: 0.5, y: -1.1428572}
@@ -147,7 +147,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 49
+      y: 27
       width: 32
       height: 14
     spriteID: 5b5acab9761797f4b9fedfb5fd912fb6
@@ -158,7 +158,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 49}
+    uvTransform: {x: 4, y: 27}
   - name: tardigrade_running_Frame_2
     originalName: 
     pivot: {x: 0.5, y: -1.1428572}
@@ -166,8 +166,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 71
+      x: 44
+      y: 27
       width: 32
       height: 14
     spriteID: 89745119ac4d7c043b846a2f439df6cc
@@ -178,7 +178,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 71}
+    uvTransform: {x: 44, y: 27}
   - name: tardigrade_running_Frame_3
     originalName: 
     pivot: {x: 0.5, y: -1.0666667}
@@ -199,6 +199,86 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: tardigrade_running_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 27
+      width: 32
+      height: 14
+    spriteID: 638aebbdd38b91545ac6c38254b3ea50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 27}
+  - name: tardigrade_running_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 32
+      height: 14
+    spriteID: 60ca8a5aa3689b94dbd789314cc5da44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: tardigrade_running_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 49
+      width: 32
+      height: 14
+    spriteID: beb009e8adf703841999518ece3d6873
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 49}
+  - name: tardigrade_running_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 32
+      height: 15
+    spriteID: f4d35aa0ff7ecfd46bfef87f2f739c72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -216,14 +296,6 @@ ScriptedImporter:
         width: 32
         height: 14
       spriteId: 46f8dee863a7a3e4aba7ebc330a7b7ae
-    - name: tardigrade_running_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 16
-        y: 16
-        width: 32
-        height: 14
-      spriteId: 5b5acab9761797f4b9fedfb5fd912fb6
     - name: tardigrade_running_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,15 +303,55 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 14
+      spriteId: 5b5acab9761797f4b9fedfb5fd912fb6
+    - name: tardigrade_running_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
       spriteId: 89745119ac4d7c043b846a2f439df6cc
-    - name: tardigrade_running_Frame_3
-      frameIndex: 3
+    - name: tardigrade_running_Frame_6
+      frameIndex: 6
       cellRect:
         x: 16
         y: 16
         width: 32
         height: 15
       spriteId: 7beb014feb3298641a93af6fefad8e4d
+    - name: tardigrade_running_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 638aebbdd38b91545ac6c38254b3ea50
+    - name: tardigrade_running_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 60ca8a5aa3689b94dbd789314cc5da44
+    - name: tardigrade_running_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: beb009e8adf703841999518ece3d6873
+    - name: tardigrade_running_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 15
+      spriteId: f4d35aa0ff7ecfd46bfef87f2f739c72
     linkedCells: []
     parentIndex: -1
   platformSettings: []

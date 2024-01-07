@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 83c03fe491aec0141be0e72f7c6198d4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: tardigrade_attacking_Frame_0
+    originalName: 
+    pivot: {x: 0.61290324, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 31
+      height: 16
+    spriteID: f28777ff043704d42b08e8be09eea298
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: tardigrade_attacking_Frame_1
+    originalName: 
+    pivot: {x: 0.61290324, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 74
+      width: 31
+      height: 14
+    spriteID: 475ab6d5a15039b428c708c00495f656
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 74}
+  - name: tardigrade_attacking_Frame_2
+    originalName: 
+    pivot: {x: 0.61290324, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 96
+      width: 31
+      height: 14
+    spriteID: 9315f57dae97a124a9e879d21c5aa40f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 96}
+  - name: tardigrade_attacking_Frame_3
+    originalName: 
+    pivot: {x: 0.58064514, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
+      width: 31
+      height: 15
+    spriteID: 1c597cab97c7acd4985dcc98ad27da35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 28}
+  - name: tardigrade_attacking_Frame_4
+    originalName: 
+    pivot: {x: 0.58064514, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 51
+      width: 31
+      height: 15
+    spriteID: b695bf9816aa4b44786ee53ce1642a0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 51}
+  - name: tardigrade_attacking_Frame_5
+    originalName: 
+    pivot: {x: 0.5625, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 26
+      width: 32
+      height: 13
+    spriteID: 4cca983190b682c42bd84b49584a6b9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 26}
+  - name: tardigrade_attacking_Frame_6
+    originalName: 
+    pivot: {x: 0.5625, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 47
+      width: 32
+      height: 13
+    spriteID: 84f7bbdaa3156cd4e9df7d782fb82013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 47}
+  - name: tardigrade_attacking_Frame_7
+    originalName: 
+    pivot: {x: 0.53125, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 4
+      width: 32
+      height: 14
+    spriteID: 0e889e8d000af51479574c7359d97762
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 4}
+  - name: tardigrade_attacking_Frame_8
+    originalName: 
+    pivot: {x: 0.53125, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 26
+      width: 32
+      height: 14
+    spriteID: 2ee4086d405c4a140858a73118469eaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 26}
+  - name: tardigrade_attacking_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 48
+      width: 32
+      height: 14
+    spriteID: 38f67b6e4ab0f814eb350b67b56ae8da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 48}
+  - name: tardigrade_attacking_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 70
+      width: 32
+      height: 14
+    spriteID: 313ef9f6872b7ab4bbf8f54957cf0325
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 70}
+  - name: tardigrade_attacking_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 92
+      width: 32
+      height: 14
+    spriteID: 5deeaea8820ce96488fcb0449ef7407b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 92}
+  - name: tardigrade_attacking_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 114
+      width: 32
+      height: 14
+    spriteID: 05fc74ef43acce44aaed96dd0595f5cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 114}
+  - name: tardigrade_attacking_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 136
+      width: 32
+      height: 14
+    spriteID: b24f113685da7fa40b33f643e6c31b8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 136}
+  - name: tardigrade_attacking_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 158
+      width: 32
+      height: 14
+    spriteID: 031a761eaa8b83746ba2bc9669d85945
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 158}
+  - name: tardigrade_attacking_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 180
+      width: 32
+      height: 14
+    spriteID: c981eeffc7cae204cb167a60b1fe1ce9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 180}
+  - name: tardigrade_attacking_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 202
+      width: 32
+      height: 14
+    spriteID: b2af87d4412696943955bef573c31edf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 202}
+  - name: tardigrade_attacking_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 224
+      width: 32
+      height: 14
+    spriteID: 9573e9194f48bc743804c664bc31d793
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 224}
+  - name: tardigrade_attacking_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 4
+      width: 32
+      height: 14
+    spriteID: 5147e423edca5644abc99be4e9d85382
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1847377966
+    name: tardigrade_attacking
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: tardigrade_attacking_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 16
+        width: 31
+        height: 16
+      spriteId: f28777ff043704d42b08e8be09eea298
+    - name: tardigrade_attacking_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 16
+        width: 31
+        height: 14
+      spriteId: 475ab6d5a15039b428c708c00495f656
+    - name: tardigrade_attacking_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 16
+        width: 31
+        height: 14
+      spriteId: 9315f57dae97a124a9e879d21c5aa40f
+    - name: tardigrade_attacking_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 16
+        width: 31
+        height: 15
+      spriteId: 1c597cab97c7acd4985dcc98ad27da35
+    - name: tardigrade_attacking_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 16
+        width: 31
+        height: 15
+      spriteId: b695bf9816aa4b44786ee53ce1642a0e
+    - name: tardigrade_attacking_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 16
+        width: 32
+        height: 13
+      spriteId: 4cca983190b682c42bd84b49584a6b9e
+    - name: tardigrade_attacking_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 14
+        y: 16
+        width: 32
+        height: 13
+      spriteId: 84f7bbdaa3156cd4e9df7d782fb82013
+    - name: tardigrade_attacking_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 15
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 0e889e8d000af51479574c7359d97762
+    - name: tardigrade_attacking_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 15
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 2ee4086d405c4a140858a73118469eaa
+    - name: tardigrade_attacking_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 38f67b6e4ab0f814eb350b67b56ae8da
+    - name: tardigrade_attacking_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 313ef9f6872b7ab4bbf8f54957cf0325
+    - name: tardigrade_attacking_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 5deeaea8820ce96488fcb0449ef7407b
+    - name: tardigrade_attacking_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 05fc74ef43acce44aaed96dd0595f5cc
+    - name: tardigrade_attacking_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: b24f113685da7fa40b33f643e6c31b8a
+    - name: tardigrade_attacking_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 031a761eaa8b83746ba2bc9669d85945
+    - name: tardigrade_attacking_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: c981eeffc7cae204cb167a60b1fe1ce9
+    - name: tardigrade_attacking_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: b2af87d4412696943955bef573c31edf
+    - name: tardigrade_attacking_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 9573e9194f48bc743804c664bc31d793
+    - name: tardigrade_attacking_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 16
+        y: 16
+        width: 32
+        height: 14
+      spriteId: 5147e423edca5644abc99be4e9d85382
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 48}

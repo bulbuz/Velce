@@ -92059,7 +92059,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.5943396, g: 0.10933607, b: 0.22908996, a: 0}
+  m_BackGroundColor: {r: 0.12156863, g: 0.11372549, b: 0.12156863, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -98723,25 +98723,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6428071404637652346, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
   m_PrefabInstance: {fileID: 102706464859255834}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2143389720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143389694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 205d6650c7f53e54f8bea4541692db6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heartPrefab: {fileID: 2235333161916618731, guid: c610130d6ac40da469f7af4ebaea1337, type: 3}
-  maxHealth: 3
-  curHealth: 3
-  hearts:
-  - {fileID: 1544058725}
-  - {fileID: 675550258}
-  - {fileID: 1331861843}
 --- !u!1001 &102706464859255834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98759,20 +98740,8 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 541243403378213670, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1719516747, guid: 50330ca25d29a7143a9550f348e610d5, type: 3}
-    - target: {fileID: 541243403378213670, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: enemyKnockback.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: enemyKnockback.y
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: tardigradeKnockback.x
@@ -98782,6 +98751,18 @@ PrefabInstance:
       propertyPath: tardigradeKnockback.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2334502354578726207, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1544058725}
+    - target: {fileID: 2334502354578726207, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 675550258}
+    - target: {fileID: 2334502354578726207, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 1331861843}
     - target: {fileID: 3613562540894219885, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 4
@@ -98846,21 +98827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6693500367053243974, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: coyoteTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6693500367053243974, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: incrementalJump
-      value: 0.64
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3829554867675363049, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143389720}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
 --- !u!1001 &3425863902346948433
 PrefabInstance:
