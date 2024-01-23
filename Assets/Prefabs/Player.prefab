@@ -276,7 +276,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  attackDuration: 2
+  attackDuration: 0.25
   attackDamage: 20
   enemyKnockback: {x: 150, y: 100}
 --- !u!114 &2334502354578726207

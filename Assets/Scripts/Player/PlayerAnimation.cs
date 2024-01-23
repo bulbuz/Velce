@@ -40,6 +40,10 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetInteger("state", (int)stateIdx);
             motionTime = 0f;
         }
+        else
+        {
+            anim.SetInteger("state", -1);
+        }
 
         // handle attack animation
         if (curState == State.ATTACK)
