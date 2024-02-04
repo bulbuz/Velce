@@ -9,14 +9,14 @@ public static class PlayerState
     [Flags]
     public enum State
     {
-        IDLE = 1 << 0,
-        LEFT = 1 << 1,
-        RIGHT = 1 << 2,
-        RUNNING = 1 << 3,
-        FALL = 1 << 4,
-        JUMP = 1 << 5,
-        HURT = 1 << 6,
-        ATTACK = 1 << 7,
+        IDLE    =   1 << 0,
+        LEFT    =   1 << 1,
+        RIGHT   =   1 << 2,
+        RUNNING =   1 << 3,
+        FALL    =   1 << 4,
+        JUMP    =   1 << 5,
+        HURT    =   1 << 6,
+        ATTACK  =   1 << 7,
     }
     static State cur_state = State.IDLE;
 
@@ -51,11 +51,6 @@ public static class PlayerState
         // ERROR player must have a state!
         Debug.Assert(true, "player is stateless!!!");
         return -1;
-    }
-
-    public static State GetCopy()
-    {
-        return cur_state;
     }
 
     // Debug purposes

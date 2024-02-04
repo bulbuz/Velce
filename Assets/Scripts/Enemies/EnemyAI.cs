@@ -25,7 +25,7 @@ public class EnemyAI : MonoBehaviour
     public EnemyState state = EnemyState.Move;
     private Animator animator;
 
-    private Dictionary<MovementType, Action> movementTypes;
+    private Dictionary<MovementType, Action> movementModes;
     private PatrolMovement patrol;
 
     // Start is called before the first frame update
@@ -33,10 +33,10 @@ public class EnemyAI : MonoBehaviour
     {
         patrol = GetComponent<PatrolMovement>();
         animator = GetComponent<Animator>();
-        movementTypes = new Dictionary<MovementType, Action>
+        movementModes = new Dictionary<MovementType, Action>
         {
             { MovementType.Patrol, patrol.ManualUpdate }
-            // to be expanded
+            // to be expanded with more movement types
         };
     }
 
@@ -61,11 +61,16 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void SetState(EnemyAI.EnemyState newState)
+    {
+        state = newState;
+    }
+
     private void Move()
     {
-        if (movementTypes.ContainsKey(movementType))
+        if (movementModes.ContainsKey(movementType))
         {
-            movementTypes[movementType].Invoke();
+            movementModes[movementType].Invoke();
         }
         else
         {

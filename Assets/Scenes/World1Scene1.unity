@@ -107994,6 +107994,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
+      propertyPath: attackDuration
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: tardigradeKnockback.x
       value: 150
       objectReference: {fileID: 0}
