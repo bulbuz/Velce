@@ -9,22 +9,41 @@ public class Combat : MonoBehaviour
     public Transform attackBox;
     public float attackRadius = 0.5f;
     public LayerMask enemyLayer;
-    public float attackDuration = 0.4f;
+    public float attackDuration = 5 / 12; // 5 frames divided by 12 fps
     public int attackDamage;
 
     public Vector2 enemyKnockback;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    private float attackTimer = 9999f;
+    private bool doAttack = false;
 
-    // Update is called once per frame
     void Update()
     {
-        // Attack if not in hurt
-        if (Input.GetKeyDown(KeyCode.J))
+        // check if attack button is pressed and player is not currently attacking
+        // -0.1f is used to add 100ms of leway so the user can press attack 100ms before its finished
+        if (attackTimer >= attackDuration - 0.1f)
+        {
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                doAttack = true;
+            }
+        }
+
+        // handle attack
+        if (attackTimer >= attackDuration && doAttack)
+        {
+            attackTimer = 0;
             Attack();
+            doAttack = false;
+        }
+
+        attackTimer += Time.deltaTime;
+        
+        // check if attack has finished
+        if (attackTimer >= attackDuration)
+        {
+            PlayerState.SetState(PlayerState.State.ATTACK, false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

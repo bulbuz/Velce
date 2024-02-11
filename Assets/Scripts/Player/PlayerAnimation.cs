@@ -13,21 +13,41 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator anim;
     private State prevState = State.IDLE;
-    private float motionTime = 0f;
     private float attackDuration;
+    private int attackCombo = 0;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
         attackDuration = GetComponent<Combat>().attackDuration;
     }
 
-    private void PlayAttack()
+    private void HandleAttack()
     {
-        if (motionTime >= attackDuration)
+        if (Ps.GetState(State.RUNNING))
         {
-            Ps.SetState(State.ATTACK, false);
-            motionTime = 0f;
+            if (attackCombo % 2 == 0)
+            {
+                anim.SetInteger("state", 9);
+            }
+            else
+            {
+                anim.SetInteger("state", 10);
+            }
         }
+        else
+        {
+            if (attackCombo % 2 == 0)
+            {
+                anim.SetInteger("state", 7);
+            }
+            else
+            {
+                anim.SetInteger("state", 8);
+            }
+        }
+
+        attackCombo++;
     }
     private void Update()
     {
@@ -37,22 +57,20 @@ public class PlayerAnimation : MonoBehaviour
         // reset motionTime if state has changed
         if (curState != prevState)
         {
-            anim.SetInteger("state", (int)stateIdx);
-            motionTime = 0f;
+            if (curState == State.ATTACK)
+            {
+                HandleAttack();
+            }
+            else
+            {
+                anim.SetInteger("state", (int)stateIdx);
+            }
         }
         else
         {
             anim.SetInteger("state", -1);
         }
 
-        // handle attack animation
-        if (curState == State.ATTACK)
-        {
-            PlayAttack();
-        }
-
-        motionTime += Time.deltaTime;
-        anim.SetFloat("motionTime", motionTime);
         prevState = curState;
     }
 }
