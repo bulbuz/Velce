@@ -6,9 +6,8 @@ using UnityEngine.XR;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public GameObject heartPrefab;
     public int maxHealth;
-    public int curHealth; 
+    public int curHealth;
     public GameObject[] hearts;
     
     // Start is called before the first frame update
@@ -22,6 +21,11 @@ public class PlayerHealth : MonoBehaviour
     {
     }
 
+    void Die()
+    {
+        // TODO: reset everything and possibly death screen??
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemies"))
@@ -29,6 +33,10 @@ public class PlayerHealth : MonoBehaviour
             curHealth--;
             var animator = hearts[curHealth].GetComponent<Animator>();
             animator.SetTrigger("Hurt");
+            if (curHealth == 0)
+            {
+                Die();
+            }
         }
     }
 }

@@ -66,7 +66,7 @@ public class HealthUpdate : MonoBehaviour
 
     void Die()
     {
-        GetComponent<EnemyAI>().state = EnemyAI.EnemyState.Dead;
+        GetComponent<EnemyAI>().state = EnemyAI.State.Dead;
         dead = true;
         dmgTime = 1f;
         animDur = 0f;

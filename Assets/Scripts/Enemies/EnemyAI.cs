@@ -4,28 +4,41 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+
+/*
+ * ENEMY AI
+ * 
+ * At the core, the enemy AI is a finite state machine (FSM) on steroids.
+ * 
+ * There are a few basic states from which all enemies are assembled (see state enum)
+ * The enemies are created by the model "Pick and Mix", i.e. for each state, choose the enemy behaviour from a
+ * predetermined set of patterns (usually scripts) making this script essentially the "brain"
+ * 
+ */
+
+
 public class EnemyAI : MonoBehaviour
 {
     public bool removeAtDeath = true;
-    public enum EnemyState
+    public enum State
     {
         Attacking,
-        Idle,
+        Hurt, // All enemies should have a "hurt" cooldown
         Move,
         Dead,
     }
 
-    public enum MovementType
+    public enum MovementMode
     {
         Patrol,
         Fly,
     }
 
-    public MovementType movementType;
-    public EnemyState state = EnemyState.Move;
+    public MovementMode movementType;
+    public State state = State.Move;
     private Animator animator;
 
-    private Dictionary<MovementType, Action> movementModes;
+    private Dictionary<MovementMode, Action> movementModes;
     private PatrolMovement patrol;
 
     // Start is called before the first frame update
@@ -33,9 +46,9 @@ public class EnemyAI : MonoBehaviour
     {
         patrol = GetComponent<PatrolMovement>();
         animator = GetComponent<Animator>();
-        movementModes = new Dictionary<MovementType, Action>
+        movementModes = new Dictionary<MovementMode, Action>
         {
-            { MovementType.Patrol, patrol.ManualUpdate }
+            { MovementMode.Patrol, patrol.ManualUpdate }
             // to be expanded with more movement types
         };
     }
@@ -45,14 +58,14 @@ public class EnemyAI : MonoBehaviour
     {
         switch (state)
         {
-            case EnemyState.Dead:
+            case State.Dead:
                 Die();
                 break;
 
-            case EnemyState.Move:
+            case State.Move:
                 Move();
                 break;
-            case EnemyState.Attacking:
+            case State.Attacking:
                 Attack();
                 break;
 
@@ -61,7 +74,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void SetState(EnemyAI.EnemyState newState)
+    public void SetState(EnemyAI.State newState)
     {
         state = newState;
     }
@@ -81,6 +94,11 @@ public class EnemyAI : MonoBehaviour
     private void Attack()
     {
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 
     private void Die()

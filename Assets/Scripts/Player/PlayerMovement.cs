@@ -67,15 +67,15 @@ public class PlayerMovement : MonoBehaviour
         // Add movement force
         rb.AddForce(movement * Vector2.right);
 
-        Ps.SetState(State.LEFT | State.RIGHT, false);
+        Ps.SetState(Ps.State.LEFT | Ps.State.RIGHT, false);
         if (horizontal != 0)
         {
             if (facingRight)
-                Ps.SetState(State.RIGHT, true);
-            else 
-                Ps.SetState(State.LEFT, true);
+                Ps.SetState(Ps.State.RIGHT, true);
+            else
+                Ps.SetState(Ps.State.LEFT, true);
         }
-        Ps.SetState(State.RUNNING, Ps.GetState(State.RIGHT | State.LEFT));
+        Ps.SetState(Ps.State.RUNNING, Ps.GetState(Ps.State.RIGHT | Ps.State.LEFT));
 
         if (IsGrounded())
             coyoteCounter = coyoteTime;
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         else
             jumpBufferCounter -= Time.deltaTime;
 
-        Ps.SetState(State.JUMP | State.FALL, false);
+        Ps.SetState(Ps.State.JUMP | Ps.State.FALL, false);
         // jump buffer and coyote time for better jump yee
         if (coyoteCounter > 0f && jumpBufferCounter > 0f)
         {
@@ -104,15 +104,15 @@ public class PlayerMovement : MonoBehaviour
         }
         if (rb.velocity.y < -0.01f)
         {
-            Ps.SetState(State.FALL, true);
+            Ps.SetState(Ps.State.FALL, true);
             isJumping = false;
         }
-        Ps.SetState(State.JUMP, isJumping);
+        Ps.SetState(Ps.State.JUMP, isJumping);
 
         // Flip if necessary
         if (horizontal != 0 && (horizontal > 0 != facingRight))
             Flip();
-        Ps.SetState(State.IDLE, !Ps.GetState(State.JUMP | State.FALL | State.ATTACK | State.HURT | State.RUNNING));
+        Ps.SetState(Ps.State.IDLE, !Ps.GetState(Ps.State.JUMP | Ps.State.FALL | Ps.State.ATTACK | Ps.State.HURT | Ps.State.RUNNING));
     }
 
     private bool IsGrounded()

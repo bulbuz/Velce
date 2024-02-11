@@ -12,7 +12,7 @@ using State = PlayerState.State;
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator anim;
-    private State prevState = State.IDLE;
+    private Ps.State prevState = Ps.State.IDLE;
     private float attackDuration;
     private int attackCombo = 0;
 
@@ -24,7 +24,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void HandleAttack()
     {
-        if (Ps.GetState(State.RUNNING))
+        if (Ps.GetState(Ps.State.RUNNING))
         {
             if (attackCombo % 2 == 0)
             {
@@ -52,12 +52,12 @@ public class PlayerAnimation : MonoBehaviour
     private void Update()
     {
         int stateIdx = Ps.GetPrio();
-        State curState = (State)(1 << stateIdx);
+        Ps.State curState = (Ps.State)(1 << stateIdx);
 
         // reset motionTime if state has changed
         if (curState != prevState)
         {
-            if (curState == State.ATTACK)
+            if (curState == Ps.State.ATTACK)
             {
                 HandleAttack();
             }
