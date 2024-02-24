@@ -93131,7 +93131,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -108494,10 +108494,6 @@ PrefabInstance:
     - target: {fileID: 541243403378213670, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
-      propertyPath: attackDuration
-      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 573449443920517170, guid: 09304b18b263c504e9fefd00657b840e, type: 3}
       propertyPath: tardigradeKnockback.x

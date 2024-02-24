@@ -270,13 +270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3df1ff9f3c96d743b64401374a1e8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 6845603294935490918}
   attackBox: {fileID: 4591501430207421534}
   attackRadius: 0.5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  attackDuration: 0.25
+  attackDuration: 0.4166667
   attackDamage: 20
   enemyKnockback: {x: 150, y: 100}
 --- !u!114 &2334502354578726207
@@ -291,7 +291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205d6650c7f53e54f8bea4541692db6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartPrefab: {fileID: 2235333161916618731, guid: c610130d6ac40da469f7af4ebaea1337, type: 3}
   maxHealth: 3
   curHealth: 3
   hearts:
